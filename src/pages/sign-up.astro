@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import Form from '../components/page/Form.astro';
+import { prices, routes, links } from '../data/site';
+
+const title = 'Book a Pelvy demo, or sign up your clinic';
+const description = 'Tell Amelia about your clinic and she will email you a recorded demo, or book a live one. $20 a month during the pilot, and no payment details to sign up.';
+---
+<Base {title} {description} crumbs={[{ name: 'Book a demo', href: routes.signUp }]}>
+  <PageHead kicker="Book a demo" title="Tell Amelia about your clinic." lead="She’ll email you a recorded demo, and a time for a live one if you’d like it. No payment details." narrow />
+  <section class="section--tight">
+    <div class="wrap signup" data-signup data-patient-title="Write to Amelia." data-patient-lead="A question about Pelvy, or help with the app. She answers these herself.">
+      <div data-rise>
+        <Form subject="Pelvy sign up" submit="Write my email">
+          <fieldset>
+            <legend>You are</legend>
+            <label class="choice"><input type="radio" name="who" value="clinician" data-label="I am" checked /> A clinician</label>
+            <label class="choice"><input type="radio" name="who" value="patient" data-label="I am" /> A patient, or on my own</label>
+          </fieldset>
+          <p class="body signup__patient" data-when="who=patient">You don’t need this form. Pelvy Patient is in the <a href={links.appStore} rel="noopener">App Store</a> and on <a href={links.googlePlay} rel="noopener">Google Play</a>: {prices.liteMonthly} a month or {prices.liteYearly} a year on your own, or free for six months when your clinic subscribes. If you’d still like to write to Amelia, carry on.</p>
+          <div class="form__row">
+            <div class="field"><label for="s-name">Your name</label><input id="s-name" name="name" autocomplete="name" required /></div>
+            <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" autocomplete="email" required /></div>
+          </div>
+          <div class="form__row">
+            <div class="field"><label for="s-phone">Phone (optional)</label><input id="s-phone" name="phone" type="tel" autocomplete="tel" /></div>
+            <div class="field"><label for="s-country">Country</label><input id="s-country" name="country" autocomplete="country-name" required /></div>
+          </div>
+          <div class="form__row" data-when="who=clinician">
+            <div class="field"><label for="s-clinic">Clinic name</label><input id="s-clinic" name="clinic" autocomplete="organization" required /></div>
+            <div class="field"><label for="s-software">Practice software you use (optional)</label><input id="s-software" name="software" /><span class="field__hint">Pelvy doesn’t connect to it yet. It helps to know.</span></div>
+          </div>
+          <label class="choice" data-when="who=clinician"><input type="checkbox" name="live-demo" data-label="Live demo with Amelia" /> I’d like a live demo with Amelia</label>
+          <div class="field"><label for="s-interest">What you’d like Pelvy to do for you (optional)</label><textarea id="s-interest" name="interest" maxlength="1500"></textarea></div>
+          <div class="field"><label for="s-heard">Where you heard about Pelvy (optional)</label><input id="s-heard" name="heard" /></div>
+        </Form>
+      </div>
+      <aside class="signup__aside stack" style="--stack-gap: 1rem; --i: 1" data-rise>
+        <h2 class="h3">What happens next</h2>
+        <ol class="signup__next" role="list">
+          <li><span class="ring" style="--d: 2.25rem" aria-hidden="true">1</span><span>Amelia emails you from amelia@pelvy.app. Check your junk folder.</span></li>
+          <li data-for="clinician"><span class="ring" style="--d: 2.25rem" aria-hidden="true">2</span><span>You watch the recorded demo, or she shows you live.</span></li>
+          <li data-for="clinician"><span class="ring" style="--d: 2.25rem" aria-hidden="true">3</span><span>She sets up your clinic herself. {prices.clinicMonthly} a month during the pilot.</span></li>
+        </ol>
+        <p data-for="clinician"><a class="link-strong" href={routes.clinicianFaqs}>Questions from clinicians</a></p>
+        <p data-for="patient" hidden><a class="link-strong" href={routes.peopleFaqs}>Questions from patients</a></p>
+      </aside>
+    </div>
+  </section>
+</Base>
+
+<script>
+  // The page opens for a clinic. When someone says they are a patient, the heading,
+  // the lead and what happens next stop talking about a clinic, and change back with the choice.
+  const root = document.querySelector<HTMLElement>('[data-signup]');
+  const form = root?.querySelector<HTMLFormElement>('[data-form]');
+  const title = document.querySelector<HTMLElement>('.page-head h1');
+  const lead = document.querySelector<HTMLElement>('.page-head .lead');
+  if (root && form && title && lead) {
+    const words = {
+      clinician: { title: title.textContent, lead: lead.textContent },
+      patient: { title: root.dataset.patientTitle!, lead: root.dataset.patientLead! },
+    };
+    const sync = () => {
+      const who = (form.elements.namedItem('who') as RadioNodeList).value === 'patient' ? 'patient' : 'clinician';
+      title.textContent = words[who].title;
+      lead.textContent = words[who].lead;
+      root.querySelectorAll<HTMLElement>('[data-for]').forEach((el) => { el.hidden = el.dataset.for !== who; });
+    };
+    form.addEventListener('change', sync);
+    form.addEventListener('reset', () => window.setTimeout(sync));
+    window.addEventListener('pageshow', sync);
+    sync();
+  }
+</script>
+
+<style>
+  .signup { display: grid; gap: clamp(2rem, 6vw, 5rem); align-items: start; padding-bottom: var(--section); }
+  @media (min-width: 1000px) { .signup { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); } }
+  .signup__aside { background: var(--mint); border-radius: var(--r-panel); padding: 1.75rem; }
+  .signup__next { margin: 0; display: grid; gap: 1rem; }
+  .signup__next li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.9rem; align-items: start; }
+  .signup__next li[hidden] { display: none; }
+  .signup__next li > span:last-child { padding-top: 0.3rem; }
+  .signup__next .ring { background: var(--white); }
+  .signup__patient { background: var(--mint); border-radius: var(--r-field); padding: 1rem 1.25rem; }
+</style>

@@ -1,0 +1,12 @@
+{
+  "name": "Pelvy",
+  "short_name": "Pelvy",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "theme_color": "#41684A",
+  "background_color": "#FCFDFC",
+  "display": "browser",
+  "start_url": "/"
+}

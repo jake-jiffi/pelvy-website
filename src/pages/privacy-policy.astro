@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import { routes, site } from '../data/site';
+
+// Legal text is Pelvy's own, word for word. It is not rewritten in the brand voice.
+const title = 'Terms and policies';
+const description = 'Pelvy’s privacy policy and terms of use for the pilot phase, last updated 6 October 2025.';
+---
+<Base {title} {description} crumbs={[{ name: 'Terms and policies', href: routes.privacy }]}>
+  <PageHead kicker="Terms and policies" title="Privacy policy and terms of use." lead="For the pilot phase. Last updated 6 October 2025." narrow />
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="prose legal">
+        <h2 id="privacy">Privacy Policy (Pilot Phase)</h2>
+        <p>Pelvy Pty Ltd (“Pelvy”, “we”, “our”, or “us”) respects your privacy and is committed to protecting personal information in accordance with the Australian Privacy Principles under the Privacy Act 1988 (Cth).</p>
+        <h3>Information Collected and How It Is Used</h3>
+        <p>Pelvy collects only the information necessary to provide its core functionality, including clinician contact details, patient profiles, exercise programs, and optional notes or feedback. Patient phone number is collected with consent and used solely to create a patient profile for the app. Patient email is collected with consent by the clinician to share Pelvy’s contact details and feedback questionnaire during the pilot. No sensitive health data is collected.</p>
+        <p>Clinicians may input educational notes, advice, and exercise programs to support patient care. These entries are visible to the patient for guidance and reference. Pelvy’s education and advice sections are not designed or intended for the storage of medical results, diagnostic images, or clinical test data. Clinicians are informed of this clear differentiator during onboarding and within the clinician portal. Any diagnostic or formal medical record storage remains the responsibility of the clinician’s own practice systems. The educational notes section is also not a form of record keeping or clinical documentation, but is copied into Pelvy to help with information retention instead of providing written or emailed advice/treatment summaries.</p>
+        <p>Aggregated, de-identified data derived from feedback questionnaires (not through the app) may be used to improve functionality and inform the development of current or future features such as bladder diaries, bowel diaries, symptom tracking, reminders, and exercise programs.</p>
+        <p>Pelvy stores all data securely in Google Cloud (Sydney Region, Australia). Data is encrypted in transit and at rest. User data is deleted upon request.</p>
+        <p>For any privacy-related queries, please contact <a href={`mailto:${site.email}`}>{site.email}</a></p>
+
+        <h2 id="terms">Terms of Use (Pilot Phase)</h2>
+        <h3>Use of the Platform and Professional Responsibilities</h3>
+        <p>Clinicians acknowledge that Pelvy’s features – including the advice, education, and exercise sections – are provided solely for general guidance, communication, and patient engagement. These sections must not be used for storing or transmitting medical results, diagnostic reports, or other regulated clinical records.</p>
+        <p>Clinicians remain responsible for all medical decision-making, patient management, and record keeping in accordance with their professional obligations and local regulatory requirements.</p>
+        <h3>General Terms</h3>
+        <p>Pelvy is designed to assist clinicians in delivering evidence-based pelvic health care by providing tools for exercise programs, reminders, and educational content. Use of Pelvy does not replace clinical judgment, and clinicians retain full responsibility for their professional conduct and advice.</p>
+        <p>Pelvy is currently operating in a limited pilot phase. Access is restricted to participating pelvic health clinicians and their patients for testing and feedback. Data collected during this phase is used solely to evaluate and improve Pelvy’s functionality prior to public release.</p>
+        <p>For any terms of use related queries, please contact <a href={`mailto:${site.email}`}>{site.email}</a></p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .legal { padding-bottom: var(--section); }
+</style>

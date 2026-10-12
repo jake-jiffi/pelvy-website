@@ -1,0 +1,162 @@
+---
+import DeskScene from '../DeskScene.astro';
+import directory from '../../data/clinics.json';
+import { prices, reach, routes } from '../../data/site';
+
+// Quotes are the clinics' own words, as published in Pelvy's clinic directory.
+const chosen = ['The Funky Physio', "FitRight Women's Health", 'Physio73', "Jindabyne Women's Health", 'Thea Pelvic Health Physiotherapy', 'Physiotherapy Alliance', 'Fit 2 Function'];
+const quotes = chosen.map((name) => directory.clinics.find((c) => c.name === name)).filter((c) => c && c.quote) as typeof directory.clinics;
+---
+<section class="clinics" aria-labelledby="clinics-title">
+  <div class="wrap section">
+    <div class="clinics__head">
+      <p class="clinics__for" data-rise>For clinicians</p>
+      <h2 class="h1" id="clinics-title" data-rise style="--i: 1">Your advice and your program go home with your patient.</h2>
+    </div>
+
+    <div class="clinics__grid">
+      <ol class="steps" role="list" data-steps>
+        <li class="steps__item" data-step>
+          <span class="ring" aria-hidden="true">1</span>
+          <div>
+            <h3 class="h3"><span class="visually-hidden">Step 1: </span>Subscribe</h3>
+            <p class="body">{prices.clinicMonthly} a month during the pilot. Join now and that stays your price. Amelia sets up every clinic herself.</p>
+          </div>
+        </li>
+        <li class="steps__item" data-step>
+          <span class="ring" aria-hidden="true">2</span>
+          <div>
+            <h3 class="h3"><span class="visually-hidden">Step 2: </span>Set your patient up</h3>
+            <p class="body">From your computer: your own programs, your advice, and exercises and videos from the library. Put in what you’d usually write, print or email.</p>
+          </div>
+        </li>
+        <li class="steps__item" data-step>
+          <span class="ring" aria-hidden="true">3</span>
+          <div>
+            <h3 class="h3"><span class="visually-hidden">Step 3: </span>They open Pelvy at home</h3>
+            <p class="body">Your note is the first thing they see. The program counts them through every rep, and reminders arrive at the times they choose. Free for their first {prices.patientFreeMonths} months.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="clinics__scene" data-rise><DeskScene /></div>
+    </div>
+
+    <div class="actions clinics__actions" data-rise>
+      <a class="btn" href={routes.signUp}>Book a demo</a>
+      <a class="link-strong" href={routes.clinicians}>What clinics get, and what it costs</a>
+    </div>
+  </div>
+
+  <div class="said ground" data-ground data-quotes>
+    <div class="wrap said__head">
+      <h3 class="said__title">What clinics say</h3>
+      <p class="said__reach">Amelia’s count in {reach.asOf}: {reach.clinics} clinics in {reach.countries} countries. <a href={routes.directory}>See the clinic directory</a></p>
+    </div>
+    <ul class="said__row" role="list" tabindex="0" data-quotes-row aria-label="Quotes from clinics that use Pelvy. Use the left and right arrow keys for more.">
+      {quotes.map((c) => (
+        <li class="said__item">
+          <figure>
+            <blockquote>{c.quote}</blockquote>
+            <figcaption>{c.quoteAttribution}<span>{c.location}</span></figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+    <div class="wrap">
+      <div class="said__nav">
+        <p class="said__count" aria-hidden="true"><span class="ring said__ring" data-quotes-now>1</span><span class="mono">of {quotes.length}</span></p>
+        <div class="said__buttons">
+          <button type="button" class="said__btn" data-quotes-prev aria-label="Previous quote" aria-disabled="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+          </button>
+          <button type="button" class="said__btn" data-quotes-next aria-label="Next quote" aria-disabled="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </button>
+        </div>
+        <p class="visually-hidden" role="status" data-quotes-status></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .clinics { background: var(--white); border-top: 1px solid var(--line); }
+  .clinics__head { display: grid; gap: 1rem; margin-bottom: clamp(2.5rem, 6vw, 4.5rem); }
+  .clinics__head :global(.h1) { max-width: 24ch; }
+  .clinics__for { font-weight: 600; color: var(--deep); }
+  .clinics__grid { display: grid; gap: clamp(2.5rem, 6vw, 5rem); align-items: start; }
+  .clinics__scene { min-width: 0; }
+  @media (min-width: 900px) {
+    .clinics__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+    .clinics__scene { position: sticky; top: calc(var(--header-h) + 2rem); }
+  }
+  .clinics__actions { margin-top: clamp(2.5rem, 5vw, 4rem); }
+
+  /* The count ring marks a position in a real sequence. Each step is counted as it is
+     passed, one at a time: the rail fills, the ring turns and the words come up to ink. */
+  .steps { position: relative; margin: 0; display: grid; gap: clamp(2.5rem, 5vw, 3.5rem); --ring: 3rem; }
+  .steps::before, .steps::after {
+    content: ''; position: absolute; left: calc(var(--ring) / 2 - 1px); top: var(--ring); bottom: 2rem; width: 2px; background: var(--line);
+  }
+  .steps::after { background: var(--deep); transform-origin: top; transform: scaleY(var(--rail, 1)); }
+  /* Tall enough that no two steps are ever counted within 150px of scroll. */
+  .steps__item { position: relative; z-index: 1; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 1.5rem; align-items: start; min-height: 7.5rem; }
+  .steps__item > div { display: grid; gap: 0.5rem; padding-top: 0.45rem; align-content: start; transition: opacity 480ms var(--settle-ease); }
+  .steps__item .ring { --d: var(--ring); background: var(--white); transition: border-color 480ms var(--settle-ease), color 480ms var(--settle-ease), transform 640ms var(--breath-ease); }
+  :global(.js) .steps[data-live] .steps__item:not(.is-on) .ring { border-color: var(--border-strong); color: var(--muted); transform: scale(0.9); }
+  :global(.js) .steps[data-live] .steps__item:not(.is-on) > div { opacity: 0.66; }
+
+  /* What clinics say, one at a time. White sits on deep sage only. */
+  .said { --edge: max(var(--pad), calc((100vw - var(--wrap)) / 2)); background: var(--deep); color: var(--accent-on-solid); padding-block: clamp(3.5rem, 7vw, 5.5rem); }
+  .said__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.75rem 2rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+  .said__title { font-family: var(--stack-body); font-weight: 600; font-size: var(--text-base); }
+  .said__reach { font-size: var(--text-sm); }
+  .said__reach a { color: var(--accent-on-solid); font-weight: 600; }
+  /* Each quote fills the column. The gap matches the edge, so the next one waits just out of sight. */
+  .said__row {
+    margin: 0; display: flex; gap: var(--edge); overflow-x: auto; scroll-snap-type: x mandatory;
+    padding-inline: var(--edge); scroll-padding-inline: var(--edge); padding-bottom: 1.25rem;
+    scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--accent-on-solid) 55%, transparent) transparent;
+  }
+  /* With the buttons and the count there, the scrollbar has nothing left to say. */
+  :global(.js) .said__row { scrollbar-width: none; padding-bottom: 0; }
+  :global(.js) .said__row::-webkit-scrollbar { display: none; }
+  .said__row:focus-visible { outline: 2px solid var(--accent-on-solid); outline-offset: -4px; }
+  .said__item { flex: 0 0 100%; min-width: 0; scroll-snap-align: start; }
+  .said__item figure { height: 100%; display: flex; flex-direction: column; justify-content: space-between; gap: clamp(1.75rem, 4vw, 2.75rem); }
+  .said__item blockquote {
+    font-family: var(--stack-display); font-weight: 500; font-size: clamp(1.75rem, 1.05rem + 2.9vw, 3.25rem);
+    line-height: 1.18; letter-spacing: -0.018em; text-wrap: pretty; max-width: 23em;
+  }
+  .said__item figcaption { font-weight: 600; font-size: var(--text-base); }
+  .said__item figcaption span { display: block; font-weight: 400; }
+
+  .said__nav {
+    display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+    margin-top: clamp(1.75rem, 4vw, 2.75rem); padding-top: clamp(1.25rem, 2.5vw, 1.75rem);
+    border-top: 1px solid color-mix(in srgb, var(--accent-on-solid) 38%, transparent);
+  }
+  :global(html:not(.js)) .said__nav { display: none; }
+  .said__count { display: flex; align-items: center; gap: 0.75rem; font-size: var(--text-base); }
+  .said__ring { --d: 3rem; border-color: var(--accent-on-solid); color: var(--accent-on-solid); }
+  .said__buttons { display: flex; gap: 0.75rem; }
+  .said__btn {
+    appearance: none; display: grid; place-items: center; width: 3.75rem; height: 3rem; padding: 0; cursor: pointer;
+    border: 1.5px solid var(--accent-on-solid); border-radius: var(--r-pill); background: transparent; color: var(--accent-on-solid);
+    transition: background-color var(--duration-base) var(--ease-standard), color var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
+  }
+  .said__btn svg { width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .said__btn:hover { background: var(--accent-on-solid); color: var(--deep); }
+  .said__btn:focus-visible { outline: 2px solid var(--accent-on-solid); outline-offset: 3px; }
+  /* At either end the button stays where it is and can still be focused: it just has nowhere to go. */
+  .said__btn[aria-disabled='true'] {
+    cursor: default; background: transparent;
+    border-color: color-mix(in srgb, var(--accent-on-solid) 38%, transparent);
+    color: color-mix(in srgb, var(--accent-on-solid) 45%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .steps__item > div, .steps__item .ring { transition: none; }
+  }
+</style>

@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import Cta from '../components/page/Cta.astro';
+import AppPlayer from '../components/AppPlayer.astro';
+import { prices, routes, links } from '../data/site';
+
+const title = 'Pelvy for you: pelvic floor exercises, counted';
+const description = 'Pelvy counts you through pelvic floor programs for strength and for relaxation. Free for six months when your clinic subscribes, or $4.99 a month on your own.';
+---
+<Base {title} {description} crumbs={[{ name: 'For you', href: routes.people }]}>
+  <PageHead kicker="For you" title="Know whether to squeeze or let go, and be counted through it." lead="With your clinician’s program and notes when your clinic subscribes, or a physio-built program when you’re on your own.">
+    <div class="actions">
+      <a class="btn" href={links.appStore} rel="noopener">Download on the App Store</a>
+      <a class="btn btn--quiet" href={links.googlePlay} rel="noopener">Get it on Google Play</a>
+    </div>
+  </PageHead>
+
+  <section class="section--tight">
+    <div class="wrap split split--even you-try">
+      <div class="you-try__screen panel panel--sage" data-rise>
+        <div class="you-try__app"><AppPlayer /></div>
+      </div>
+      <div class="stack" style="--stack-gap: 1.1rem; --i: 1" data-rise>
+        <h2 class="h1">It counts every breath, so you don’t.</h2>
+        <p class="body">This is the exercise screen. It tells you what to do in a few words, counts the seconds, and counts the reps. You can turn the sound and the vibration on or off.</p>
+        <div class="you-try__switch" role="group" aria-label="Which program to try">
+          <button type="button" class="btn btn--quiet btn--small" data-program="letgo" aria-pressed="true">Let go</button>
+          <button type="button" class="btn btn--quiet btn--small" data-program="squeeze" aria-pressed="false">Squeeze</button>
+        </div>
+        <p class="fine">A working sample, drawn in Pelvy’s new look. The app in the stores still wears its older colours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="h1" data-rise style="max-width: 16ch">Strength, and letting go.</h2>
+      <div class="both">
+        <div class="both__one both__one--letgo" data-rise>
+          <span class="chip chip--letgo">Relaxation</span>
+          <h3 class="h2">When to let go</h3>
+          <p class="body">Some pelvic floors are too tight, not too weak. Those need to learn to let go. If you have pelvic pain, relaxation belongs in your toolbox, and sometimes leaking comes from muscles that are too tight too.</p>
+          <p class="body">Pelvy’s belly breathing and downtraining program cues you to widen your belly, waist and ribs, then let it all go.</p>
+        </div>
+        <div class="both__one both__one--work" data-rise style="--i: 1">
+          <span class="chip chip--work">Strength</span>
+          <h3 class="h2">When to squeeze</h3>
+          <p class="body">A pelvic floor can weaken under heavy loads it isn’t braced for: lifting, high-impact sport, straining, repeated coughing. Pregnancy, a vaginal birth and ageing do it too.</p>
+          <p class="body">Pelvy’s strength program starts with quick squeezes, then holds, and finishes with belly breathing so the muscles relax afterwards. Pelvic floor exercises and Kegels are the same thing.</p>
+        </div>
+      </div>
+      <p class="body both__after" data-rise>Not sure which you need? The Learn tab walks you through it in five articles. The surest way is still a pelvic health physio, who can assess you and set a program for your body.</p>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="wrap split">
+      <div class="stack" style="--stack-gap: 1rem">
+        <h2 class="h1" data-rise>Every body.</h2>
+        <p class="body" data-rise style="--i: 1">Everyone has a pelvis and a pelvic floor. Choose your anatomy when you set up, so the cues match your body.</p>
+      </div>
+      <div data-rise style="--i: 1">
+        <p class="label">People bring Pelvy’s programs to</p>
+        <ul class="brings" role="list">
+          <li>Pregnancy, and the months after a birth</li>
+          <li>A leaking bladder, urgency, waking at night to wee, or bladder pain</li>
+          <li>Bowel symptoms that involve the pelvic floor</li>
+          <li>Painful periods, perimenopause and menopause</li>
+          <li>Erection problems</li>
+          <li>Pelvic pain with muscle tension</li>
+          <li>Heavy lifting and high-impact sport</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="get-the-app">
+    <div class="wrap">
+      <h2 class="h1" data-rise style="max-width: 16ch">Two ways to start.</h2>
+      <div class="starts">
+        <article class="panel panel--soft stack" style="--stack-gap: 0.9rem" data-rise>
+          <h3 class="h2">Your clinic subscribes</h3>
+          <p class="starts__price"><span class="mono">$0</span> for your first {prices.patientFreeMonths} months</p>
+          <p class="body">Your clinician sets you up. Their notes and their program are in the app when you open it.</p>
+          <p><a class="link-strong" href={routes.directory} style="color: var(--ink)">Find a clinic that uses Pelvy</a></p>
+        </article>
+        <article class="panel panel--white stack" style="--stack-gap: 0.9rem; --i: 1" data-rise>
+          <h3 class="h2">On your own</h3>
+          <p class="starts__price"><span class="mono">{prices.liteMonthly}</span> a month, or <span class="mono">{prices.liteYearly}</span> a year</p>
+          <p class="body">Download Pelvy Patient and answer no when it asks whether your clinic subscribes for you. It starts you on a physio-built program.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap split">
+      <div class="panel panel--mint stack" style="--stack-gap: 0.9rem" data-rise>
+        <h2 class="h2">When to see someone.</h2>
+        <p class="body">If anything makes your symptoms worse, stop the program and see a pelvic health physio. Exercises that aren’t helping may be the wrong ones for you, and they can check. Pelvy can’t.</p>
+        <p class="body">Three months of regular exercises should change something. If it hasn’t, that’s the signal to see a pelvic health physio.</p>
+      </div>
+      <div class="stack" style="--stack-gap: 0.9rem; --i: 1" data-rise>
+        <h2 class="h2">Your information is yours.</h2>
+        <p class="body">It’s stored in Australia, encrypted, and only you and your clinician can see your profile. We don’t sell it and there are no ads.</p>
+        <p class="body">When you close your account we delete it. Once it’s deleted, it’s deleted, so save your program first.</p>
+        <p><a class="link-strong" href={routes.peopleFaqs}>More questions, answered</a></p>
+      </div>
+    </div>
+  </section>
+
+  <Cta for="person" />
+</Base>
+
+<style>
+  .you-try { align-items: center; }
+  .you-try__screen { display: grid; place-items: center; }
+  .you-try__app { width: min(100%, 18.5rem); }
+  .you-try__switch { display: flex; gap: 0.6rem; }
+  .you-try__switch :global(.btn[aria-pressed='true']) { background: var(--ink); color: var(--white); }
+  :global(html:not(.js)) .you-try__switch { display: none; }
+
+  .both { margin-top: clamp(2rem, 5vw, 3.5rem); display: grid; gap: 1.25rem; }
+  @media (min-width: 800px) { .both { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .both__one { border-radius: var(--r-panel); padding: clamp(1.5rem, 4vw, 3rem); display: grid; gap: 1rem; align-content: start; justify-items: start; background: var(--white); border: 1px solid var(--line); }
+  .both__after { margin-top: 2rem; }
+
+  .band { background: var(--white); border-block: 1px solid var(--line); }
+  .brings { margin: 0.9rem 0 0; border-top: 1px solid var(--line); }
+  .brings li { padding-block: 0.8rem; border-bottom: 1px solid var(--line); }
+
+  .starts { margin-top: clamp(2rem, 5vw, 3.5rem); display: grid; gap: 1.25rem; }
+  @media (min-width: 800px) { .starts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .starts__price { font-size: var(--text-md); }
+  .starts__price .mono { font-size: 1.15em; }
+</style>

@@ -1,0 +1,131 @@
+---
+// The program card: the parts of Pelvic floor strength as the app lists them,
+// with one part counting for real (count.ts). One to a page.
+import { programs, strengthParts } from '../data/site';
+
+interface Props {
+  /** The count's own stop control, for a page that has no page-wide one. */
+  pause?: boolean;
+}
+const { pause = false } = Astro.props;
+const strength = programs.find((p) => p.name === 'Pelvic floor strength')!;
+// The card counts one part for real. Holds is the steadiest to watch: five
+// seconds held, five seconds rested, so the numeral changes every second.
+const counted = strengthParts.find((p) => p.name === 'Holds')!;
+const countedReps = counted.values.find(([k]) => k === 'Reps')![1];
+const seconds = (v: string) => parseInt(v, 10);
+---
+<div class="count" data-count data-reps={countedReps} data-kind="work" data-rise>
+  <div class="count__live" data-count-live role="img" aria-label={`A working sample of the count, on the ${counted.name} part: ${counted.values.map(([k, v]) => `${k.toLowerCase()} ${v}`).join(', ')}.`}>
+    <p class="count__part serif">{counted.name}</p>
+    <div class="count__now">
+      <span class="ring count__ring"><span data-count-n>{seconds(counted.values[0][1])}</span></span>
+      <p class="count__state">
+        <span class="count__phase" data-count-phase>{counted.values[0][0]}</span>
+        <span class="count__rep mono">Rep <span data-count-rep>1</span> of {countedReps}</span>
+      </p>
+    </div>
+  </div>
+  {pause && (
+    <button class="motion-btn count__pause" type="button" data-count-toggle aria-pressed="false" aria-label="Pause the count">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="motion-btn__pause" d="M9 7v10M15 7v10" /><path class="motion-btn__play" d="M9.5 7l8 5-8 5z" /></svg>
+    </button>
+  )}
+
+  <div class="count__list" role="group" aria-label="The parts of the Pelvic floor strength program, as the app lists them">
+    <div class="count__head">
+      <p class="count__name serif">{strength.name}</p>
+      {strength.chips.map((c) => <span class:list={['chip', `chip--${c.kind}`]}>{c.label}</span>)}
+    </div>
+    <ol class="count__parts" role="list">
+      {strengthParts.map((part, i) => (
+        <li class="count__row">
+          <span class="ring" style="--d: 2.6rem" aria-hidden="true">{part.n}</span>
+          <p class="count__row-name"><span class="visually-hidden">Part {part.n}: </span>{part.name}</p>
+          <dl class:list={['count__values', `count__values--${part.values.length}`]}>
+            {part.values.map(([k, v]) => (
+              <div
+                data-seconds={part === counted && k !== 'Reps' ? seconds(v) : undefined}
+                data-label={part === counted && k !== 'Reps' ? k : undefined}
+                data-kind={part === counted && k !== 'Reps' ? (k === 'Rest' ? 'letgo' : 'work') : undefined}
+              ><dt>{k}</dt><dd class="mono">{v}</dd></div>
+            ))}
+          </dl>
+          {i < strengthParts.length - 1 && <p class="count__rest">Rest for 10 seconds</p>}
+        </li>
+      ))}
+    </ol>
+    <p class="count__when">
+      <span>{strength.frequency}.</span>
+      <span class="count__times">Reminders at <span class="count__time mono">8am</span><span class="visually-hidden">, </span><span class="count__time mono">2pm</span><span class="visually-hidden"> and </span><span class="count__time mono">8pm</span><span class="visually-hidden">.</span></span>
+    </p>
+  </div>
+</div>
+
+<style>
+  .count {
+    position: relative; display: grid;
+    background: var(--white); border: 1px solid var(--line); border-radius: var(--r-panel); overflow: hidden;
+  }
+
+  /* The count is only there when a script is running it. Sage means let go, slate means work. */
+  .count__live { display: none; }
+  .count[data-live] .count__live {
+    display: grid; align-content: start; gap: 1rem;
+    padding: clamp(1.25rem, 5vw, 2rem); background: var(--mint);
+    transition: background-color 640ms var(--settle-ease);
+  }
+  .count[data-live][data-kind='work'] .count__live { background: var(--slate-tint); }
+  .count__part { font-weight: 600; font-size: var(--text-md); line-height: 1.2; }
+  .count__now { display: flex; align-items: center; gap: clamp(1.25rem, 5vw, 2rem); }
+  /* On a phone the ring stays small enough that its numeral is not larger than the note's words. */
+  .count__ring { --d: 6.5rem; background: var(--white); transition: transform 640ms var(--breath-ease); }
+  /* A hold draws the ring in a little. A rest lets it go. */
+  .count[data-kind='work'] .count__ring { transform: scale(0.93); }
+  .count__state { display: grid; gap: 0.15rem; }
+  .count__phase { font-weight: 600; font-size: var(--text-lg); line-height: 1.15; color: var(--deep); transition: color 480ms var(--settle-ease); }
+  .count[data-kind='work'] .count__phase { color: var(--slate); }
+  .count__rep { font-size: var(--text-sm); }
+  /* The stop control shares the counting part's cell and sits in its corner. */
+  .count__pause { grid-area: 1 / 1 / 2 / 2; }
+  .count:not([data-live]) .count__pause { display: none; }
+
+  .count__list { container-type: inline-size; padding: clamp(1.25rem, 2.6vw, 2rem); min-width: 0; }
+  .count__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.1rem; }
+  .count__name { font-weight: 600; font-size: var(--text-md); line-height: 1.2; }
+  .count__parts { margin: 0; }
+  .count__row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 0.9rem; align-items: start; padding-block: 0.85rem; border-top: 1px solid var(--line); }
+  .count__row-name { font-weight: 600; line-height: 2.6rem; }
+  .count__values { grid-column: 2; margin: 0.1rem 0 0; display: flex; gap: 0.35rem; }
+  .count__values > div { min-width: 3.9rem; padding: 0.3rem 0.6rem; margin-left: -0.6rem; border-radius: var(--r-field); transition: background-color 480ms var(--settle-ease); }
+  .count__values > div:global(.is-counting) { background: var(--mint); }
+  .count[data-kind='work'] .count__values > div:global(.is-counting) { background: var(--slate-tint); }
+  .count__values dt { font-size: var(--text-xs); color: var(--muted); }
+  /* Muted text falls just short of 4.5 to 1 on either tint, so the part being counted is labelled in ink. */
+  .count__values > div:global(.is-counting) dt { color: var(--ink); }
+  .count__values dd { margin: 0; font-size: var(--text-md); line-height: 1.2; }
+  .count__rest { grid-column: 1 / -1; margin-top: 0.85rem; margin-bottom: -0.85rem; padding-block: 0.4rem; font-size: var(--text-xs); color: var(--muted); border-top: 1px solid var(--line); }
+  .count__when { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; padding-top: 0.9rem; border-top: 1px solid var(--line); font-size: var(--text-sm); color: var(--muted); }
+  .count__times { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
+  .count__time { display: inline-flex; align-items: center; min-height: 1.9rem; padding: 0 0.75rem; border: 1px solid var(--line); border-radius: var(--r-pill); background: var(--paper); color: var(--ink); font-size: var(--text-sm); }
+
+  /* With room, each part is one line: its name, then its values in columns that line up. */
+  @container (min-width: 33rem) {
+    .count__row { grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; }
+    .count__values { grid-column: 3; margin: 0; display: grid; grid-template-columns: repeat(4, 4.6rem); gap: 0; }
+    .count__values > div { margin-left: 0; }
+    .count__values--3 > div:first-child { grid-column-start: 2; }
+  }
+
+  @media (min-width: 900px) {
+    .count[data-live] { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+    .count[data-live] .count__live { grid-template-rows: auto 1fr; align-content: stretch; padding: clamp(1.5rem, 2.6vw, 2rem); }
+    .count__now { flex-direction: column; justify-content: center; gap: 1.5rem; padding-bottom: 1.5rem; }
+    .count__ring { --d: clamp(9rem, 14vw, 11.5rem); }
+    .count__state { justify-items: center; text-align: center; gap: 0.3rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .count__live, .count__ring, .count__phase, .count__values > div { transition: none; }
+  }
+</style>

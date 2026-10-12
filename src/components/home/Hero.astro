@@ -1,0 +1,242 @@
+---
+// The opening. A room at home with the app running on the phone; scrolling
+// pushes in through the phone until the screen is the page, then hands over a
+// working exercise screen to try. Without a script, or with reduced motion,
+// the same two things sit one after the other and nothing is hidden.
+import { Image } from 'astro:assets';
+import room from '../../assets/scenes/room.jpg';
+import AppPlayer from '../AppPlayer.astro';
+import { prices, routes } from '../../data/site';
+
+const sample = 'A working sample in Pelvy’s new look. The timings are examples: in the app you set your own, or your clinician does.';
+---
+<section class="hero" data-hero aria-labelledby="hero-title">
+  <div class="hero__stage" data-hero-stage>
+    <div class="hero__ground" data-hero-ground aria-hidden="true"></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy" data-hero-copy>
+        <h1 class="h-display" id="hero-title">Squeeze or let go. Pelvy counts you through it.</h1>
+        <p class="lead">A pelvic floor app built by a pelvic health physio. <span class="hero__lead-more">Programs for strength and for relaxation, counted breath by breath, with your own clinician’s advice when you have one.</span></p>
+        <div class="actions">
+          <a class="btn" href={routes.signUp}>Book a demo</a>
+          <a class="link-strong" href="#get-the-app">I’m a patient: get the app</a>
+        </div>
+        <p class="fine hero__prices">Clinics: {prices.clinicMonthly} a month during the pilot, with {prices.patientFreeMonths} months free for each patient. On your own: {prices.liteMonthly} a month or {prices.liteYearly} a year.</p>
+      </div>
+
+      <div class="hero__side">
+        <div class="hero__slot" data-hero-slot>
+          <div class="hero__panel" data-hero-panel>
+            <div class="hero__world" data-hero-world>
+              <div class="hero__photo" data-hero-photo>
+                <Image
+                  src={room}
+                  widths={[480, 720, 1080, 1440, 1894]}
+                  sizes="(min-width: 900px) 46vw, 100vw"
+                  loading="eager"
+                  fetchpriority="high"
+                  alt="A phone propped against a speckled mug on a bedroom floor, beside a rolled sage exercise mat, in late afternoon light. The phone is running the Pelvy app."
+                />
+                <video data-hero-video muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-src-lg="/media/room-1080.mp4" data-src-sm="/media/room-720.mp4"></video>
+              </div>
+              <div class="hero__backing" data-hero-backing></div>
+              <div class="hero__screen" data-hero-screen><AppPlayer mini /></div>
+            </div>
+          </div>
+          <!-- Moving pictures need a way to stop them. Shown only when something is moving. -->
+          <button class="motion-btn" type="button" data-motion-toggle data-hero-meta aria-pressed="false" aria-label="Pause motion" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path class="motion-btn__pause" d="M9 7v10M15 7v10" /><path class="motion-btn__play" d="M9.5 7l8 5-8 5z" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="try" data-hero-try id="try-it">
+      <div class="wrap try__in" data-hero-try-in>
+        <div class="try__copy" data-try-part>
+          <h2 class="h1">It counts, so you can finish.</h2>
+          <p class="try__lead">Squeeze, hold, let go. Pelvy counts every rep and every breath of the program, for strength and for relaxation.</p>
+        </div>
+
+        <div class="try__screen" data-hero-target><AppPlayer /></div>
+
+        <div class="try__panel" data-try-part>
+          <p class="try__q serif" id="try-q">Which do you need?</p>
+          <div class="try__switch" role="group" aria-labelledby="try-q">
+            <button type="button" class="try__opt" data-program="letgo" aria-pressed="true">
+              <span class="try__dot try__dot--letgo" aria-hidden="true"></span>
+              <span><strong>Let go</strong><span class="try__sub">Belly breathing</span></span>
+            </button>
+            <button type="button" class="try__opt" data-program="squeeze" aria-pressed="false">
+              <span class="try__dot try__dot--work" aria-hidden="true"></span>
+              <span><strong>Squeeze</strong><span class="try__sub">Pelvic floor with breath</span></span>
+            </button>
+          </div>
+          <ul class="try__key" role="list">
+            <li><span class="try__dot try__dot--letgo" aria-hidden="true"></span>A sage disc means breathe in and let go.</li>
+            <li><span class="try__dot try__dot--work" aria-hidden="true"></span>A slate disc means breathe out and work.</li>
+            <li><span class="try__dot try__dot--hold" aria-hidden="true"></span>A ring means hold.</li>
+          </ul>
+          <p class="fine">{sample}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- On a phone the pinned screen has no room for this line, so it follows the stage. -->
+<p class="wrap fine hero__after">{sample}</p>
+
+<style>
+  .hero { position: relative; background: var(--paper); }
+  .hero__stage { padding-top: var(--header-h); }
+
+  .hero__grid { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.5rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem); }
+  .hero__copy { display: flex; flex-direction: column; gap: clamp(1.25rem, 2.4vw, 1.75rem); min-width: 0; }
+  .hero__copy .lead { max-width: 33ch; }
+  .hero__prices { max-width: 46ch; }
+
+  .hero__side { min-width: 0; }
+  .hero__slot { position: relative; aspect-ratio: 1; width: 100%; max-width: 42rem; margin-inline: auto; }
+  .hero__panel { position: absolute; inset: 0; border-radius: var(--r-panel); overflow: hidden; background: var(--sage); }
+  .hero__world { position: absolute; inset: 0; transform-origin: 0 0; }
+  .hero__photo { position: absolute; inset: 0; }
+  .hero__ground { display: none; }
+  .hero__photo :global(img), .hero__photo video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero__photo video { opacity: 0; transition: opacity 900ms var(--settle-ease); }
+  .hero__photo video.is-playing { opacity: 1; }
+
+  /* Where the phone's blank screen sits in the photograph, measured from the frames.
+     The script replaces this skew with the exact four-corner fit. */
+  .hero__screen, .hero__backing {
+    position: absolute; left: 32.14%; top: 13.77%; width: 32.88%; height: 72.2%;
+    transform-origin: 0 0; transform: matrix(1, -0.0015, 0.0171, 1, 0, 0);
+  }
+  .hero__screen { mix-blend-mode: multiply; }
+  .hero__screen :global(.app) { width: 100%; height: 100%; aspect-ratio: auto; }
+  .hero__backing { background: var(--white); border-radius: 7% / 3.235%; opacity: 0; }
+
+  @media (min-width: 900px) {
+    .hero__grid { grid-template-columns: minmax(0, 11fr) minmax(0, 10fr); min-height: calc(100svh - var(--header-h)); }
+    .hero__slot { max-width: min(42rem, calc(100svh - var(--header-h) - 7rem)); margin-inline: auto 0; }
+  }
+
+  .hero__after { display: none; }
+
+  /* ---------- Try it ---------- */
+
+  .try { padding-bottom: var(--section); }
+  .try__in { display: grid; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+  .try__copy { display: grid; gap: 1.25rem; }
+  /* Ink sits on sage at 24px and up, never smaller. */
+  .try__lead { font-size: max(1.5rem, var(--text-md)); line-height: 1.38; max-width: 22ch; }
+  .try__screen { width: min(100%, 19.5rem); margin-inline: auto; }
+  .try__screen :global(.app) { box-shadow: var(--shadow-lg); }
+
+  .try__panel { background: var(--white); border-radius: var(--r-panel); padding: clamp(1.25rem, 2.5vw, 1.75rem); display: grid; gap: 1.1rem; }
+  .try__q { font-weight: 600; font-size: var(--text-md); line-height: 1.2; }
+  .try__switch { display: grid; gap: 0.6rem; }
+  .try__opt {
+    display: flex; align-items: center; gap: 0.9rem; width: 100%; text-align: left;
+    min-height: 4rem; padding: 0.6rem 1rem; border-radius: var(--r-field);
+    background: var(--white); border: 1.5px solid var(--border-strong); cursor: pointer;
+    transition: border-color var(--duration-base) var(--ease-standard), background-color var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard);
+  }
+  .try__opt:hover { border-color: var(--ink); }
+  .try__opt[aria-pressed='true'] { border-color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); background: var(--paper); }
+  .try__opt strong { display: block; font-weight: 600; font-size: var(--text-base); line-height: 1.2; }
+  .try__sub { display: block; font-size: var(--text-xs); color: var(--muted); }
+  .try__dot { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 50%; }
+  .try__dot--letgo { background: var(--sage); }
+  .try__dot--work { background: var(--slate); }
+  .try__dot--hold { background: var(--white); border: 0.19rem solid var(--deep); }
+  .try__key { margin: 0; display: grid; gap: 0.55rem; padding-top: 1.1rem; border-top: 1px solid var(--line); font-size: var(--text-sm); }
+  .try__key li { display: flex; align-items: center; gap: 0.75rem; }
+  .try__key .try__dot { width: 1.1rem; height: 1.1rem; }
+  .try__key .try__dot--hold { border-width: 0.14rem; }
+
+  /* Static layout: one sage panel after the opening. The heading steps down a size so it sits on two lines. */
+  :global(.hero:not(.hero--live)) .try__copy :global(.h1) { font-size: clamp(1.9rem, 1.35rem + 2.4vw, var(--text-2xl)); }
+  :global(.hero:not(.hero--live)) .try__in > * { position: relative; }
+  :global(.hero:not(.hero--live)) .try__in {
+    background: var(--sage); border-radius: var(--r-panel);
+    padding: clamp(1.5rem, 5vw, 4rem); max-width: calc(var(--wrap) + 0px); width: calc(100% - 2 * var(--pad));
+  }
+  @media (min-width: 900px) {
+    .try__in { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+    .try__copy { justify-self: end; max-width: 26rem; }
+    .try__panel { max-width: 22rem; }
+    .try__screen { width: clamp(15rem, 34svh, 19.5rem); }
+  }
+
+  /* ---------- Live: pinned, pushed in by scroll ----------
+     Nothing in this block moves a box in the layout. The ground opens with a
+     clip-path and the room moves with a transform, so the page never jumps. */
+
+  :global(.hero--live) { height: calc(100svh + var(--hero-travel, 250svh)); }
+  :global(.hero--live) .hero__stage { position: sticky; top: 0; height: 100svh; overflow: clip; }
+  :global(.hero--live) .hero__ground { display: block; position: absolute; inset: 0; background: var(--sage); clip-path: inset(50% round 22px); }
+  :global(.hero--live) .hero__grid { position: relative; height: 100%; min-height: 0; align-content: center; }
+  :global(.hero--live) .hero__panel { overflow: visible; background: none; border-radius: 0; }
+  :global(.hero--live) .hero__photo { clip-path: inset(0 round 22px); }
+  /* Pinned, the small screen is laid out at the large one's size, so it takes the same label size. */
+  :global(.hero--live) .hero__screen :global(.app) { --label: max(1.5rem, 6.15cqw); --disc: clamp(66cqw, 10.4rem, 86cqw); }
+  :global(.hero--live) .try { position: absolute; inset: 0; padding: calc(var(--header-h) * 0.5) 0 0; display: grid; align-items: center; pointer-events: none; }
+  :global(.hero--live) .try.is-on { pointer-events: auto; }
+  :global(.hero--live) .try__screen { opacity: 0; width: auto; height: min(74svh, 46rem); aspect-ratio: 390 / 844; }
+  :global(.hero--live) .try__screen :global(.app) { box-shadow: none; }
+
+  /* Short phones: the exercise screen keeps its size and the words around it give way. */
+  @media (max-width: 639px) and (max-height: 739px) {
+    :global(.hero--live) .try__in { gap: 0.6rem; padding-block: 0.6rem 0.7rem; }
+    :global(.hero--live) .try__copy :global(.h1) { font-size: 1.5rem; line-height: 1.15; }
+    :global(.hero--live) .try__q { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    :global(.hero--live) .try__panel { padding: 0.55rem; }
+  }
+  @media (max-width: 639px) and (max-height: 699px) {
+    :global(.hero--live) .try__copy { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  }
+
+  /* Without a script the switch has nothing to drive, so only the key shows. */
+  :global(html:not(.js)) .try__q, :global(html:not(.js)) .try__switch { display: none; }
+  :global(html:not(.js)) .try__key { padding-top: 0; border-top: 0; }
+
+  @media (min-width: 640px) and (max-width: 899px) {
+    :global(.hero--live) .try__in {
+      grid-template-columns: auto minmax(0, 21rem); grid-template-areas: 'copy copy' 'screen panel';
+      justify-content: center; align-content: center; gap: 1.5rem 2rem;
+    }
+    :global(.hero--live) .try__copy { grid-area: copy; }
+    :global(.hero--live) .try__lead { max-width: 30ch; }
+    :global(.hero--live) .try__screen { grid-area: screen; height: min(62svh, 46rem); margin: 0; }
+    :global(.hero--live) .try__panel { grid-area: panel; align-self: center; }
+  }
+
+  @media (max-width: 899px) {
+    .hero__grid { padding-top: 1rem; gap: 1.5rem; }
+    .hero__prices { display: none; }
+    /* On a phone the first screen has to hold the headline, the action and the app. The rest of the lead is said again below. */
+    .hero__lead-more { display: none; }
+    :global(.hero--live) .hero__grid { align-content: start; }
+  }
+  @media (max-width: 639px) {
+    /* The header can come back over the top of the stage, so nothing sits under it. */
+    :global(.hero--live) .try { padding: var(--header-h) 0 0; align-items: stretch; }
+    :global(.hero--live) .try__in {
+      height: 100%; gap: 0.75rem; padding-block: 1rem 0.9rem;
+      grid-template-rows: auto minmax(0, 1fr) auto; justify-items: center; align-items: center;
+    }
+    /* Rows are named, so the screen keeps the flexible row even when the heading is taken out of view. */
+    :global(.hero--live) .try__copy { justify-self: start; grid-row: 1; }
+    :global(.hero--live) .try__screen { grid-row: 2; }
+    :global(.hero--live) .try__panel { grid-row: 3; }
+    :global(.hero--live) .try__copy :global(.h1) { font-size: 1.85rem; }
+    :global(.hero--live) .try__lead { display: none; }
+    :global(.hero--live) .try__screen { height: 100%; max-height: 36rem; width: auto; margin: 0; }
+    :global(.hero--live) .try__panel { width: 100%; padding: 0.7rem; gap: 0.55rem; }
+    :global(.hero--live) .try__q { font-size: var(--text-sm); font-family: var(--stack-body); }
+    :global(.hero--live) .try__switch { grid-template-columns: 1fr 1fr; }
+    :global(.hero--live) .try__opt { min-height: 3rem; padding: 0.35rem 0.7rem; gap: 0.6rem; }
+    :global(.hero--live) .try__sub, :global(.hero--live) .try__panel .fine, :global(.hero--live) .try__key { display: none; }
+    :global(.hero--live) + .hero__after { display: block; padding-top: 1.25rem; }
+  }
+</style>

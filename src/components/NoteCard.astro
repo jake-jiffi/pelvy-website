@@ -1,0 +1,19 @@
+---
+// The clinician's note: the biggest words on a Pelvy surface belong to the
+// clinician. A note is a real one used with permission, or it says it is a sample.
+interface Props {
+  words: string;
+  by: string;
+  /** The app's own line above the note. Pass false to leave it off: words, then name and role. */
+  from?: string | false;
+  /** The words read themselves in as they are scrolled. */
+  reading?: boolean;
+  class?: string;
+}
+const { words, by, from = 'From your clinician', reading = false, class: className } = Astro.props;
+---
+<figure class:list={['note', className]}>
+  {from && <p class="note__from">{from}</p>}
+  <blockquote class="note__words" data-reading={reading || undefined}>{words}</blockquote>
+  <figcaption class="note__by">{by}</figcaption>
+</figure>

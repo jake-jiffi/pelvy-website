@@ -1,0 +1,48 @@
+---
+import { routes, links } from '../../data/site';
+interface Props {
+  for?: 'clinic' | 'person';
+  /** Pass false to leave the lead off, where the section above has just said it. */
+  lead?: boolean;
+}
+const { for: audience = 'clinic', lead = true } = Astro.props;
+---
+<section class="section cta" aria-labelledby="cta-title">
+  <div class="wrap">
+    <div class="cta__panel" data-rise>
+      {audience === 'clinic' ? (
+        <>
+          <div class="cta__copy">
+            <h2 class="h1" id="cta-title">See it with your own patients in mind.</h2>
+            {lead && <p class="cta__lead">Amelia is a pelvic health physiotherapist and sets up every clinic herself. Book a demo and she’ll walk you through it.</p>}
+          </div>
+          <div class="actions">
+            <a class="btn btn--on-sage" href={routes.signUp}>Book a demo</a>
+          </div>
+        </>
+      ) : (
+        <>
+          <div class="cta__copy">
+            <h2 class="h1" id="cta-title">Start with one program.</h2>
+            {lead && <p class="cta__lead">The app is called Pelvy Patient. It asks whether your clinic subscribes for you, then takes you the right way.</p>}
+          </div>
+          <div class="actions">
+            <a class="btn btn--on-sage" href={links.appStore} rel="noopener">Download on the App Store</a>
+            <a class="btn btn--on-sage" href={links.googlePlay} rel="noopener">Get it on Google Play</a>
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta__panel { background: var(--sage); border-radius: var(--r-panel); padding: clamp(2rem, 6vw, 5rem); display: grid; gap: 2rem; align-items: end; }
+  .cta__copy { display: grid; gap: 1.25rem; }
+  .cta__copy :global(.h1) { max-width: 16ch; }
+  /* Ink on sage at 24px and up. */
+  .cta__lead { font-size: max(1.5rem, var(--text-md)); line-height: 1.38; max-width: 30ch; }
+  .cta :global(.btn--on-sage) { background: var(--ink); border-color: var(--ink); }
+  .cta :global(.btn--on-sage:hover) { background: var(--white); border-color: var(--white); color: var(--ink); }
+  @media (min-width: 900px) { .cta__panel { grid-template-columns: minmax(0, 1fr) auto; } }
+</style>

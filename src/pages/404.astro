@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { routes } from '../data/site';
+---
+<Base title="Page not found" description="That page isn’t on pelvy.app. Start from the home page, or find the clinicians page, the patients page or the clinic directory." noindex>
+  <section class="section missing">
+    <div class="wrap stack" style="--stack-gap: 1.5rem">
+      <h1 class="h-display">That page isn’t here.</h1>
+      <p class="lead">The address may have changed, or the link was mistyped. These are the places people usually want.</p>
+      <ul class="missing__links" role="list">
+        <li><a href="/">Home</a></li>
+        <li><a href={routes.clinicians}>For clinicians</a></li>
+        <li><a href={routes.people}>For you</a></li>
+        <li><a href={routes.directory}>Find a clinic</a></li>
+        <li><a href={routes.contact}>Contact Amelia</a></li>
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .missing { min-height: 60svh; }
+  .missing__links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; font-weight: 600; font-size: var(--text-md); }
+</style>

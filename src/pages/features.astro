@@ -1,0 +1,145 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import Cta from '../components/page/Cta.astro';
+import AppHub from '../components/AppHub.astro';
+import NoteCard from '../components/NoteCard.astro';
+import { routes, strengthParts, videos, learn } from '../data/site';
+
+const title = 'What Pelvy does, and what it doesn’t do yet';
+const description = 'Programs that count every rep, your clinician’s notes, reminders, exercise videos and a Learn tab. Symptom tracking and diaries come after the pilot.';
+---
+<Base {title} {description} crumbs={[{ name: 'What it does', href: routes.features }]}>
+  <PageHead kicker="What it does" title="Five things in the app now. Three that aren’t yet." lead="Everything on this page is either in the app today or marked as coming. Nothing has a date it can’t keep.">
+    <p class="body">This is the app’s home screen. Programs, Videos and Learn sit behind three tabs.<span class="shows__tap"> Tap them.</span></p>
+    <figure class="shows" slot="media">
+      <div class="panel panel--sage shows__panel"><div class="shows__screen"><AppHub /></div></div>
+      <figcaption class="credit">A working sample, drawn in Pelvy’s new look. The app in the stores still wears its older colours.</figcaption>
+    </figure>
+  </PageHead>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <h2 class="h2 now__h" data-rise>In the app now</h2>
+      <ol class="now" role="list">
+        <li class="now__row" data-rise>
+          <span class="ring" aria-hidden="true">1</span>
+          <div class="now__text">
+            <h3 class="h2">Programs that count</h3>
+            <p class="body">Three ship with the app: Pelvic floor strength, Belly breathing and downtraining, and Pelvic floor with breath. Each one counts every rep and every hold, and cues each breath in a few words. You can change the holds, the rests and the reps.</p>
+          </div>
+          <div class="now__show">
+            <div class="parts">
+              {strengthParts.map((part) => (
+                <div class="parts__row">
+                  <span class="parts__name">{part.name}</span>
+                  <span class="parts__vals mono">{part.values.map(([k, v]) => <span>{k} {v}</span>)}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </li>
+        <li class="now__row" data-rise>
+          <span class="ring" aria-hidden="true">2</span>
+          <div class="now__text">
+            <h3 class="h2">Your clinician’s notes</h3>
+            <p class="body">When your clinic subscribes, your clinician writes their advice into Pelvy from their computer, and adds their own programs. The note is the first thing you see when you open the app.</p>
+          </div>
+          <div class="now__show"><NoteCard from={false} words="Let your belly go, then belly breathing. Use your guided program." by="Amelia Godfrey, pelvic health physiotherapist" /><p class="fine" style="margin-top: 0.6rem">A sample note, from Pelvy’s store listing.</p></div>
+        </li>
+        <li class="now__row" data-rise>
+          <span class="ring" aria-hidden="true">3</span>
+          <div class="now__text">
+            <h3 class="h2">Reminders</h3>
+            <p class="body">Each program takes up to three reminders a day, at the times you choose. They arrive as discreet push notifications.</p>
+          </div>
+          <div class="now__show"><p class="times mono" aria-label="Reminder times: 8am, 2pm and 8pm"><span>8am</span><span>2pm</span><span>8pm</span></p></div>
+        </li>
+        <li class="now__row" data-rise>
+          <span class="ring" aria-hidden="true">4</span>
+          <div class="now__text">
+            <h3 class="h2">Videos</h3>
+            <p class="body">Mobility and stretches for hips, lower back and upper back, filmed with real people, including men. Every stretch shows a supported version, with a pillow or a ball, and a version with movement.</p>
+          </div>
+          <div class="now__show">
+            <ul class="parts" role="list" aria-label="Video titles, as the app lists them">
+              {videos.map((v) => <li class="parts__row"><span class="parts__name">{v}</span></li>)}
+            </ul>
+          </div>
+        </li>
+        <li class="now__row" data-rise>
+          <span class="ring" aria-hidden="true">5</span>
+          <div class="now__text">
+            <h3 class="h2">Learn</h3>
+            <p class="body">Five articles, in order. They start with when to see a pelvic health physio, then help you work out whether you need to strengthen or to relax. Each one says it is general education, not individual advice.</p>
+          </div>
+          <div class="now__show">
+            <ol class="parts" role="list" aria-label="The five articles, in the app’s order">
+              {learn.map((a, i) => (
+                <li class="parts__row parts__row--article">
+                  <span class="mono" aria-hidden="true">{i + 1}</span>
+                  <span class="parts__name">{a.title}</span>
+                  <span class:list={['chip', a.tag.startsWith('Strength') ? 'chip--work' : a.tag.startsWith('Pain') ? 'chip--letgo' : 'chip--plain']}>{a.tag}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="panel panel--mint split" data-rise>
+        <div class="stack" style="--stack-gap: 0.8rem">
+          <h2 class="h1">Not in the app yet.</h2>
+          <p class="body">These come after the pilot. There’s no date.</p>
+        </div>
+        <ul class="later" role="list">
+          <li><strong>Symptom tracking.</strong> For bladder, bowel, pain, prolapse and sexual health symptoms, with a summary your clinician can read.</li>
+          <li><strong>Diaries.</strong> Bladder, bowel and pad weight diaries, filled in on your phone.</li>
+          <li><strong>Find a clinician, in the app.</strong> Until then, the <a href={routes.directory}>clinic directory</a> is on this site.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>
+
+<style>
+  .now__h { margin-bottom: 1.5rem; }
+  .now { margin: 0; border-top: 2px solid var(--ink); }
+  .now__row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.25rem 1.5rem; padding-block: clamp(1.75rem, 4vw, 2.75rem); border-bottom: 1px solid var(--line); align-items: start; }
+  .now__text { display: grid; gap: 0.75rem; padding-top: 0.2rem; }
+  .now__show { grid-column: 2; min-width: 0; }
+  @media (min-width: 1000px) {
+    .now__row { grid-template-columns: auto minmax(0, 6fr) minmax(0, 5fr); gap: 1.25rem 3rem; }
+    .now__show { grid-column: 3; }
+  }
+  .parts { margin: 0; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-panel); padding: 0.5rem 1.5rem; }
+  .parts__row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.25rem 1rem; padding-block: 0.9rem; border-bottom: 1px solid var(--line); }
+  .parts__row:last-child { border-bottom: 0; }
+  .parts__name { font-weight: 600; }
+  .parts__vals { display: flex; flex-wrap: wrap; gap: 0.1rem 1.1rem; color: var(--muted); }
+  /* An article is its place in the order, its title, then who it is for. */
+  .parts__row--article { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: 0.4rem 0.5rem; align-items: baseline; }
+  .parts__row--article .mono { color: var(--deep); }
+  .parts__row--article .chip { grid-column: 2; justify-self: start; }
+  .times { display: flex; flex-wrap: wrap; gap: 0.6rem; font-size: var(--text-lg); }
+  .times span { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-pill); padding: 0.5rem 1.25rem; }
+
+  /* The app's home screen opens the page, on the ground the app always sits on.
+     On a wide screen it is sized to the window, so the whole of it is in the first screen. */
+  .shows { margin: 0; }
+  .shows__panel { display: grid; place-items: center; padding: 1.75rem; }
+  .shows__screen { width: min(100%, 20.5rem); }
+  @media (min-width: 900px) {
+    .shows__screen { width: clamp(17rem, (100svh - var(--header-h) - 11.5rem) * 0.462, 20.5rem); max-width: 100%; }
+  }
+  /* With no script the screen shows Programs and nothing says to tap. */
+  :global(html:not(.js)) .shows__tap { display: none; }
+
+  .later { margin: 0; display: grid; gap: 1.1rem; font-size: var(--text-md); line-height: var(--leading-md); max-width: 44ch; }
+</style>

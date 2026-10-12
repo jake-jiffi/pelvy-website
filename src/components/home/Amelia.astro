@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import clinic from '../../assets/people/amelia-clinic.jpg';
+import { routes } from '../../data/site';
+---
+<section class="section amelia" aria-labelledby="amelia-title">
+  <div class="wrap amelia__grid">
+    <figure class="amelia__photo" data-rise>
+      <div class="photo">
+        <!-- 1170 by 755 at source, so it is never shown wider than that. -->
+        <Image src={clinic} widths={[480, 720, 1170]} sizes="(min-width: 900px) 44vw, 100vw" alt="Amelia Godfrey using an ultrasound machine with a man lying on a treatment bed in her clinic." />
+      </div>
+      <figcaption class="credit">Amelia Godfrey, pelvic health physiotherapist and Pelvy’s founder, in clinic.</figcaption>
+    </figure>
+
+    <div class="amelia__copy">
+      <h2 class="h1" id="amelia-title" data-rise>Built by a physio, from what her patients asked for.</h2>
+      <div class="stack body" data-rise style="--i: 1">
+        <p>Amelia kept seeing the same thing. A patient would leave with good advice and a program, then struggle to keep up with it. The handout was lost, the email was buried, and nothing was counting for them.</p>
+        <p>So she built Pelvy with patients, physiotherapists, GPs and specialists. She still sets up every clinic herself.</p>
+      </div>
+      <p data-rise style="--i: 2"><a class="link-strong" href={routes.about}>More about Amelia</a></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* The closing panel follows, with its own space above it. */
+  .amelia { padding-bottom: 0; }
+  .amelia__grid { display: grid; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+  .amelia__photo { margin: 0; max-width: 1170px; }
+  .amelia__photo .photo { aspect-ratio: 1170 / 755; }
+  .amelia__copy { display: grid; gap: 1.5rem; }
+  .amelia__copy :global(.h1) { max-width: 15ch; }
+  @media (min-width: 900px) { .amelia__grid { grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); } }
+</style>

@@ -1,0 +1,31 @@
+---
+// The clinic desk with a slow light loop, and the set-up card laid onto its
+// blank card. Corners measured from the clip's frames.
+import { Image } from 'astro:assets';
+import desk from '../assets/scenes/desk.jpg';
+import SetupCard from './SetupCard.astro';
+---
+<figure class="desk">
+  <div class="photo desk__frame">
+   <div class="desk__stage">
+    <Image src={desk} widths={[640, 960, 1280, 1920, 2400]} sizes="(min-width: 900px) 50vw, 100vw" alt="A pale timber clinic desk seen from above, with a ceramic dish, two notebooks and a pen around a small white card." />
+    <video data-loop muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-src="/media/desk-720.mp4"></video>
+    <div class="desk__card"><SetupCard /></div>
+   </div>
+   <button class="motion-btn" type="button" data-loop-toggle aria-pressed="false" aria-label="Pause motion" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path class="motion-btn__pause" d="M9 7v10M15 7v10" /><path class="motion-btn__play" d="M9.5 7l8 5-8 5z" /></svg>
+   </button>
+  </div>
+</figure>
+
+<style>
+  .desk { margin: 0; }
+  /* The frame may crop tighter than the clip; the stage keeps the clip's 16:9 so the card stays registered. */
+  .desk__frame { position: relative; aspect-ratio: 4 / 3; }
+  .desk__stage { position: absolute; top: 0; left: 50%; height: 100%; aspect-ratio: 16 / 9; translate: -50% 0; }
+  .desk__stage :global(img), .desk__stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (min-width: 900px) { .desk__frame { aspect-ratio: 16 / 10; } }
+  .desk__frame video { opacity: 0; transition: opacity 900ms var(--settle-ease); }
+  .desk__frame video.is-playing { opacity: 1; }
+  .desk__card { position: absolute; left: 32.34%; top: 29.5%; width: 35.33%; height: 40.6%; mix-blend-mode: multiply; }
+</style>

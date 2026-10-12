@@ -1,0 +1,96 @@
+---
+import Logo from '../assets/logo/pelvy-logo-brand.svg';
+import { nav, routes } from '../data/site';
+
+const here = Astro.url.pathname;
+const isCurrent = (href: string) => here === href || here === href.replace(/\/$/, '');
+---
+<header class="site-header" data-header>
+  <div class="wrap site-header__in">
+    <a class="site-header__logo" href="/" aria-label="Pelvy, home">
+      <Logo role="img" aria-hidden="true" />
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul role="list">
+        {nav.map((item) => (
+          <li><a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <a class="btn btn--small site-header__cta" href={routes.signUp}>Book a demo</a>
+
+    <!-- Opens with no JavaScript. -->
+    <details class="menu" data-menu>
+      <summary><span>Menu</span></summary>
+      <nav class="menu__sheet" aria-label="Menu">
+        <ul role="list">
+          {nav.map((item) => (
+            <li><a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>
+          ))}
+          <li><a href={routes.clinicianFaqs}>Questions from clinicians</a></li>
+          <li><a href={routes.peopleFaqs}>Questions from patients</a></li>
+          <li><a href={routes.contact}>Contact Amelia</a></li>
+        </ul>
+        <a class="btn" href={routes.signUp}>Book a demo</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: fixed; inset: 0 0 auto 0; z-index: 50;
+    height: var(--header-h);
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    transition: transform 420ms var(--settle-ease), background-color var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard);
+  }
+  .site-header.is-scrolled { box-shadow: 0 1px 0 var(--line); background: var(--paper); }
+  .site-header.is-away { transform: translateY(-101%); }
+  .site-header:focus-within { transform: none; }
+
+  .site-header__in { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+
+  /* The logo never goes under 120px wide. */
+  .site-header__logo { display: block; flex: none; width: 132px; min-width: 120px; padding-block: 0.5rem; }
+  .site-header__logo :global(svg) { width: 100%; height: auto; }
+
+  .site-nav ul { display: flex; gap: clamp(1rem, 2.4vw, 2.25rem); margin: 0; }
+  .site-nav a { color: var(--ink); text-decoration: none; font-weight: 500; font-size: var(--text-sm); padding-block: 0.5rem; white-space: nowrap; }
+  .site-nav a:hover, .site-nav a[aria-current='page'] { color: var(--deep); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.4em; }
+
+  .menu { display: none; }
+  .menu summary {
+    list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.6rem;
+    min-height: 2.75rem; padding: 0 1.1rem; border: 2px solid var(--ink); border-radius: var(--r-pill);
+    font-weight: 600; font-size: var(--text-sm);
+  }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu summary::before {
+    content: ''; width: 1rem; height: 0.55rem; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+    transition: height var(--duration-base) var(--ease-standard);
+  }
+  .menu[open] summary::before { height: 0; }
+  .menu__sheet {
+    position: fixed; inset: var(--header-h) 0 0 0; overflow-y: auto;
+    background: var(--paper); padding: 1.5rem var(--pad) 3rem;
+    display: flex; flex-direction: column; gap: 2rem;
+  }
+  .menu__sheet ul { margin: 0; border-top: 1px solid var(--line); }
+  .menu__sheet li { border-bottom: 1px solid var(--line); }
+  .menu__sheet li a {
+    display: block; padding: 1.05rem 0; color: var(--ink); text-decoration: none;
+    font-family: var(--stack-display); font-weight: 600; font-size: var(--text-md);
+  }
+  .menu__sheet li a[aria-current='page'] { color: var(--deep); }
+  .menu__sheet .btn { align-self: flex-start; }
+
+  @media (max-width: 1023px) {
+    .site-nav, .site-header__cta { display: none; }
+    .menu { display: block; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .site-header { transition: none; }
+  }
+</style>

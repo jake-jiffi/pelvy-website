@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "version": "1.18.0",
+  "files": [
+    {
+      "path": "live/checkpoint.mjs",
+      "sha256": "4075c9cb0577220568486d9de781c0ea75a048eb37d60aef12c318ec6f4347ce"
+    },
+    {
+      "path": "live/cli.mjs",
+      "sha256": "d29e88d7ccb2ab0845a35038c32b7235e6d2fb83ed4afd90ac5dbba57f46b53a"
+    },
+    {
+      "path": "live/project.mjs",
+      "sha256": "8457ae63650ad7068f53937e3aaf7fe0f8ff4110be0ccc16e56b314d82b99bf2"
+    },
+    {
+      "path": "palate.mjs",
+      "sha256": "bd14af191e9a4482050f75678911d6ab2b487e47f70f53300b14a5b16dc92513"
+    },
+    {
+      "path": "template/.gitignore",
+      "sha256": "93e6ca3391aa84c5cf7c2496903fa9c3cac6986b906dd27d1fd3a385b399a560"
+    },
+    {
+      "path": "template/astro.config.mjs",
+      "sha256": "8778b33cab574fbb8877d995cb77d58e2689bf4ebf3af5bf9f8937be407bf2d9"
+    },
+    {
+      "path": "template/package-lock.json",
+      "sha256": "890ce0d571c8c60d16960174bf5dc5943694fbf43d639b0bdb00367fe30f354f"
+    },
+    {
+      "path": "template/package.json",
+      "sha256": "6daa892421afc9ccde88ca4f68697c914e8ec761b208846039f753531cd8fad7"
+    },
+    {
+      "path": "template/palate-preview/direction.astro",
+      "sha256": "5cf7a6879dd65c1c7a9a5cbdf756bc2117afca3db31349e83310c9b4091f6637"
+    },
+    {
+      "path": "template/palate-preview/gallery.astro",
+      "sha256": "064d8e37ca88a5dbb17e5a0cb4d935a199c2d43a48b35683bfc1c7cb2e11f622"
+    },
+    {
+      "path": "template/palate-preview/integration.mjs",
+      "sha256": "07267d4990041be3caf28b013c4c7f31dc23bbf8bfc69e0ea639c1f9c122f991"
+    },
+    {
+      "path": "template/palate-preview/server.mjs",
+      "sha256": "bc27b50d25242e1830310f58c1af9a1d8df3e13ce8cd419e297ca04d780a593c"
+    },
+    {
+      "path": "template/palate-preview/state.mjs",
+      "sha256": "f17ad247909e741c96e6f5529151c4cb846a01d5f2d7a0118a0632723a8d9812"
+    },
+    {
+      "path": "template/scripts/palate-preview.mjs",
+      "sha256": "3aa822303d8af235baaa7e684e0f137e84478e293c247ac15abb5a8cb04e9217"
+    },
+    {
+      "path": "template/src/layouts/BaseLayout.astro",
+      "sha256": "67be43cbaec2ea0b51178467c4e4fdca5c576531960080abbbb404085dcba392"
+    },
+    {
+      "path": "template/src/pages/index.astro",
+      "sha256": "25d50715bcfd450838352f177e69eca5ccf49960b3d59a43829dd4b356600dfe"
+    },
+    {
+      "path": "template/tsconfig.json",
+      "sha256": "4ad88c9702f205359ba5e6eabb9344b0b21d7809d6b8f190ff64327a566aca5a"
+    }
+  ]
+}

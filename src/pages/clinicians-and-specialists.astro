@@ -1,0 +1,263 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import Cta from '../components/page/Cta.astro';
+import NoteCard from '../components/NoteCard.astro';
+import AppHub from '../components/AppHub.astro';
+import ProgramCount from '../components/ProgramCount.astro';
+import DeskScene from '../components/DeskScene.astro';
+import { prices, reach, routes, links, site } from '../data/site';
+
+const title = 'Pelvy for pelvic health clinicians';
+const description = 'Subscribe, and your patients get your advice and their program on their phone, free for six months. $20 a month for the clinic during the pilot.';
+---
+<Base {title} {description} crumbs={[{ name: 'For clinicians', href: routes.clinicians }]}>
+  <PageHead kicker="For clinicians" title="Your advice and your program go home with your patient." lead="For pelvic health physios, and for the GPs, specialists and midwives who work beside them." aside>
+    <div class="actions">
+      <a class="btn" href={routes.signUp}>Book a demo</a>
+      <a class="link-strong" href={routes.clinicianFaqs}>Questions from clinicians</a>
+    </div>
+    <p class="fine head-price">{prices.clinicMonthly} a month during the pilot, with {prices.patientFreeMonths} months free for each patient.</p>
+  </PageHead>
+
+  <!-- The advice itself, on the note's own ground: the biggest words on the page are the clinician's. -->
+  <section class="voice ground" data-ground aria-label="A sample of a clinician’s note">
+    <div class="wrap voice__in">
+      <NoteCard
+        from={false}
+        reading
+        words="Let your belly go, then belly breathing. Use your guided program."
+        by="Amelia Godfrey, pelvic health physiotherapist"
+      />
+    </div>
+  </section>
+
+  <section class="after-voice">
+    <div class="wrap">
+      <p class="fine">A sample note, from Pelvy’s store listing. Yours go here.</p>
+      <div class="split problem">
+        <div class="stack" style="--stack-gap: 1.1rem" data-rise>
+          <h2 class="h2">The problem is the week after the appointment.</h2>
+          <p class="body">Patients want to get better, or they wouldn’t have come. Then the handout is lost, the email is buried, and the program stops halfway through a set because they lost count. The next appointment repeats the last one.</p>
+          <p class="body">Pelvy puts what you’d usually write, print or email on your patient’s phone, and counts them through the program you set.</p>
+        </div>
+        <div data-rise style="--i: 1"><DeskScene /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The four things a patient gets, shown as the two parts of the app that carry them. -->
+  <section aria-labelledby="gets-title">
+    <div class="gets ground" data-ground>
+      <div class="wrap gets__grid">
+        <h2 class="h1 gets__title" id="gets-title" data-rise>What your patients get in the pilot.</h2>
+
+        <div class="gets__stage" data-rise style="--i: 1">
+          <div class="gets__screen"><AppHub /></div>
+        </div>
+
+        <ul class="gets__list" role="list" data-rise style="--i: 2">
+          <li>
+            <button type="button" class="gets__item" data-hub-go="programs" aria-pressed="true">
+              <span class="gets__name serif">Your advice, kept</span>
+              <span class="gets__text">Your notes sit at the top of their app each time they open it. It’s there when they need it, not in a drawer.</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="gets__item" data-hub-go="videos" aria-pressed="false">
+              <span class="gets__name serif">Audio and video</span>
+              <span class="gets__text">Programs carry audio and video guidance. You can add videos from the library for patients who need mobility or stretches.</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap program">
+      <ProgramCount pause />
+      <div class="program__says" data-rise>
+        <div>
+          <h3 class="h3">The whole program, counted</h3>
+          <p class="body">The app counts and guides every rep, for strength or for relaxation. It takes them through the full sequence, not a demonstration with the reps written beside it.</p>
+        </div>
+        <div>
+          <h3 class="h3">Reminders</h3>
+          <p class="body">For exercises, appointments and medication, at the times your patient chooses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The price is the heading here: the largest figure on the page. -->
+  <section class="price ground" data-ground aria-labelledby="price-title">
+    <div class="wrap">
+      <h2 class="h2 price__title" id="price-title" data-rise>What it costs.</h2>
+      <dl class="costs" data-rise style="--i: 1">
+        <div>
+          <dt>For the clinic</dt>
+          <dd>
+            <p class="costs__sum"><span class="mono">{prices.clinicMonthly}</span> <span class="serif">a month during the pilot.</span></p>
+            <p>Join now and that stays your price. Clinics that join later are likely to pay more.</p>
+          </dd>
+        </div>
+        <div>
+          <dt>For your patients</dt>
+          <dd>
+            <p class="costs__sum"><span class="mono">$0</span> <span class="serif">for their first {prices.patientFreeMonths} months under your subscription.</span></p>
+          </dd>
+        </div>
+        <div><dt>After six months</dt><dd>They can keep going on their own subscription. Amelia is still settling that price, so ask her before you quote one.</dd></div>
+        <div><dt>How you pay</dt><dd>PayPal or direct debit. Some payment options may not be available during the pilot.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="recommend">
+    <div class="wrap split">
+      <div class="stack" style="--stack-gap: 1rem" data-rise>
+        <h2 class="h1">Not a physio? Two ways to use it.</h2>
+        <p class="body">Pelvy was designed with GPs, specialists and midwives as well as physiotherapists.</p>
+      </div>
+      <div class="pair" data-rise style="--i: 1">
+        <div class="stack" style="--stack-gap: 0.5rem">
+          <h3 class="h3">Subscribe, and use the advice section</h3>
+          <p class="body">Put in what you’d usually write, print or email, and add Pelvy’s videos for patients who can’t get to a pelvic health physio, or not yet.</p>
+        </div>
+        <div class="stack" style="--stack-gap: 0.5rem">
+          <h3 class="h3">Or recommend it in one scan</h3>
+          <p class="body">You don’t subscribe. Your patient scans a QR code and subscribes for themselves, at <span class="mono">{prices.liteMonthly}</span> a month or <span class="mono">{prices.liteYearly}</span> a year, and starts on a physio-built program. <a href={`mailto:${site.email}?subject=QR%20code%20sheet%20for%20my%20patients`}>Email Amelia for the printable sheet</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="panel panel--mint split" data-rise>
+        <h2 class="h2">What Pelvy doesn’t do yet.</h2>
+        <ul class="plain" role="list">
+          <li>It doesn’t connect to clinical software. Tell us what you use. In a demo Amelia can show you how clinics run the two side by side.</li>
+          <li>Bladder, bowel and pad weight diaries aren’t in the app. They come after the pilot, with symptom and medical summaries a patient can send before a consult.</li>
+          <li>The advice section isn’t a clinical record. Results, images and notes for the file stay in your own practice system.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="stack" style="--stack-gap: 1rem" data-rise>
+        <h2 class="h2">Where Pelvy is used.</h2>
+        <p class="body">Amelia’s count in {reach.asOf}: {reach.clinics} clinics in {reach.countries} countries. Pelvy is based in Australia and stores information in Australia. Clinics elsewhere can subscribe, and should check their local rules first.</p>
+        <p><a class="link-strong" href={routes.directory}>See the clinic directory</a></p>
+      </div>
+      <div class="stack" style="--stack-gap: 1rem; --i: 1" data-rise>
+        <h2 class="h2">Health services and funded programs.</h2>
+        <p class="body">Pelvy is education and support between appointments. It isn’t TGA certified and it doesn’t give individual medical advice. Amelia wants to talk with funded programs, larger organisations and public health services about how it could be used.</p>
+        <p><a class="link-strong" href="/queensland-health-pilot-opportunity-could-pelvy-support-your-patients/">Read the Queensland Health pilot proposal</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <a class="watch" href={links.demoVideo} rel="noopener" data-rise>
+        <span class="watch__play" aria-hidden="true"></span>
+        <span class="watch__text">
+          <span class="h3">Watch Amelia walk through the app</span>
+          <span class="muted">Her 13 minute demo for doctors and specialists, on YouTube.</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <Cta />
+</Base>
+
+<style>
+  .head-price { margin-top: 0.85rem; }
+
+  /* ---------- The note: the ground is the card, as on the home page ---------- */
+  .voice { background: var(--sage-soft); color: var(--ink); }
+  .voice__in { display: grid; align-content: center; padding-block: clamp(2.75rem, 3.4vw, 3rem) clamp(3rem, 5vw, 4.5rem); }
+  .voice :global(.note) { background: none; border-radius: 0; padding: 0; gap: clamp(1.5rem, 2vw, 1.75rem); }
+  /* The home page's own size for the note: larger than this page's heading at every width. */
+  .voice :global(.note__words) {
+    font-size: clamp(2.8rem, 1.5rem + 5.6vw, 6rem); line-height: 1.06; letter-spacing: -0.026em;
+    max-width: 13.5em; text-wrap: balance;
+  }
+  .voice :global(.note__by) { font-size: var(--text-md); line-height: 1.3; }
+
+  .after-voice { padding-block: 0.75rem var(--section); }
+  .problem { margin-top: clamp(2.25rem, 4.5vw, 3.5rem); align-items: center; }
+
+  /* ---------- What patients get: the app's home screen, on the ground the app always sits on ---------- */
+  .gets { background: var(--sage); color: var(--ink); }
+  /* On a phone: the heading, the screen, then the two things it shows. */
+  .gets__grid { display: grid; gap: clamp(1.75rem, 5vw, 2.5rem); padding-block: var(--section); }
+  .gets__title { max-width: 13ch; }
+  .gets__stage { min-width: 0; }
+  .gets__screen { width: min(100%, 20.5rem); margin-inline: auto; }
+
+  /* Only large type goes straight onto sage: the reading-size list has its own white panel. */
+  .gets__list { margin: 0; min-width: 0; background: var(--white); border-radius: var(--r-panel); padding: 0.35rem clamp(1.1rem, 2.4vw, 1.75rem); }
+  .gets__list li + li { border-top: 1px solid var(--line); }
+  .gets__item {
+    appearance: none; width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+    display: grid; gap: 0.35rem; padding: 1.25rem 0 1.25rem 1.5rem; position: relative; color: inherit;
+  }
+  .gets__item::before {
+    content: ''; position: absolute; left: 0; top: 1.25rem; bottom: 1.25rem; width: 4px; border-radius: var(--r-pill);
+    background: var(--line); transition: background-color var(--breath-ms) var(--ease-standard);
+  }
+  .gets__item[aria-pressed='true']::before { background: var(--deep); }
+  .gets__name { font-weight: 600; font-size: var(--text-md); line-height: 1.2; }
+  .gets__text { max-width: 46ch; color: var(--muted); transition: color var(--breath-ms) var(--ease-standard); }
+  .gets__item[aria-pressed='true'] .gets__text, .gets__item:hover .gets__text { color: var(--ink); }
+  /* With no script the screen shows Programs and the list is plain reading. */
+  :global(html:not(.js)) .gets__item { cursor: default; }
+
+  @media (min-width: 900px) {
+    .gets__grid {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); grid-template-rows: 1fr auto auto 1fr;
+      grid-template-areas: 'stage .' 'stage title' 'stage list' 'stage .'; gap: 0 clamp(2rem, 6vw, 6rem);
+    }
+    .gets__stage { grid-area: stage; align-self: center; }
+    .gets__title { grid-area: title; max-width: 16ch; margin-bottom: 2rem; }
+    .gets__list { grid-area: list; }
+    /* Sized to the window, so the whole screen is seen at once beside what it shows. */
+    .gets__screen { width: clamp(17rem, (100svh - var(--header-h) - 11.5rem) * 0.462, 20.5rem); max-width: 100%; }
+  }
+
+  /* ---------- The program card, counting, then the two things it carries ---------- */
+  .program { padding-block: clamp(3rem, 7vw, 6rem) var(--section); }
+  .program__says { margin-top: clamp(1.75rem, 3.6vw, 2.75rem); display: grid; gap: 1.75rem clamp(2rem, 5vw, 4rem); }
+  .program__says > div { display: grid; gap: 0.5rem; align-content: start; }
+  @media (min-width: 800px) { .program__says { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  /* ---------- What it costs. White sits on deep sage only. ---------- */
+  .price { --rule: color-mix(in srgb, var(--accent-on-solid) 38%, transparent); background: var(--deep); color: var(--accent-on-solid); padding-block: clamp(3.5rem, 7vw, 5.5rem); }
+  .price__title { color: inherit; margin-bottom: clamp(1.5rem, 3vw, 2rem); }
+  .costs { margin: 0; display: grid; }
+  .costs > div { display: grid; gap: 0.5rem; align-content: start; padding-block: clamp(1.25rem, 2.5vw, 1.75rem); border-top: 1px solid var(--rule); }
+  .costs dt { font-weight: 600; font-size: var(--text-sm); }
+  .costs dd { margin: 0; max-width: 46ch; display: grid; gap: 0.75rem; }
+  /* A price is set in the counting face, larger than anything else below the note. */
+  .costs__sum { display: grid; gap: 0.5rem; }
+  .costs__sum .mono { font-size: clamp(4.25rem, 2.9rem + 5.6vw, 6rem); line-height: 1; letter-spacing: -0.04em; }
+  .costs__sum .serif { font-weight: 500; font-size: var(--text-lg); line-height: 1.22; letter-spacing: var(--tracking-lg); text-wrap: balance; }
+  @media (min-width: 800px) {
+    .costs { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(2rem, 5vw, 4rem); }
+  }
+
+  .pair { display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .pair > div { padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+
+  .plain { margin: 0; display: grid; gap: 1rem; font-size: var(--text-md); line-height: var(--leading-md); max-width: 46ch; }
+
+  .watch { display: flex; align-items: center; gap: 1.5rem; padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--r-panel); background: var(--white); color: var(--ink); text-decoration: none; }
+  .watch:hover { border-color: var(--deep); color: var(--ink); }
+  .watch__text { display: grid; gap: 0.3rem; }
+  .watch__play { flex: none; width: 3.75rem; height: 3.75rem; border-radius: 50%; background: var(--deep); display: grid; place-items: center; }
+  .watch__play::before { content: ''; border-left: 1.05rem solid var(--white); border-top: 0.7rem solid transparent; border-bottom: 0.7rem solid transparent; margin-left: 0.25rem; }
+</style>

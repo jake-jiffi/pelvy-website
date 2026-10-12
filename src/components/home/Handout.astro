@@ -1,0 +1,70 @@
+---
+// The problem, shown once: the handout leaves the fridge as you scroll.
+// The frames are a generated clip. With no script or with
+// reduced motion the first frame stands still and the words carry it.
+// The scene ends on its heading, and both hold while the note's ground
+// (the next section) slides up over them.
+import { Image } from 'astro:assets';
+import fridge from '../../assets/scenes/fridge.jpg';
+---
+<section class="handout" data-handout aria-label="Why a handout is not enough">
+  <div class="wrap handout__grid">
+    <figure class="handout__media">
+      <div class="photo handout__frame">
+        <Image
+          src={fridge}
+          widths={[480, 720, 1080, 1440]}
+          sizes="(min-width: 900px) 36vw, 100vw"
+          alt="A creased exercise handout held to a fridge door by one magnet, half hidden behind a takeaway menu and a child's drawing."
+        />
+        <canvas width="720" height="1280" aria-hidden="true" data-handout-canvas></canvas>
+      </div>
+    </figure>
+
+    <div class="handout__beats" data-handout-beats>
+      <div class="handout__beat"><p data-reading>Pelvic health care comes with a lot to remember.</p></div>
+      <div class="handout__beat"><p data-reading>The advice goes home on a handout, or in an email. By the time it’s needed, it’s in a drawer or buried in an inbox.</p></div>
+      <div class="handout__beat"><p data-reading>And a handout can’t count a set, or remind anyone of anything.</p></div>
+    </div>
+
+    <div class="handout__hinge">
+      <h2 class="h1 handout__title" id="two-title" data-rise>Two things a handout can’t do.</h2>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* --cover is how far the next section slides over this one: enough to pass
+     the photograph before it lets go. --hold is how far the heading waits. */
+  .handout {
+    --cover: calc(46svh + 4rem); --hold: min(36svh, 20rem);
+    padding-block: var(--section) 0; margin-bottom: calc(-1 * var(--cover)); isolation: isolate;
+  }
+  .handout__grid { display: grid; gap: 0 clamp(2rem, 6vw, 6rem); }
+
+  .handout__media { position: sticky; top: 0; z-index: 1; padding-block: 0.75rem; background: var(--paper); margin: 0; }
+  .handout__frame { position: relative; height: 46svh; }
+  .handout__frame canvas { position: absolute; inset: 0; opacity: 0; }
+  :global(.handout.is-live) .handout__frame canvas { opacity: 1; }
+
+  .handout__beat { min-height: 46svh; display: grid; align-content: center; }
+  .handout__beat p {
+    font-family: var(--stack-display); font-weight: 500;
+    font-size: clamp(1.75rem, 1.2rem + 2.6vw, 2.9rem); line-height: 1.2; letter-spacing: -0.015em;
+    text-wrap: pretty; max-width: 19ch;
+  }
+
+  /* On a phone the heading waits just under the photograph. */
+  .handout__hinge { height: calc(var(--cover) + var(--hold)); }
+  .handout__title { position: sticky; top: calc(46svh + 4.25rem); max-width: 14ch; }
+
+  @media (min-width: 900px) {
+    .handout { --photo: min(100svh - var(--header-h) - 5rem, 44rem); --cover: calc(var(--photo) + 3rem); }
+    .handout__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; }
+    .handout__media { grid-row: 1 / span 2; top: calc(var(--header-h) + 1rem); padding-block: 0; background: none; }
+    .handout__beats, .handout__hinge { grid-column: 2; }
+    .handout__frame { height: var(--photo); aspect-ratio: 3 / 4; width: auto; max-width: 100%; }
+    .handout__beat { min-height: 72svh; }
+    .handout__title { top: clamp(7rem, 28svh, 16rem); }
+  }
+</style>

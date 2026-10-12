@@ -1,0 +1,34 @@
+---
+// The patient set-up card, set from the brand's own card: what a clinician
+// hands over at the end of an appointment.
+import Logo from '../assets/logo/pelvy-logo-brand.svg';
+---
+<!-- A picture of the card. Its words are too small to read at this size, so the label carries them. -->
+<div class="card" aria-label="The patient set-up card, lying on the desk. It reads: Your program is on Pelvy. 1, download Pelvy Patient. 2, sign in with your mobile number. 3, your notes and your program are there." role="img">
+  <div class="card__top" aria-hidden="true">
+    <span class="card__logo"><Logo /></span>
+    <span class="card__url">pelvy.app</span>
+  </div>
+  <p class="card__h" aria-hidden="true">Your program is on Pelvy.</p>
+  <ol class="card__steps" role="list" aria-hidden="true">
+    <li><span class="card__ring">1</span>Download Pelvy Patient.</li>
+    <li><span class="card__ring">2</span>Sign in with your mobile number.</li>
+    <li><span class="card__ring">3</span>Your notes and your program are there.</li>
+  </ol>
+  <p class="card__by" aria-hidden="true">Set up by <span></span></p>
+</div>
+
+<style>
+  /* Padding is in per cent: container units cannot measure the element that defines them. */
+  .card { container-type: inline-size; width: 100%; height: 100%; color: var(--ink); font-family: var(--stack-body); padding: 6% 6.4% 5%; display: flex; flex-direction: column; justify-content: space-between; }
+  .card__top { display: flex; align-items: center; justify-content: space-between; }
+  .card__logo { width: 27cqw; }
+  .card__logo :global(svg) { width: 100%; height: auto; }
+  .card__url { font-weight: 600; font-size: 3.6cqw; }
+  .card__h { font-family: var(--stack-display); font-weight: 600; font-size: 6.4cqw; line-height: 1.1; letter-spacing: -0.015em; }
+  .card__steps { margin: 0; display: grid; gap: 2cqw; font-size: 3.9cqw; line-height: 1.2; }
+  .card__steps li { display: flex; align-items: center; gap: 2.6cqw; }
+  .card__ring { flex: none; display: inline-grid; place-items: center; width: 6cqw; height: 6cqw; border-radius: 50%; border: 0.5cqw solid var(--deep); font-family: var(--stack-mono); font-weight: 500; font-size: 3cqw; line-height: 1; }
+  .card__by { display: flex; align-items: flex-end; gap: 2cqw; font-size: 3.5cqw; }
+  .card__by span { flex: 1; border-bottom: 0.35cqw solid var(--ink); height: 1em; }
+</style>

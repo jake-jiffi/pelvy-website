@@ -1,0 +1,61 @@
+---
+interface Props {
+  title: string;
+  lead?: string;
+  kicker?: string;
+  narrow?: boolean;
+  /** On a wide screen the lead and the actions sit beside the heading, on its last line. */
+  aside?: boolean;
+}
+const { title, lead, kicker, narrow = false, aside = false } = Astro.props;
+// A page that has its subject to show (an app screen, a photograph) passes it as
+// the "media" slot and opens the way the home page does: words left, subject right.
+const media = Astro.slots.has('media');
+---
+<header class:list={['page-head', { 'page-head--narrow': narrow, 'page-head--media': media, 'page-head--aside': aside }]}>
+  <div class="wrap page-head__in">
+    <div class="page-head__copy">
+      {kicker && <p class="page-head__kicker" data-rise>{kicker}</p>}
+      <h1 class="h-display" data-rise style="--i: 1">{title}</h1>
+      {lead && <p class="lead" data-rise style="--i: 2">{lead}</p>}
+      <div class="page-head__after" data-rise style="--i: 3"><slot /></div>
+    </div>
+    {media && <div class="page-head__media" data-rise style="--i: 2"><slot name="media" /></div>}
+  </div>
+</header>
+
+<style>
+  .page-head { padding-block: clamp(2.5rem, 7vw, 6rem) clamp(2rem, 5vw, 4rem); }
+  .page-head__copy { display: grid; gap: clamp(1.1rem, 2.4vw, 1.75rem); min-width: 0; }
+  .page-head :global(.h-display) { max-width: 17ch; font-size: clamp(2.4rem, 1.4rem + 4.4vw, 4.2rem); }
+  .page-head--narrow :global(.h-display) { max-width: 14ch; }
+  .page-head :global(.lead) { max-width: 44ch; }
+  .page-head__kicker { font-weight: 600; color: var(--deep); }
+  .page-head__after:empty { display: none; }
+
+  /* Words and subject, in the home page's own columns. The first screen is theirs. */
+  .page-head--media { padding-block: clamp(1.5rem, 3vw, 2rem) clamp(2rem, 4vw, 2.5rem); }
+  .page-head--media .page-head__in { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+  .page-head__media { min-width: 0; }
+  @media (min-width: 900px) {
+    .page-head--media .page-head__in {
+      grid-template-columns: minmax(0, 11fr) minmax(0, 10fr);
+      min-height: calc(100svh - var(--header-h) - clamp(3.5rem, 7vw, 4.5rem));
+    }
+    .page-head--media :global(.lead) { max-width: 36ch; }
+  }
+
+  /* The heading takes the left, and what follows it lines up with its last line. */
+  .page-head--aside { padding-block: clamp(2rem, 3.4vw, 3rem) clamp(2rem, 2.5vw, 2.25rem); }
+  @media (min-width: 1000px) {
+    .page-head--aside .page-head__copy {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); grid-template-rows: auto 1fr auto;
+      grid-template-areas: 'kicker .' 'title lead' 'title after'; column-gap: clamp(2rem, 5vw, 4rem);
+    }
+    .page-head--aside .page-head__kicker { grid-area: kicker; }
+    /* Sized to its column, so the heading keeps to three lines beside what follows it. */
+    .page-head--aside :global(.h-display) { grid-area: title; font-size: min(4.2rem, 4.9vw); }
+    .page-head--aside :global(.lead) { grid-area: lead; align-self: end; }
+    .page-head--aside .page-head__after { grid-area: after; }
+  }
+</style>

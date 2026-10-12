@@ -1,0 +1,64 @@
+---
+import { routes } from '../../data/site';
+---
+<section class="section compare" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="compare__grid">
+      <h2 class="h2" id="compare-title" data-rise>The handout, and Pelvy.</h2>
+      <div class="compare__table" data-rise style="--i: 1">
+        <table>
+          <thead>
+            <tr><td></td><th scope="col">A handout or an email</th><th scope="col">Pelvy</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Three weeks later</th><td data-col="A handout or an email">In a drawer or an inbox</td><td data-col="Pelvy">On your phone, first screen</td></tr>
+            <tr><th scope="row">Keeping count</th><td data-col="A handout or an email">You do</td><td data-col="Pelvy">Pelvy does, every rep</td></tr>
+            <tr><th scope="row">Reminders</th><td data-col="A handout or an email">None</td><td data-col="Pelvy">Up to three a day for each program, at times you choose</td></tr>
+            <tr><th scope="row">Strength or relaxation</th><td data-col="A handout or an email">Whatever was printed</td><td data-col="Pelvy">Both, and it helps you tell which you need</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="notyet" data-rise>
+      <h2 class="h2">What Pelvy doesn’t do yet.</h2>
+      <ul role="list">
+        <li>It doesn’t connect to clinical software. Tell us what you use.</li>
+        <li>Symptom tracking and bladder and bowel diaries aren’t in the app. They come after the pilot.</li>
+        <li>It doesn’t give individual medical advice. If nothing has changed in three months, it tells you to see a pelvic health physio. <a href={routes.directory}>Find one who uses Pelvy</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .compare__grid { display: grid; gap: clamp(1.5rem, 4vw, 4rem); }
+  @media (min-width: 900px) { .compare__grid { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); } }
+  table { width: 100%; border-collapse: collapse; font-size: var(--text-base); }
+  th, td { text-align: left; vertical-align: top; padding: 1.1rem 1.25rem 1.1rem 0; border-bottom: 1px solid var(--line); }
+  thead th { font-weight: 600; border-bottom: 2px solid var(--ink); }
+  thead td { border-bottom: 2px solid var(--ink); }
+  tbody th { font-weight: 500; color: var(--muted); }
+  tbody td:last-child { font-weight: 600; color: var(--deep); }
+  /* The handout gets a column wide enough to keep its answers on one line. */
+  @media (min-width: 640px) {
+    table { table-layout: fixed; }
+    thead td { width: 25%; }
+    thead th:first-of-type { width: 31%; }
+  }
+
+  /* On a phone each row becomes its own small comparison. */
+  @media (max-width: 639px) {
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    tbody tr { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
+    tbody th, tbody td { display: block; padding: 0; border: 0; width: auto; }
+    tbody th { grid-column: 1 / -1; font-weight: 600; color: var(--ink); }
+    tbody td::before { content: attr(data-col); display: block; font-size: var(--text-xs); font-weight: 400; color: var(--muted); margin-bottom: 0.15rem; }
+    tbody tr:first-child { border-top: 2px solid var(--ink); }
+  }
+
+  .notyet { margin-top: clamp(3rem, 7vw, 5.5rem); background: var(--mint); border-radius: var(--r-panel); padding: clamp(1.5rem, 4vw, 3rem); display: grid; gap: clamp(1.25rem, 4vw, 4rem); }
+  @media (min-width: 900px) { .notyet { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); } }
+  .notyet ul { margin: 0; display: grid; gap: 0.9rem; font-size: var(--text-md); line-height: var(--leading-md); max-width: 44ch; }
+  .notyet a { font-weight: 600; white-space: nowrap; }
+</style>

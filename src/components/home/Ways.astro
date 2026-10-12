@@ -1,0 +1,61 @@
+---
+import { prices, routes, links } from '../../data/site';
+---
+<section class="ways" aria-labelledby="ways-title">
+  <div class="wrap">
+    <h2 class="h1 ways__title" id="ways-title" data-rise>With your clinician, or on your own.</h2>
+
+    <div class="ways__grid">
+      <article class="ways__way ways__way--clinic" data-rise>
+        <h3 class="h2">Your clinic subscribes</h3>
+        <p class="ways__price"><span class="mono">$0</span> for your first {prices.patientFreeMonths} months</p>
+        <p class="body">Your clinician sets you up. Their notes and your program are in the app when you open it, and they can change either from their computer.</p>
+        <p><a class="link-strong" href={routes.directory}>Find a clinic that uses Pelvy</a></p>
+      </article>
+
+      <article class="ways__way ways__way--own" data-rise style="--i: 1">
+        <h3 class="h2">On your own</h3>
+        <p class="ways__price"><span class="mono">{prices.liteMonthly}</span> a month, or <span class="mono">{prices.liteYearly}</span> a year</p>
+        <p class="body">Pelvy starts you on a physio-built program and its Learn tab helps you choose between strength and relaxation. If nothing has changed in three months, it tells you to see a pelvic health physio.</p>
+        <p><a class="link-strong" href={routes.people}>How it works without a clinician</a></p>
+      </article>
+    </div>
+  </div>
+
+  <!-- Both ways end in the same place, so getting the app has the full width of the page. -->
+  <div class="ways__band ground" id="get-the-app">
+    <div class="wrap" data-rise>
+      <div class="ways__get">
+        <div>
+          <h3 class="h2">Get the app</h3>
+          <p class="body">It’s called Pelvy Patient in both stores. It first asks whether your clinic subscribes for you, then takes you the right way.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href={links.appStore} rel="noopener">Download on the App Store</a>
+          <a class="btn btn--quiet" href={links.googlePlay} rel="noopener">Get it on Google Play</a>
+        </div>
+      </div>
+      <div class="ways__gp"><p class="body">GPs and specialists: you don’t need to subscribe to recommend it. Ask Amelia for a printable QR code and your patient signs up for themselves. <a href={routes.clinicians + '#recommend'}>How recommending works</a></p></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ways__title { max-width: 16ch; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+  .ways__grid { display: grid; gap: 1.25rem; }
+  @media (min-width: 800px) { .ways__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .ways__way { border-radius: var(--r-panel); padding: clamp(1.5rem, 4vw, 3rem); display: grid; gap: 1rem; align-content: start; }
+  .ways__way--clinic { background: var(--sage-soft); }
+  .ways__way--own { background: var(--white); border: 1px solid var(--line); }
+  .ways__price { font-size: var(--text-md); line-height: 1.3; }
+  .ways__price .mono { font-size: 1.15em; }
+  .ways__way a { color: var(--ink); }
+  .ways__way--own a { color: var(--deep); }
+
+  .ways { padding-block: var(--section) clamp(2rem, 4.5vw, 3.5rem); }
+  .ways__band { margin-top: clamp(2.5rem, 6vw, 4.5rem); background: var(--mint); padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+  .ways__get { display: grid; gap: 1.5rem; align-items: center; }
+  .ways__get > div:first-child { display: grid; gap: 0.6rem; }
+  @media (min-width: 1000px) { .ways__get { grid-template-columns: minmax(0, 1fr) auto; gap: 3rem; } }
+  .ways__gp { margin-top: clamp(1.75rem, 4vw, 2.75rem); padding-top: clamp(1.25rem, 2.5vw, 1.75rem); border-top: 1px solid var(--line); }
+</style>

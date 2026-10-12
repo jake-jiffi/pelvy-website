@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.astro/
+.env*
+!.env.example
+.palate/preview-server.json
+.palate/preview-server.lock
+.palate/preview.log
+.palate/preview-launch-*.json
+.palate/preview-logs/
+.palate/checkpoints/
+.palate/submissions/
+.palate/cart/
+
+# Private working records: check results, critique reports, reference studies of other sites,
+# and the session's own logs. They stay on the machine that made them.
+.palate/evidence/
+.palate/critique/
+.palate/references/
+.palate/events/
+.palate/input/
+.palate/locks/
+.palate/verification/
+.palate/preview-dist.log
+.DS_Store

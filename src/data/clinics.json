@@ -1,0 +1,3751 @@
+{
+ "source": "https://pelvy.app/clinicians-directory/",
+ "captured": "2026-10-12",
+ "listed": [
+  "ACE Physical Therapy",
+  "Ace Physiotherapy and Pilates",
+  "Active Pelvic Health",
+  "Allsports Physio",
+  "Amelie Private",
+  "Anatomy Physiotherapy",
+  "Anita Bir Physiotherapy",
+  "Ashlee Dodd Physiotherapy",
+  "Blackwood Physiotherapy & Pelvic Health",
+  "Body & Birth Physiotherapy",
+  "Breathe Women’s Health Physiotherapy",
+  "Childer's Physio and Allied Health",
+  "Christine Pelvic Physio",
+  "Embrace Physio + Pilates",
+  "Evolve Physio & Pelvic Health",
+  "Essential Health Physiotherapy",
+  "Femme Space Physiotherapy",
+  "FitRight Women's Health",
+  "Focus with Form Physiotherapy",
+  "Form & Practice",
+  "Healthfocus Physiotherapy",
+  "HerHealth Physiotherapy",
+  "Hug Pelvic Physio",
+  "Katie Stan-Bishop Physiotherapy",
+  "Katy Holmes Physiotherapy",
+  "KM Women's Health Physiotherapy",
+  "Macarthur Women's Health Physiotherapy",
+  "Mercy Physiotherapy",
+  "North Coast Pilates & Physiotherapy",
+  "North West Healthy Women",
+  "Nurturing Her Physiotherapy",
+  "Oak Flats Physiotherapy and Pelvic Health",
+  "Pelvic Fix Physiotherapy",
+  "Pelvicworks Physiotherapy",
+  "Physio73",
+  "PhysioSista",
+  "Physiotherapy Alliance",
+  "Resurgence Physiotherapy",
+  "Revolve Physiotherapy",
+  "Shalom Pilates and Physio",
+  "Sports & Spinal Physio",
+  "Steph Lyons Physio",
+  "The Pelvic Health Co.",
+  "Thea Pelvic Health Physiotherapy",
+  "Vitality Road Physio"
+ ],
+ "clinics": [
+  {
+   "name": "Adelaide Pelvic Physiotherapy",
+   "clinicians": "Carolyn Berry, Alycia Scannell & Team",
+   "location": "Glengowrie, Adelaide, SA, Australia",
+   "tags": [
+    "2× APA Titled",
+    "Pessary Fitting",
+    "Men's Health",
+    "Paediatric",
+    "25 Yrs Experience",
+    "Telehealth"
+   ],
+   "quote": "No lost paper notes by the patient — and greater uptake of video use for pelvic open stretches since using Pelvy.",
+   "quoteAttribution": "Adelaide Pelvic Physiotherapy Team",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Carolyn Berry — APA Titled Women's, Men's & Pelvic Health Physiotherapist (~25 years experience). Alycia Scannell — APA Titled Women's, Men's & Pelvic Health Physiotherapist (~25 years experience). Eleni Pagonis & Kerry Schneider — Pelvic Health Physiotherapists."
+    },
+    {
+     "label": "Equipment",
+     "value": "Transperineal & transabdominal ultrasound (biofeedback, assessment & post-void residuals), Rectal balloon training, Electrical stimulation, EMG biofeedback, Obstetric TENS, TENS for pain & bladder/bowel neuromodulation, Pessary fitting, Dry needling, Therapeutic ultrasound for mastitis, Vaginal trainers for pelvic pain"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No classes at present"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum — men's health (with ultrasound), paediatric pelvic health, pessary service, pelvic pain (incl. teens), LGBTQAI+ inclusive, colorectal & bowel dysfunction"
+    },
+    {
+     "label": "Stands out",
+     "value": "2× APA Titled physios with ~25 years experience each — 3 of 4 clinicians have 25+ years in pelvic health. Close collaborative relationships with referring medical specialists and GPs across all pelvic health concerns."
+    },
+    {
+     "label": "Favourite",
+     "value": "Pelvic floor exercises and pelvic open stretches — easier access for patients to their session notes and exercise videos"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.adelaidepelvicphysiotherapy.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/adelaide_pelvic_physiotherapy",
+     "title": "@adelaide_pelvic_physiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "Boutique Pelvic Health",
+   "clinicians": "Zara Howard",
+   "location": "2 Clinics in Gold Coast, QLD, Australia",
+   "tags": [
+    "APA Titled",
+    "Pelvic Pain",
+    "Endometriosis",
+    "Dyspareunia",
+    "Telehealth"
+   ],
+   "quote": "Adherence and time spent setting up programs has improved — and I love all of it!",
+   "quoteAttribution": "Zara Howard, Boutique Pelvic Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Women's Health & Continence Physiotherapist. Master of Clinical Physiotherapy (Women's Health & Continence)."
+    },
+    {
+     "label": "Equipment",
+     "value": "Vaginal dilator therapy guidance, TENS education & support, internal pelvic floor assessment, external-only assessment options, pelvic floor muscle rehabilitation, pressure management & return-to-exercise rehab, pelvic pain graded exposure programs, pregnancy & postnatal assessment"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes — available Australia-wide"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Boutique education workshops & pelvic pain circles offered periodically"
+    },
+    {
+     "label": "Niche",
+     "value": "Pelvic pain & endometriosis, persistent pain & nervous system sensitisation, dyspareunia & vaginismus, pre/post pelvic surgery, pregnancy & postnatal, bladder & bowel dysfunction, young women & teens with pelvic pain, trauma-aware & LGBTQAI+ inclusive care"
+    },
+    {
+     "label": "Stands out",
+     "value": "Solo clinician-led practice — all patients personally treated by Zara. Known for longer appointment times, continuity of care, trauma-aware & consent-based treatment, and complex pelvic pain expertise from extensive public hospital experience."
+    },
+    {
+     "label": "Favourite",
+     "value": "Love all of it! Excited about adding handouts and videos."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.boutiquepelvichealth.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/boutiquepelvichealth",
+     "title": "@boutiquepelvichealth"
+    }
+   ]
+  },
+  {
+   "name": "Central Melbourne Gastroenterology",
+   "clinicians": "Annabelle Citroen, Isabella Lees-Trinca & Angela Khera",
+   "location": "Fitzroy, Melbourne, VIC, Australia",
+   "tags": [
+    "Bowel & Anorectal",
+    "PhD Clinician",
+    "IBD Specialist",
+    "Post-Surgical Bowel",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Annabelle Citroen — Post Grad Cert, bowel & anorectal dysfunction. Isabella Lees-Trinca — Post Grad Cert, bowel & anorectal dysfunction. Angela Khera — Post Grad Cert & PhD, specialist in bowel & anorectal dysfunction related to inflammatory bowel disease & post-surgical bowel dysfunction."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Rectal balloon training, EMG biofeedback, Electrical stimulation — all types including interferential therapy"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Bowel & anorectal dysfunction — including inflammatory bowel disease, post-surgical bowel dysfunction, and all types of pelvic floor dysfunction"
+    },
+    {
+     "label": "Stands out",
+     "value": "Highly specialised bowel & anorectal dysfunction expertise — the team teaches these skills at university level, runs courses and presents at conferences. A leading referral point for complex bowel dysfunction."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.centralmelbournegastro.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Complete Core Physiotherapy",
+   "clinicians": "Complete Core Team",
+   "location": "Tullamore, Co. Offaly, Ireland",
+   "tags": [
+    "Pessary Service",
+    "Men's Health",
+    "Classes",
+    "Only PH Clinic in County"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Biofeedback, Pessary fitting, TENS"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pilates for pelvic health"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary service, men's health — the only pelvic health clinic in the county"
+    },
+    {
+     "label": "Stands out",
+     "value": "The only pelvic health clinic in the county — providing accessible, specialised pelvic health care including pessary services and men's health to an underserved area."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://instagram.com/completecorephysio",
+     "title": "@completecorephysio"
+    }
+   ]
+  },
+  {
+   "name": "Deniliquin Pelvic Physio",
+   "clinicians": "Grace Gillett",
+   "location": "Deniliquin, NSW, Australia",
+   "tags": [
+    "Pregnancy & Postnatal",
+    "Pelvic Pain",
+    "Mastitis Service",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Clients have found it easier to keep track of their pelvic health journey as all advice and exercise is in the one place.",
+   "quoteAttribution": "Grace Gillett, Deniliquin Pelvic Physio",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Director & Pelvic Health Physiotherapist. Special interest in pregnancy & postpartum health and pelvic pain."
+    },
+    {
+     "label": "Equipment",
+     "value": "Therapeutic ultrasound for mastitis, Obstetric TENS hire, Electrical stimulation (e-stims, TTNS, TENS for period pain), Pelvic girdle belts"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Mums & bubs Pilates"
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & postpartum health, pelvic pain, mastitis service"
+    },
+    {
+     "label": "Stands out",
+     "value": "The only women's health & pelvic health physiotherapy clinic in a large rural area — passionate about providing expert care to rural women through all stages of life. 2 locations served."
+    },
+    {
+     "label": "Favourite",
+     "value": "The space for advice & education alongside the exercise program — all in one place"
+    },
+    {
+     "label": "Excited about",
+     "value": "More exercises so Pelvy becomes the single platform — no more juggling several programs!"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.deniliquinpelvicphysio.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/deniliquin.pelvic.physio",
+     "title": "@deniliquin.pelvic.physio"
+    }
+   ]
+  },
+  {
+   "name": "Elevate Pelvic Health",
+   "clinicians": "Melissa D'Arcy",
+   "location": "Springfield, Ipswich, QLD, Australia",
+   "tags": [
+    "APA Titled",
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "H-EDS and Hypermobility (HSD)",
+    "Telehealth"
+   ],
+   "quote": "Weekend and after-hours appointments available — because pelvic health care shouldn't have to fit around a 9-to-5.",
+   "quoteAttribution": "Melissa D'Arcy, Elevate Pelvic Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Women's, Men's & Pelvic Health Physiotherapist. Master of Clinical Physiotherapy (Continence & Pelvic Health), Curtin University. Special interest in hypermobility — h-EDS & HSD."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Pessary fitting (inc. Gellhorn & incontinence dish), Dry needling, Electrical stimulation hire"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Extensive pessary fitting experience (inc. Gellhorn), pelvic pain, and a special interest in hypermobility conditions (h-EDS & HSD) — a rare and sought-after combination"
+    },
+    {
+     "label": "Stands out",
+     "value": "Weekend & after-hours appointments available — the only clinic in the area offering this. Located inside a gym with access to a full gym floor for functional appointments in a beautiful private clinic room."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.elevatepelvichealth.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/elevate.pelvichealth",
+     "title": "@elevate.pelvichealth"
+    },
+    {
+     "href": "https://www.linkedin.com/in/melissa-d-arcy",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Embody Pelvic Health",
+   "clinicians": "Brooke Dobo",
+   "location": "Paddington & Samford Valley, Australia",
+   "tags": [
+    "APA Titled",
+    "Pelvic Pain",
+    "Pregnancy & Postnatal",
+    "Menopause",
+    "Classes",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Saved time — and patients love it. The HEP and reminders are my favourite features so far.",
+   "quoteAttribution": "Brooke Dobo, Embody Pelvic Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Physiotherapist. Website: embodyph.com.au"
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Mother & Daughter Retreats for menstrual cycle awareness"
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & postpartum, birth & labour prep, peri/post menopause, overactive bladder, incontinence, pelvic pain, constipation, pelvic organ prolapse, sexual function, tailbone pain"
+    },
+    {
+     "label": "Stands out",
+     "value": "APA Titled. Home visits available. Lovely clinic space in Paddington with easy parking. Unique Mother & Daughter Retreats for menstrual cycle awareness."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.embodyph.com.au",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/brooke_physio",
+     "title": "@brooke_physio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/brooke-dobo",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Empelvic Physiotherapy",
+   "clinicians": "Emma Boyes",
+   "location": "5 Visiting Clinics in South West, WA, Australia",
+   "tags": [
+    "APA Titled",
+    "Men's Health",
+    "Pregnancy & Postnatal",
+    "Rural Outreach",
+    "Telehealth"
+   ],
+   "quote": "People are so pleased with how easy it is to take them through their exercises — and it helps make sure they do it properly.",
+   "quoteAttribution": "Emma Boyes, Empelvic Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Continence & Pelvic Health Physiotherapist. Special interest in pregnancy & postnatal, return to exercise, pain with intercourse, and men's health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Not yet"
+    },
+    {
+     "label": "Niche",
+     "value": "Men's health (with ultrasound), pregnancy & postnatal, return to exercise, pain with intercourse"
+    },
+    {
+     "label": "Stands out",
+     "value": "Rural outreach service across multiple locations in SW Australia — bringing expert pelvic health care to people who would otherwise travel hours for access. Wide GP referral network. Volunteer with BTA."
+    },
+    {
+     "label": "Favourite",
+     "value": "Timed pelvic floor exercises, mobility exercise additions, and the ability to send programs via link"
+    },
+    {
+     "label": "Pelvy solves",
+     "value": "Exercise adherence, communication, ease of prescription & access — especially important for rural patients"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.empelvicphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/empelvicphysio",
+     "title": "@empelvicphysio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/emma-boyes",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Fit 2 Function",
+   "clinicians": "Fit 2 Function Team",
+   "location": "3 Clinics in New England, NSW, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "PhD Clinician",
+    "HILT Laser",
+    "LGBTQAI+",
+    "Classes",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Something built from the ground up specifically for pelvic health — rather than trying to mould something built for another purpose.",
+   "quoteAttribution": "Fit 2 Function Team",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "PhD student/clinician specialising in persistent pelvic pain research. Jess — highly skilled physiotherapist passionate about the full women's health spectrum. Both passionate about rural & women's health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, Balloon training, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting, High Intensity Near Infrared Laser (HILT)"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Reformer Pilates (incl. on demand), women's strength classes, rehabilitation classes"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary fitting, pelvic pain (incl. teens — with ultrasound), pre/postnatal & birth prep, colorectal & bowel dysfunction, LGBTQAI+ affirming care"
+    },
+    {
+     "label": "Stands out",
+     "value": "Emergency mastitis service, HILT laser, real-time ultrasound, comprehensive reformer Pilates suite (incl. on demand), baby cuddlers for postpartum classes, herbal teas in the waiting room — a warm, welcoming space where patients feel truly at home."
+    },
+    {
+     "label": "Favourite",
+     "value": "Ease of prescription — just click, click and done. No more forgetting to prescribe pelvic floor exercises."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.fit2function.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/fit2function_f2f",
+     "title": "@fit2function_f2f"
+    }
+   ]
+  },
+  {
+   "name": "Geelong Pelvic Health",
+   "clinicians": "Geelong Pelvic Health Team",
+   "location": "2 Clinics in Geelong, VIC, Australia",
+   "tags": [
+    "Men's Health",
+    "Colorectal/Bowels",
+    "Pregnancy & Postnatal",
+    "Pelvic Pain",
+    "Telehealth"
+   ],
+   "quote": "Less paper usage and fewer emails to patients — adherence tracking has been a game changer for us.",
+   "quoteAttribution": "Annabelle Citroen, Geelong Pelvic Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Annabelle Citroen — special interest in bowel dysfunction."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Rectal balloon assessment & training, Electrical stimulation, Biofeedback, TENS"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Men's health, bowel dysfunction/colorectal & bowels, pre & postpartum, pelvic pain."
+    },
+    {
+     "label": "Stands out",
+     "value": "Highly trained & experienced clinicians covering the full spectrum of pelvic health conditions and needs — linked in and collaborating with numerous medical & allied health specialists to provide best patient care and outcomes. 2 locations."
+    },
+    {
+     "label": "Favourite",
+     "value": "Adherence tracking — ease of access to resources & exercises, with reminders"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.geelongpelvichealth.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/geelongpelvichealth",
+     "title": "#geelongpelvichealth"
+    }
+   ]
+  },
+  {
+   "name": "Graceville Painslayers Physiotherapy",
+   "clinicians": "Details to be confirmed",
+   "location": "Graceville, QLD, Australia",
+   "tags": [
+    "Pelvy Partner"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://gracevillephysio.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Ivory Rose Physiotherapy",
+   "clinicians": "Kathryn Warr",
+   "location": "3 Hubs in Norwood, SA, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Emsella & Emsculpt",
+    "Mastitis Service",
+    "DRAM",
+    "LGBTQAI+",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Time saving for practitioners — HEP and accountability features are our favourites so far.",
+   "quoteAttribution": "Ivory Rose Physiotherapy Team",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Transperineal & real-time ultrasound, Therapeutic ultrasound for mastitis & scar treatment, Low-Level Laser Therapy (LLLT) for nipple damage & scars, EMG biofeedback (NeuroTrac TENS EMG), TENS hire (obstetric, pelvic pain, TTNS, pelvic floor rehab), Balloon training, Dry needling, Pessary fitting & management (incl. speculum exams), Emsella, Emsculpt"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes — Physio & Exercise Physiology where clinically appropriate. Dedicated 2-week postnatal telehealth check-ins offered to all prenatal clients."
+    },
+    {
+     "label": "Home Visits",
+     "value": "NDIS cases considered on request"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — ~100 classes/week: Reformer Pilates, combined Reformer & Mat Pilates, strength, cardio. Online: BumpFit (pregnancy), AbFit (core rehab), 12-week live Zoom Pelvic Floor Exercise Program. On-site crèche available during selected gym classes."
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum — men's health, paediatric pelvic health, pessary service, pelvic pain (incl. teens), LGBTQAI+ inclusive, colorectal & bowel dysfunction"
+    },
+    {
+     "label": "Stands out",
+     "value": "After-hours mastitis service on weekends & public holidays. Emsella & Emsculpt available. Motherhood Connect — an 8-week postnatal community group with industry experts. Born Ready Practicals — hands-on birth preparation workshops for expectant parents. ~100 classes/week with on-site crèche."
+    },
+    {
+     "label": "Favourite",
+     "value": "HEP — saves time for practitioners and improves patient accountability"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.ivoryrosephysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/ivoryrose_physiotherapy",
+     "title": "@ivoryrose_physiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "Lift Pelvic Physiotherapy",
+   "clinicians": "Lift Pelvic Physiotherapy Team",
+   "location": "Currambine, Perth, WA, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Prolapse",
+    "Anorectal",
+    "Telehealth"
+   ],
+   "quote": "Trying to use Pelvy for most patients — makes it easier to prescribe home exercise programs.",
+   "quoteAttribution": "Kate Fosdike, Lift Pelvic Physiotherapy",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "RTUS, Therapeutic US, LASER, Biofeedback, Balloon retraining, Dry needling, ETIM hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No classes"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary fitting & prolapse management, anorectal dysfunction"
+    },
+    {
+     "label": "Favourite",
+     "value": "Exercise videos & the reminder system"
+    },
+    {
+     "label": "Pelvy solves",
+     "value": "Reminds patients to do their exercises"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://liftpelvicphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/liftpelvicphysio",
+     "title": "@liftpelvicphysio"
+    }
+   ]
+  },
+  {
+   "name": "Luma: For Her Health & Wellbeing",
+   "clinicians": "Odette Gaynor",
+   "location": "3 Clinics in Perth, WA, Australia",
+   "tags": [
+    "Endometriosis",
+    "Pelvic Pain",
+    "Gov. Funded Clinic",
+    "Multidisciplinary",
+    "Telehealth"
+   ],
+   "quote": "Pelvy saves time and makes me more clear and efficient — better patient engagement and new offerings since using it.",
+   "quoteAttribution": "Odette Gaynor, Luma",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Odette Gaynor — Physiotherapist with a Master's in Continence & Women's Health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound for assessment"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Not currently"
+    },
+    {
+     "label": "Niche",
+     "value": "One of the government-funded Endometriosis & Pelvic Pain clinics in WA — providing specialist, subsidised care for complex pelvic pain"
+    },
+    {
+     "label": "Stands out",
+     "value": "True multidisciplinary service — Women's Health GP, Nurse & Physiotherapist all under one roof. One of WA's government-funded Endometriosis & Pelvic Pain clinics. 2 locations."
+    },
+    {
+     "label": "Favourite",
+     "value": "The templates — saves time and keeps consultations clear and efficient"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://luma.org.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://au.linkedin.com/in/odette-gaynor-a37270247",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Reactive Physiotherapy",
+   "clinicians": "Tamara Bernardi",
+   "location": "London, ON, Canada",
+   "tags": [
+    "Female Athlete",
+    "Men's Health",
+    "Mastitis Service",
+    "Cancer Exercise",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Clients are more consistent with exercises — and I love having all info in the app without needing to text, email or write elsewhere.",
+   "quoteAttribution": "Tamara Bernardi, Reactive Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Senior Physiotherapist. Graduate Certificate in Continence & Pelvic Health, Curtin University. Special interest in female athlete & pelvic health, pre/postnatal, menopause, pelvic pain, prolapse, men's health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Ultrasound for mastitis, Dry needling, TENS"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Clinical rehab (equipment Pilates), Strength & Conditioning (gym), GLAD Hip & Knee, GLAD Back, Cancer Exercise — all face to face"
+    },
+    {
+     "label": "Niche",
+     "value": "Pelvic pain, pregnancy & postpartum, sexual dysfunction (male & female), men's health, mastitis service, gym & Pilates support through life stages"
+    },
+    {
+     "label": "Stands out",
+     "value": "Affiliated with local gynaecologist, Wellspring Cancer Support, local oncologists — EIR Clinic & LHSC. Unique combination of pelvic health and cancer exercise rehabilitation under one roof."
+    },
+    {
+     "label": "Favourite",
+     "value": "Having all patient info in the app — no more texting, emailing or writing notes elsewhere"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://reactivephysio.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/reactive_physiotherapy",
+     "title": "@reactive physiotherapy"
+    },
+    {
+     "href": "https://www.linkedin.com/in/tamara-bernardi",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Territory Women's Clinic",
+   "clinicians": "Bronte Ellis & Laura Justin",
+   "location": "Yarrawonga, Darwin, NT, Australia",
+   "tags": [
+    "APA Titled",
+    "Caesarean Scar",
+    "Mastitis Service",
+    "Women's Only",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Adherence, patient satisfaction and completeness of consults have all improved since using Pelvy — everything succinct in one place.",
+   "quoteAttribution": "Bronte Ellis, Territory Women's Clinic",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Bronte Ellis — APA Titled Women's, Men's & Pelvic Health Physiotherapist. Laura Justin — Physiotherapist with special interest & additional training in Women's Health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Estim & biofeedback, Obstetric TENS hire, Dry needling, Therapeutic ultrasound for mastitis, perineal tears & haemorrhoids"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Foundations First (postnatal return-to-exercise, online & face-to-face, max 4); Pregnancy & Pelvic Floor Workshop (2.5hr, incl. perineal massage & pushing prep); Pelvic Floor Bootcamp (4-week group classes, max 8)"
+    },
+    {
+     "label": "Niche",
+     "value": "Caesarean scar management (Restore Scar Therapy practitioner), pregnancy & postnatal rehab, mastitis & perineal care — the only pelvic health specific physio clinic in Darwin & surrounds"
+    },
+    {
+     "label": "Stands out",
+     "value": "Women's-only clinic — culturally safe & appropriate for Aboriginal & Torres Strait Islander people in Darwin, and a trauma-informed safe space for women who need female-only clinicians. The only pelvic health physio clinic in Darwin."
+    },
+    {
+     "label": "Favourite",
+     "value": "Notifications & being able to set patient-specific parameters — makes every program feel truly individualised"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.territorywomensclinic.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/territorywomensclinic",
+     "title": "@territorywomensclinic"
+    }
+   ]
+  },
+  {
+   "name": "The Funky Physio",
+   "clinicians": "Emily Tregear",
+   "location": "Mobile & Telehealth Services in Melbourne, VIC, Australia",
+   "tags": [
+    "Pregnancy & Postnatal",
+    "Mastitis Home Visits",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Pelvy counts sets, reps, hold time and rest time — so all the patient has to do is focus on correct technique.",
+   "quoteAttribution": "Emily Tregear, The Funky Physio",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Women's Health Physiotherapist. MPhysioPrac, GCert Physio (Pelvic Floor Physiotherapy)."
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes — mastitis, prenatal & postnatal physiotherapy & pelvic floor"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & postnatal pelvic health, mastitis home visits"
+    },
+    {
+     "label": "Stands out",
+     "value": "Home visits for mastitis, prenatal & postnatal care — bringing expert pelvic health care directly to patients when they need it most."
+    },
+    {
+     "label": "Favourite",
+     "value": "Individualised HEP prescription — the videos and templates make it quick and easy within the appointment"
+    },
+    {
+     "label": "Excited about",
+     "value": "Pelvy becoming a full pelvic health library — everything in one place instead of printed sheets, emails, written notes and other apps"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.thefunkyphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/the.funkyphysio",
+     "title": "@the.funkyphysio"
+    }
+   ]
+  },
+  {
+   "name": "The Healthy Peach Physio",
+   "clinicians": "Healthy Peach Team",
+   "location": "2 Clinics in Brisbane, QLD, Australia",
+   "tags": [
+    "Sexual Health",
+    "Pelvic Pain",
+    "Mastitis Service",
+    "ND / LGBTQAI+",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pain & Sex program"
+    },
+    {
+     "label": "Niche",
+     "value": "Sexual health specialist, pelvic pain, men's health, pelvic floor, prolapse, bowel & bladder dysfunction — all areas except paediatrics. ND & LGBTQAI+ inclusive."
+    },
+    {
+     "label": "Stands out",
+     "value": "Affiliated with Endo32 for pelvic pain programs. Emergency mastitis appointments held daily. Sex therapy integration. Neurodivergent & LGBTQAI+ affirming practice. 4 treatment rooms across 5 locations."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://thehealthypeachphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/TheHealthyPeachPhysio",
+     "title": "@TheHealthyPeachPhysio"
+    }
+   ]
+  },
+  {
+   "name": "Vera Wellness",
+   "clinicians": "Brooke Dobo",
+   "location": "Mount Samson, Brisbane, QLD, Australia",
+   "tags": [
+    "APA Titled",
+    "Pelvic Pain",
+    "Pregnancy & Postnatal",
+    "Menopause",
+    "Classes",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Saved time — and patients love it. The HEP and reminders are my favourite features so far.",
+   "quoteAttribution": "Brooke Dobo, Vera Wellness",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Physiotherapist. Website: embodyph.com.au"
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Mother & Daughter Retreats for menstrual cycle awareness"
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & postpartum, birth & labour prep, peri/post menopause, overactive bladder, incontinence, pelvic pain, constipation, pelvic organ prolapse, sexual function, tailbone pain"
+    },
+    {
+     "label": "Stands out",
+     "value": "APA Titled. Home visits available. Lovely clinic space in Paddington with easy parking. Unique Mother & Daughter Retreats for menstrual cycle awareness."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.verawellness.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/brooke_physio",
+     "title": "@brooke_physio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/brooke-dobo",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Vital Core Physiotherapy",
+   "clinicians": "Tory Toogood & Team",
+   "location": "Norwood, Adelaide, SA, Australia",
+   "tags": [
+    "4× APA Titled",
+    "Pessary (since 2009)",
+    "Men's Health",
+    "Paediatric",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Love the videos. Excited about streamlining the templates and expanding what we can do for patients.",
+   "quoteAttribution": "Tory Toogood, Vital Core Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "4× Titled physios (Tory Toogood, Rebecca Sabine, Dr Robyn Brennan, Justine Gorman). 3× Grad Cert physios. Male men's health physio (Thomas Kostakis). Business built & owned by women for 23 years."
+    },
+    {
+     "label": "Equipment",
+     "value": "TA & TP Ultrasound, Biofeedback (US & EMG), Balloon training, US for mastitis, Dry needling, Estim hire, Obstetric TENS hire, Pessary fitting (since 2009), TENS hire/sale"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pilates/gym for pregnancy, postnatal, pelvic-floor safe, bone health & balance"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum: men's health & ED, pessary (led by lead physio for the world's only dedicated pessary-fitting uni course), teens with pelvic pain, Trans & LGBTQAI+ inclusive, menopausal & neurodiverse adults, colorectal/bowels"
+    },
+    {
+     "label": "Stands out",
+     "value": "7-day mastitis service. Baby cuddlers for postnatal classes. Affiliated with colorectal surgeons & gynaecology clinic. Women-owned for 23 years."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.vitalcore.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/vitalcorepelvichealth",
+     "title": "vitalcorepelvichealth"
+    },
+    {
+     "href": "https://www.linkedin.com/company/vital-core-physiotherapy",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "ACE Physical Therapy",
+   "clinicians": "Manisha Mendonca",
+   "location": "7 Clinics in Northern Virginia, VA, United States",
+   "tags": [
+    "Pelvic Health",
+    "Pelvy Partner"
+   ],
+   "quote": "Supporting patients with evidence-based pelvic health care through Pelvy.",
+   "quoteAttribution": "Manisha Mendonca, ACE",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Note",
+     "value": "Additional clinic details coming soon."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://ace-pt.org/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Ace Physiotherapy and Pilates",
+   "clinicians": "Alice Saunder",
+   "location": "Regional Australia",
+   "tags": [
+    "Masters Pelvic Health",
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Regional Area",
+    "Classes"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Alice Saunder — Masters in Pelvic Health (Physiotherapy)."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment & biofeedback, Ultrasound for mastitis, Dry needling, Electrical stimulation & TENS hire (incl. electrode sales), Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Available but not routine"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Clinical Pilates"
+    },
+    {
+     "label": "Niche",
+     "value": "Wide range of pelvic health issues — serving a regional area where specialist care is otherwise hard to access"
+    },
+    {
+     "label": "Stands out",
+     "value": "Inclusive, evidence-based pelvic health care in a regional area — so patients don't have to travel excessively for quality care. Strong relationships with local medical colleagues for onward referral where needed."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://ace-physiotherapy-and-pilates.au2.cliniko.com/bookings#location",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/ace.physio.pilates",
+     "title": "@ace.physio.pilates"
+    }
+   ]
+  },
+  {
+   "name": "Active Pelvic Health",
+   "clinicians": "Zainab (Zain) Oher",
+   "location": "Spotswood, Melbourne, VIC, Australia",
+   "tags": [
+    "APA Titled",
+    "Female Athlete",
+    "Return to Sport",
+    "Mastitis Service",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Zainab (Zain) Oher — APA Titled Women's, Men's & Pelvic Health Physiotherapist. Special interest in Women's Health and Performance."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound for pelvic floor assessment, Therapeutic ultrasound for mastitis, Dry needling, Functional movement screening, Exercise space with weights & treadmill, Force plates (coming soon)"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "1:1 clinical strength & Pilates sessions available"
+    },
+    {
+     "label": "Niche",
+     "value": "Active women & athletes through pregnancy, postpartum & return to sport — including pelvic organ prolapse, urinary incontinence, pelvic pain, menopause, bowel dysfunction & pelvic floor rehabilitation. Expert in return to running & strength training."
+    },
+    {
+     "label": "Stands out",
+     "value": "Combines advanced pelvic health expertise with a whole-body, performance-focused approach — helping active women return to the activities they love through every stage of life. In-clinic exercise space with weights, treadmill & force plates coming soon."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.activepelvichealth.org/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/activepelvichealth",
+     "title": "@activepelvichealth"
+    },
+    {
+     "href": "https://www.linkedin.com/in/zain-zainab-608441105",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Allsports Physio",
+   "clinicians": "Ruth Tung",
+   "location": "20+ Clinics across Brisbane & Gold Coast, QLD, Australia",
+   "tags": [
+    "APA Titled",
+    "Pessary Fitting",
+    "Mastitis Service",
+    "MSK & Pelvic Health"
+   ],
+   "quote": "Pelvy provides one platform to record all information — instead of multiple pieces of paper.",
+   "quoteAttribution": "Ruth Tung, Allsports Physio",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled. Master of Continence & Women's Health. Strong combined MSK and pelvic health background."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary fitting, mastitis service — with a rare combination of strong MSK and pelvic health expertise"
+    },
+    {
+     "label": "Stands out",
+     "value": "Dual expertise in MSK and pelvic health with an active mastitis service — ideal for patients needing comprehensive, integrated physiotherapy care."
+    },
+    {
+     "label": "Favourite",
+     "value": "PFM exercise function with guided exercise videos"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.allsportsphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/allsports_mtgravatt",
+     "title": "@allsports_mtgravatt"
+    }
+   ]
+  },
+  {
+   "name": "Amelie Private",
+   "clinicians": "Amelie Team",
+   "location": "Wollongong, NSW, Australia",
+   "tags": [
+    "Pelvic Health"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Note",
+     "value": "Additional clinic details coming soon."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://amelieprivate.com/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Anatomy Physiotherapy",
+   "clinicians": "Suzanne Carney & Team",
+   "location": "Claremorris, Co. Mayo, Ireland",
+   "tags": [
+    "Clinical Specialist",
+    "Pessary Fitting",
+    "Men's Health",
+    "Neuro Physio",
+    "Cancer Rehab",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "More patient engagement with homework — and reminders for patients are our favourite feature so far.",
+   "quoteAttribution": "Suzanne Carney, Anatomy Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Suzanne Carney — Clinical Specialist Pelvic Health Physiotherapist, Masters in Continence & Women's Health (Curtin University). Ciara Middleton — Pelvic Health Physiotherapist. Michelle McDonald — Pelvic Health Physiotherapist. Laura Connor — Senior Pelvic Health Physiotherapist."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, MAPLe biofeedback & eStim, Lymphatouch, Ultrasound & laser for breastfeeding issues, Pessary fitting, eStim hire, Obstetric TENS hire, Neuro Physio"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Building Bones & Balance, Clinical Pilates, Pregnancy Pilates, Postnatal Pilates, Neuro Rehab, Cancer Rehab (online & in person options)"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum — men's, women's & children's pelvic health, paediatric pelvic health, pelvic pain (incl. teens), pessary service, colorectal & bowel dysfunction, LGBTQAI+ inclusive, neuro rehab, cancer rehab"
+    },
+    {
+     "label": "Stands out",
+     "value": "Suzanne's clinical expertise spans men, women & children's pelvic health. Close referral relationships with gynaecologists, colorectal surgeons & urologists across the country. Offers mentorship & teaches advanced practice courses. Lectures for undergraduate physios. Excellent breast health & lactation services including bra-fitting. Pelvic health specific private clinic with tea & coffee available."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://anatomyphysiotherapy.ie/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/anatomy_physiotherapy",
+     "title": "@anatomy_physiotherapy"
+    },
+    {
+     "href": "https://www.linkedin.com/in/suzanne-carney",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Ashlee Dodd Physiotherapy",
+   "clinicians": "Ashlee Dodd",
+   "location": "Coconut Grove, Darwin, NT, Australia",
+   "tags": [
+    "All equipment excl. Obs TENS",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Streamlined treatment plans — Pelvy helps patients adhere to their exercises and raises awareness of pelvic health physio.",
+   "quoteAttribution": "Ashlee Dodd",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, Balloon training, US for mastitis, Dry needling, Estim hire, Pessary fitting (all except Obstetric TENS hire)"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Favourite",
+     "value": "Reminders! — helps patients adhere to their exercise programs"
+    },
+    {
+     "label": "Excited about",
+     "value": "Increased awareness of Pelvic Health Physio in general"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.adphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/ad.physio.nt",
+     "title": "@ad.physio.nt"
+    }
+   ]
+  },
+  {
+   "name": "Blackwood Physio and Pelvic Health",
+   "clinicians": "Courtney Payne",
+   "location": "2 Clinics in Margaret River Region, WA, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Courtney Payne — Grad Cert Continence & Pelvic Health"
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound for assessment, Balloon training, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary service"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://blackwoodphysioandpelvichealth.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Body & Birth Physiotherapy",
+   "clinicians": "Dr Tanja Miokovic & Stephanie Bladon-Smith",
+   "location": "Paddington, Brisbane, QLD, Australia",
+   "tags": [
+    "PhD Clinician",
+    "Pessary Fitting",
+    "Mastitis Service",
+    "DRAM",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Excited to cancel my Physitrack subscription — Pelvy is becoming the one-stop app for exercise prescription for both patients and clinicians.",
+   "quoteAttribution": "Dr Tanja Miokovic, Body & Birth Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Dr Tanja Miokovic, PhD. Stephanie Bladon-Smith — special interest in Women's Health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound (assessment & biofeedback), Therapeutic ultrasound for mastitis & blocked ducts, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Antenatal & postnatal care, labour & delivery preparation, DRAM, return to physical activity postnatal, pessary & prolapse management, pelvic pain"
+    },
+    {
+     "label": "Stands out",
+     "value": "Established 10+ years with strong GP, gynaecologist & obstetrician referral networks. Homely, nurturing clinic with tea, coffee & juice in the waiting room, baby change facilities, home visits, and emergency mastitis appointments available."
+    },
+    {
+     "label": "Favourite",
+     "value": "Metronome for pelvic floor exercises, copy-paste of patient program into PMS, belly breathing & pelvic pain exercises"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.bodyandbirthphysio.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/bodyandbirthphysio",
+     "title": "@bodyandbirthphysio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/tanja-miokovic",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Breathe Women's Health Physiotherapy",
+   "clinicians": "Breathe Team",
+   "location": "Mobile & Clinic in Northern Beaches, NSW, Australia",
+   "tags": [
+    "Women's Health"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Note",
+     "value": "Additional clinic details coming soon. 3 locations."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.breathewomenshealth.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Childer's Physio & Allied Health",
+   "clinicians": "Jenna Horwood",
+   "location": "Childers, Bundaberg, QLD, Australia",
+   "tags": [
+    "Prolapse",
+    "Urinary Incontinence",
+    "Pessary",
+    "Bulk Billing Available",
+    "Telehealth"
+   ],
+   "quote": "Patients are finding it easier to remember their exercises and rely on the app for notifications — less paper, easy access.",
+   "quoteAttribution": "Childer's Physio & Allied Health",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Pessary fitting & management commencing July 2026 (cups, rings & Gellhorn)"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes (available)"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes (DVA / NDIS / HCP)"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Prolapse & urinary incontinence/urgency. Pessary fitting commencing June 2026 (cups, rings & Gellhorn)."
+    },
+    {
+     "label": "Stands out",
+     "value": "Bulk-billed EPC appointments available. Services Childers, Gin Gin, Mt Perry, Wallaville, Woodgate & Biggenden areas — bringing accessible pelvic health care to rural Queensland."
+    },
+    {
+     "label": "Favourite",
+     "value": "Video features — patients have easy, paperless access to their exercise information"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://childersphysio.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Christine Pelvic Physio",
+   "clinicians": "Christine Liau",
+   "location": "Yass, NSW, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Pregnancy & Postnatal",
+    "Menopause",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Continence & Pelvic Health title in progress (end of 2025). Completed APA Level 1 & 2 WHTA. Completing Dr. Mel Davidson speculum course."
+    },
+    {
+     "label": "Equipment",
+     "value": "Pessary fitting, Diagnostic & therapeutic ultrasound, Obstetric TENS hire, TTNS, Ultrasound for mastitis & engorgement"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Planned — coming soon"
+    },
+    {
+     "label": "Niche",
+     "value": "Adult female pelvic health & continence, pessary service, pregnancy & postpartum, perimenopause & menopause, pelvic pain, mastitis & engorgement service"
+    },
+    {
+     "label": "Stands out",
+     "value": "Solo practitioner serving Yass & surrounds — a regional area of 20,000+ people. Exclusively focused on adult female pelvic health & continence. Well known to local GP medical centres through strong word-of-mouth reputation."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://instagram.com/christine.pelvicphysio",
+     "title": "@christine.pelvicphysio"
+    }
+   ]
+  },
+  {
+   "name": "Embrace Physio + Pilates",
+   "clinicians": "Dora Pandeloglou & Team",
+   "location": "3 Clinics in South East Melbourne, VIC, Australia",
+   "tags": [
+    "7 Clinicians",
+    "Paediatric",
+    "Oncology",
+    "Sporting Pelvic Floor"
+   ],
+   "quote": "Limits ambiguity and helps with patient motivation and tracking progress — patients have great feedback with their pelvic floor relaxation exercises.",
+   "quoteAttribution": "Dora Pandeloglou, Embrace Physio + Pilates",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Dora Pandeloglou (Director) — PG Cert Pelvic Floor. Sophie Clarke — PG Cert Pelvic Floor, special interest in Paediatrics. Zali Rayment — PG Cert Pelvic Floor. Divya Koujalgi — PG Cert Pelvic Floor, special interest in Paediatrics. Daphne AuClair — special interest in Oncology. Plus Jessica Adams & Courtney Essex."
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & postnatal, pelvic pain, sporting pelvic floor, paediatric pelvic health, oncology pelvic health."
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Favourite",
+     "value": "The ability to set downtraining exercises for pelvic floor relaxation"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.embracephysiopilates.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/embrace.physio.pilates",
+     "title": "@embrace.physio.pilates"
+    }
+   ]
+  },
+  {
+   "name": "Evolve Physio & Pelvic Health",
+   "clinicians": "Sally McKenzie",
+   "location": "Mount Tarcoola, Geraldton, WA, Australia",
+   "tags": [
+    "APA Titled",
+    "Pessary Fitting",
+    "Men's Health",
+    "Paediatric",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Really helpful for those that need the real time exercise feature — patients love it, especially for building self-awareness.",
+   "quoteAttribution": "Sally McKenzie, Evolve Physio & Pelvic Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Sally McKenzie — APA Titled Physiotherapist. Master of Clinical Continence & Pelvic Health, BSc Hons."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, Balloon training, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pilates, gym classes, Barbells & Beyond perimenopause weight training"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum — men, women & children including teens with pelvic pain, pessary fitting, bowel dysfunction & retraining, paediatric pelvic health. Works with many Perth specialists for holistic care."
+    },
+    {
+     "label": "Stands out",
+     "value": "Geraldton's only private pelvic health physiotherapy clinic — giving Mid West WA access to specialist care without travelling to Perth. Extended initial consultations (~1 hour) for thorough, individualised assessment. Works collaboratively with Perth specialists across all areas of pelvic health."
+    },
+    {
+     "label": "Favourite",
+     "value": "Adherence tracking & streaks — patients love it!"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.evolvepelvicphysio.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/evolvepelvicphysio",
+     "title": "@evolvepelvicphysio"
+    }
+   ]
+  },
+  {
+   "name": "Essential Health Physiotherapy",
+   "clinicians": "Reham Mohammed",
+   "location": "3 Clinics in Brisbane & Logan, QLD, Australia",
+   "tags": [
+    "DPT · MSc · CMP · CLT",
+    "Lymphoedema Therapy",
+    "Women's Health",
+    "MSK"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Reham Mohammed — DPT, MSc PT (Women's Health), CMP, CLT, CKTP. Senior Women's Health & MSK Physiotherapist and Certified Lymphoedema Therapist."
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Women's health & MSK physiotherapy, certified lymphoedema therapy — a rare and sought-after combination of specialisations."
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://essentialhealthphysio.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Femme Space Physiotherapy",
+   "clinicians": "Emma Attard",
+   "location": "Clinic & Mobile in St George Sydney, NSW, Australia",
+   "tags": [
+    "Pregnancy & Birth Prep",
+    "Pessary Fitting",
+    "Clinical Pilates",
+    "Classes",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "The ability to completely customise a pelvic floor program specific to each patient and have them follow along the whole time.",
+   "quoteAttribution": "Emma Attard, Femme Space Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Emma Attard — M Physio (UTS), B Hlth Sci, B Pub Hlth (USYD/UOW), APAM. Founder & Senior Women's Health Physiotherapist. Clinical Pilates instructor. 15 years in healthcare, 6 years exclusively in Women's Health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Electrical stimulation hire & purchase, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes — St George, Sydney & surrounds"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pregnancy & Birth Preparation Program (hybrid online & in-person). Online modules available to purchase separately."
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & birth preparation, postnatal recovery, pelvic floor rehabilitation — with a passion for empowering women through childbirth & beyond"
+    },
+    {
+     "label": "Stands out",
+     "value": "Home visits throughout St George area — extra baby-friendly, bring your baby to the clinic or have them with you during your home visit. Hybrid birth prep program accessible online Australia-wide."
+    },
+    {
+     "label": "Favourite",
+     "value": "Fully customisable pelvic floor programs — patients can access their 100% personalised HEP anytime, anywhere"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.femmespacephysiotherapy.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/femmespacephysiotherapy",
+     "title": "@femmespacephysiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "FitRight Women's Health",
+   "clinicians": "Taryn Watson",
+   "location": "2 Clinics in Perth, WA, Australia",
+   "tags": [
+    "Pregnancy & Postnatal",
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "It's going to be great to have all patient information in one place in an app, instead of a mixture of handouts and email summaries.",
+   "quoteAttribution": "Taryn Watson, FitRight Women's Health",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "RTUS, Estim, TTNS, TENS for labour, Therapeutic US for mastitis, Low Level Laser (nipple wounds & wound healing), Dry needling, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pregnancy, postnatal, strength circuit, group Pilates & clinical exercise classes for women"
+    },
+    {
+     "label": "Niche",
+     "value": "Conservative prolapse management & pessary fitting; proactive pregnancy pelvic floor prep; postnatal rehab including mastitis care & return-to-running programs"
+    },
+    {
+     "label": "Stands out",
+     "value": "Multidisciplinary team including IBCLCs, Women's Health GPs, sexology & dietetics under one roof. Community & clinic exercise classes with baby-cuddling volunteers."
+    },
+    {
+     "label": "Note",
+     "value": "Taryn subscribes to Pelvy for her entire staff team."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://fitrightwomenshealth.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/fitrightwomenshealth",
+     "title": "@fitrightwomenshealth"
+    },
+    {
+     "href": "https://instagram.com/fitrightprofessionals",
+     "title": "@fitrightprofessionals"
+    }
+   ]
+  },
+  {
+   "name": "Focus with Form Physiotherapy",
+   "clinicians": "Georgie Mickan",
+   "location": "Mackay, QLD, Australia",
+   "tags": [
+    "Pelvic Health",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.focuswithformphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/focuswithformphysio",
+     "title": "@focuswithformphysio"
+    }
+   ]
+  },
+  {
+   "name": "Form & Practice",
+   "clinicians": "Paris & Ali",
+   "location": "3 Clinics in Yarra Ranges, VIC, Australia",
+   "tags": [
+    "Mastitis Service",
+    "Pregnancy & Postnatal",
+    "Colorectal",
+    "Classes",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "More consistent flow between us — all the information we provide is in one place, no more patients going back and forth through previous emails.",
+   "quoteAttribution": "Paris & Ali, Form & Practice",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Paris — completed APA Pelvic Health training. Ali — Physiotherapist with pelvic health special interest."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for mastitis & post-void residuals, Rectal exam & balloon training, TENS for OAB & bladder neuromodulation, Obstetric TENS hire, Dry needling"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes — general physio, pelvic health & mastitis home visits available"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — clinical exercise classes throughout the week; pre & postnatal Pilates/strength classes run by both clinicians"
+    },
+    {
+     "label": "Niche",
+     "value": "Mastitis service (in-clinic & home visits), pregnancy & postnatal care, colorectal & bowel dysfunction — full pelvic health across the lifespan"
+    },
+    {
+     "label": "Stands out",
+     "value": "Run pelvic health workshops for local gyms, Probus club groups & GPs. Mastitis service available both in-clinic and at home. 3 clinic locations across the area."
+    },
+    {
+     "label": "Favourite",
+     "value": "The interactive nature of the exercises — keeping patients engaged and consistent with their programs"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://formandpractice.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/bloomessentialswomen",
+     "title": "@bloomessentialswomen"
+    },
+    {
+     "href": "https://instagram.com/thehonestphysiotherapist",
+     "title": "@thehonestphysiotherapist"
+    }
+   ]
+  },
+  {
+   "name": "Healthfocus Physiotherapy",
+   "clinicians": "Simone Bowler",
+   "location": "2 Clinics in Albury-Wodonga Region, Australia",
+   "tags": [
+    "APA Titled",
+    "Pessary Fitting",
+    "Paediatric",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Pelvy provides ease of exercise prescription for pelvic health patients and optimises their compliance.",
+   "quoteAttribution": "Simone Bowler, Healthfocus",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Women's & Men's Pelvic Health Physiotherapist; APA Titled Musculoskeletal Physiotherapist. Post-grad training in pessary fitting & prolapse management (UniSA)."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time Ultrasound (transabdominal & transperineal), US for mastitis, Biofeedback, Rectal balloon therapy, Pessary fitting, TENS/estim for purchase, VALD Dynamometry & force plates"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum of pelvic health conditions across the lifespan — bladder, bowel, pelvic pain, endometriosis, pessary fittings, pre/post prostatectomy, paediatric continence (neurotypical & neurodiverse)"
+    },
+    {
+     "label": "Stands out",
+     "value": "Experienced, empathetic clinician with 20+ years in pelvic health. APA Titled. Patient-centred care tailored to individual goals and needs."
+    },
+    {
+     "label": "Favourite",
+     "value": "Educational videos to reinforce messages provided in clinic"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.healthfocus.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://www.instagram.com/healthfocusphysiotherapy",
+     "title": "Instagram"
+    },
+    {
+     "href": "https://www.linkedin.com/in/simone-bowler-turton-13660643",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "HerHealth Physiotherapy",
+   "clinicians": "Brooke Blair, Brianna Lancaster & Elise Kench",
+   "location": "Richmond, Sydney, NSW, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "Pregnancy & Postnatal",
+    "Mastitis Service",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Clients more consistent with exercises — ability to put all info into the app, no need to text, email or write elsewhere.",
+   "quoteAttribution": "HerHealth Physiotherapy Team",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Brooke Blair — APAM, Certificate in Pelvic Organ Prolapse (UniSA), special interest in women's health. Brianna Lancaster — special interest in women's health. Elise Kench — special interest in women's health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time & therapeutic ultrasound, EMG biofeedback, TENS, Obstetric TENS hire, Pessary fitting, Dry needling"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pregnancy, Mums & Bubs Pilates, Menopause, Strength & Stretch — all face to face"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary service, pelvic pain, pregnancy & postpartum specialty"
+    },
+    {
+     "label": "Stands out",
+     "value": "Mastitis service, Mums & Bubs Pilates, admin team available to help with babies & kids during sessions. Close relationships with local gynaecologists & midwives."
+    },
+    {
+     "label": "Favourite",
+     "value": "Ability to put all info into the app — no need to text, email or write notes elsewhere"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.herhealthphysiotherapy.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/HerHealth.physiotherapy",
+     "title": "@HerHealth.physiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "Hug Pelvic Physio",
+   "clinicians": "Louise Hug",
+   "location": "Palmyra, WA, Australia",
+   "tags": [
+    "Men's Health",
+    "Complex Bladder & Bowel",
+    "LGBTQAI+",
+    "Laser Therapy",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Louise Hug — Pelvic Health Physiotherapist. Works alongside a team of urologists and has a strong relationship with 2 colorectal surgeons."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Therapeutic ultrasound, Low Level Laser Therapy (LLLT), Rectal balloon training, Pelvitone e-stim pelvic floor muscle training, NeuroTrac EMG biofeedback, NeuroTrac Obstetric TENS hire, Dry needling & press-stud needles (OAB management)"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Pre & post-op pelvic floor training for robot-assisted radical prostatectomy, male pelvic pain & sexual dysfunction, complex bladder pain & dysfunction, bowel dysfunction (faecal incontinence, chronic constipation, obstructive defaecation, IBS/diverticulitis, post-op stoma reversal & mesh rectopexy), post-op dilator management for gender reassignment vaginoplasty (with Dr David Sofield)"
+    },
+    {
+     "label": "Stands out",
+     "value": "Licensed provider of laser for cracked nipples post-partum. Experienced LGBTQAI+ inclusive care. On-site pelvic health showroom & store with a vast range of specifically prescribed products. Embedded within a urologist & colorectal surgeon referral network."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.pelvichug.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/hug_pelvic_physio",
+     "title": "@hug_pelvic_physio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/louise-hug-048311235/",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Jindabyne Women's Health",
+   "clinicians": "Jindabyne WH Team",
+   "location": "Jindabyne, Rural NSW, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "Pregnancy & Postnatal",
+    "Only WH Clinic in Area",
+    "Classes"
+   ],
+   "quote": "The notes section is really effective — summarising education and treatment plans with the patient there so we're both on the same page.",
+   "quoteAttribution": "Jindabyne Women's Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Special interest in pre & postnatal care, pelvic pain, prolapse, pessary fitting, incontinence, bowel health & pelvic girdle pain."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for biofeedback & assessment, Pessary fitting, Electrical stimulation hire"
+    },
+    {
+     "label": "Telehealth",
+     "value": "No"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pregnancy Reformer, Mums & Bubs Reformer, Clinical Reformer, Strength classes, Over 50s Strength"
+    },
+    {
+     "label": "Niche",
+     "value": "Pre & postnatal care, pelvic pain, prolapse, pessary fitting, incontinence, bowel health & pelvic girdle pain"
+    },
+    {
+     "label": "Stands out",
+     "value": "The only women's health physiotherapy clinic in the Jindabyne rural area. Supported by local GP & midwife referrals. Completely child-friendly with a welcoming reception area offering tea & coffee. Regular community events."
+    },
+    {
+     "label": "Favourite",
+     "value": "The notes section — summarising education & treatment plans with patients so everyone is on the same page"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.jindabynewomenshealth.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/jindywh",
+     "title": "@jindywh"
+    }
+   ]
+  },
+  {
+   "name": "Katie Stan Bishop Physiotherapy",
+   "clinicians": "Katie Stan-Bishop",
+   "location": "Centennial Park, Albany, WA, Australia",
+   "tags": [
+    "APA Titled",
+    "Pessary Fitting",
+    "Pelvic Pain Clinic",
+    "EMS Chair",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "APA Titled Continence & Pelvic Health Physiotherapist. Completed UniSA Conservative Management of POP & SUI course. Advanced pessary training."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time & perineal ultrasound, TENS machines, LASER, EMS chair, Dry needling, Electrical stimulation hire, Advanced pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum — men, women & children in a rural area. Advanced pessary fitting, pelvic pain. Part of the Pioneer Pelvic Pain Clinic MDT team."
+    },
+    {
+     "label": "Stands out",
+     "value": "Full APA Titled pelvic health care in a rural area — seeing men, women & children. Part of the multidisciplinary Pioneer Pelvic Pain Clinic team. Advanced pessary training with high-end equipment including EMS chair and LASER."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.katiepelvicphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/katie_pelvic_physio",
+     "title": "@katie_pelvic_physio"
+    }
+   ]
+  },
+  {
+   "name": "Katy Holmes Physiotherapy",
+   "clinicians": "Katy Holmes",
+   "location": "Monaclinoe, Limerick, County Limerick, Ireland",
+   "tags": [
+    "Pregnancy & Postnatal"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Katy Holmes — Physiotherapist with special interest in pregnancy & postnatal pelvic health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "No"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Pregnancy & postnatal pelvic health — supporting women through every stage of their perinatal journey."
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.katyholmesphysiotherapy.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/katythephysio",
+     "title": "@katythephysio"
+    }
+   ]
+  },
+  {
+   "name": "KM Women's Health Physiotherapy",
+   "clinicians": "Katey Molenaar & Ashley Kenny",
+   "location": "2 Clinics & Studio in Central Coast, NSW, Australia",
+   "tags": [
+    "APA Level 2",
+    "Birth Prep",
+    "Pessary Fitting",
+    "Endometriosis",
+    "Classes Coming Soon",
+    "Telehealth"
+   ],
+   "quote": "Much clearer prescription of PFMT — and keen for Pelvy to be the go-to platform for everything, including bladder/bowel diaries and progress tracking.",
+   "quoteAttribution": "Katey Molenaar, KM Women's Health Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Katey Molenaar — BExSportSci, Masters of Physiotherapy, APA Level 2 Women's Pelvic Health & Through the Lifestages. Ashley Kenny — BPhysio (Honours), Women's Health Training Level 3 WHTA."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for mastitis, Dry needling, Pessary fitting (with autoclave & fitting kits), TAUS & TPUS (coming soon), TENS machine hire (coming soon)"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes — as required"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Coming soon — postnatal, prenatal, strength & menopause strength classes"
+    },
+    {
+     "label": "Niche",
+     "value": "Birth preparation, pessary service (with autoclave), endometriosis — passionate about empowering women through all stages of life"
+    },
+    {
+     "label": "Stands out",
+     "value": "Located in a beautiful old home-style cottage clinic. Works alongside gynaecologists Dr Jason Mak & Dr Kelly McNamara (Gaiacology) — Dr Mak specialises in endometriosis and offers DEUS on site. Hot herbal tea served daily."
+    },
+    {
+     "label": "Favourite",
+     "value": "Guided pelvic floor training — love being able to set the time for ease of patients following along"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.kmwomenshealth.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/kmwomenshealth",
+     "title": "@kmwomenshealth"
+    }
+   ]
+  },
+  {
+   "name": "Macarthur Women's Health Physio",
+   "clinicians": "Macarthur Team",
+   "location": "Campbelltown, Sydney, NSW, Australia",
+   "tags": [
+    "APA Titled",
+    "Mastitis",
+    "Paediatric B&B",
+    "Pessary Fitting",
+    "Telehealth"
+   ],
+   "quote": "Our service feels even more personalised, offering patients a single go-to platform where their individualised management can be found, reviewed and modified.",
+   "quoteAttribution": "Macarthur Women's Health Team",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Ultrasound assessment, Biofeedback, Balloon training, US for mastitis, Dry needling, Estim hire, Obstetric TENS hire, Pessary fitting, Urinalysis kits, Digital caliper for DRAM assessment"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Planned for 2026"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary fitting, mastitis support, paediatric bladder & bowel health, men's health, pelvic pain, LGBTQAI+ inclusive"
+    },
+    {
+     "label": "Stands out",
+     "value": "APA Titled Continence & Women's Health Physios. Physio teaches APA-level courses. Main referral point for pessary fitting with strong gynaecologist affiliations. Private space with tea, coffee & snacks."
+    },
+    {
+     "label": "Favourite",
+     "value": "Individualised cues for exercises; daily reminders; visual exercise videos"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://macwhphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/macwhphysio",
+     "title": "@macwhphysio"
+    }
+   ]
+  },
+  {
+   "name": "Mercy Physiotherapy",
+   "clinicians": "Mercy Physio Team",
+   "location": "Mount Lawley, Perth, WA, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Men's Health",
+    "Emsella Chair",
+    "Hydrotherapy",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Exercise library and reminders — reminding patients to do their PF exercises and saving time with exercise prescription and video demonstration.",
+   "quoteAttribution": "Mercy Physio Team",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Ultrasound & laser for breast or perineal care, Electrical stimulation (intravaginal), Emsella chair, Dry needling, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Antenatal & postnatal hydrotherapy classes (onsite pool)"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary fitting, males post-prostatectomy, pre & postnatal support, hydrotherapy — onsite pool available for antenatal & postnatal classes"
+    },
+    {
+     "label": "Stands out",
+     "value": "Onsite hydrotherapy pool for antenatal & postnatal classes. Baby cuddlers available for all postpartum classes. Affiliated with SJOG Mt Lawley/Subiaco surgeons."
+    },
+    {
+     "label": "Favourite",
+     "value": "Exercise library and reminders — helps patients stay consistent with their pelvic floor program"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://mercyphysio.com.au",
+     "title": "Website"
+    },
+    {
+     "href": "https://www.instagram.com/mercy_physio/",
+     "title": "@mercyphysio"
+    }
+   ]
+  },
+  {
+   "name": "North Coast Pilates & Physiotherapy",
+   "clinicians": "North Coast Team",
+   "location": "Alstonville, NSW, Australia",
+   "tags": [
+    "Pelvic Health",
+    "Pilates"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Note",
+     "value": "Additional clinic details coming soon."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://ncphysio.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "North West Healthy Women",
+   "clinicians": "Emma, Belinda, Maree & Jess",
+   "location": "Everton Park, Brisbane, QLD, Australia",
+   "tags": [
+    "Women Only Clinic",
+    "Pregnancy & Postnatal",
+    "Over 50s Classes",
+    "Multidisciplinary",
+    "Classes"
+   ],
+   "quote": "Better adherence to exercises — patients really like it. Timer and notifications are our favourite features so far.",
+   "quoteAttribution": "North West Healthy Women Team",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Team of 4 physiotherapists — Emma, Belinda, Maree & Jess — all subscribed to Pelvy. Women's health through the lifespan."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment & mastitis, Biofeedback, Obstetric/incontinence TENS hire, Electrical stimulation, Reformers, Strength & conditioning equipment"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Not usually (Psychology & Dietetics do)"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Not usually"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pregnancy & postnatal classes, Strong (strength classes), Forever Fit (over 50s strength & balance)"
+    },
+    {
+     "label": "Niche",
+     "value": "Women's health through the lifespan — pregnancy & postnatal, strength & conditioning, over 50s health & balance"
+    },
+    {
+     "label": "Stands out",
+     "value": "Women-only clinic with a true multidisciplinary team — physiotherapy, psychology & dietetics under one roof. Dedicated over 50s fitness program and comprehensive strength & conditioning facilities."
+    },
+    {
+     "label": "Favourite",
+     "value": "Timer and notifications — reminders for adherence and timing exercises without having to count"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://northwesthealthywomen.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/northwesthealthywomen",
+     "title": "@northwesthealthywomen"
+    }
+   ]
+  },
+  {
+   "name": "Nurturing Her Physiotherapy",
+   "clinicians": "Hayley Wild",
+   "location": "Sawtell, NSW, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Lymphoedema",
+    "Gynaecological Cancer",
+    "Pelvic Pain",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Adherence to HEP has improved and admin time has reduced — Pelvy makes home exercise more interactive and streamlined.",
+   "quoteAttribution": "Hayley Wild, Nurturing Her Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Hayley Wild — Physiotherapist with Women's Health special interest. Accredited Lymphoedema Therapist & Certified Rehabilitation Pilates Practitioner."
+    },
+    {
+     "label": "Equipment",
+     "value": "Pessary fitting, Sozo bioimpedance for lymphoedema monitoring"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Cancer & pelvic health rehabilitation classes (2:1). Virtual Pilates classes in development."
+    },
+    {
+     "label": "Niche",
+     "value": "Pelvic pain, gynaecological & breast cancer rehabilitation, pregnancy & birth preparation, postpartum return to movement, OAB & continence, pessary fitting & management"
+    },
+    {
+     "label": "Stands out",
+     "value": "Affiliated with Dr Beck Tallis, working from her Women's & Children's clinic 1 day per week. Runs workshops with local yoga & Pilates studios. Strong relationships with local gynaecologists. Accredited Lymphoedema Therapist — a rare and sought-after specialty."
+    },
+    {
+     "label": "Favourite",
+     "value": "Programming pelvic floor muscle training to individual patient needs"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://nurturingherphysiotherapy.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/nurturing_her_physiotherapy",
+     "title": "@nurturing_her_physiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "Oak Flats Physiotherapy and Pelvic Health",
+   "clinicians": "Oak Flats Team",
+   "location": "Oak Flats, Wollongong, NSW, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Telehealth"
+   ],
+   "quote": "Patients seem keen and excited to use the app and are more compliant with their exercises — the videos to demonstrate are our favourite feature.",
+   "quoteAttribution": "Oak Flats Physiotherapy and Pelvic Health",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Therapeutic ultrasound for mastitis, Pessary fitting, Obstetric TENS hire, TENS & Estim hire. Stockists of Belly Bands, SRC & Olive and Bee."
+    },
+    {
+     "label": "Telehealth",
+     "value": "Available on request for follow-ups only"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Not at the moment"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "A small practice that prides itself on making every patient feel comfortable and well looked after — long one-on-one consultations with no rushing people out the door."
+    },
+    {
+     "label": "Favourite",
+     "value": "Demonstration videos — and excited to add their own videos as Pelvy grows!"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.oakflatsphysiotherapy.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/oakflatsphysiotherapy",
+     "title": "@oakflatsphysiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "Pelvic Fix Physiotherapy",
+   "clinicians": "Mischa Bongers & Catriona Waite",
+   "location": "3 Clinics in Central Queensland, QLD, Australia",
+   "tags": [
+    "2× APA Titled",
+    "Men's Health",
+    "Pessary Fitting",
+    "Paediatric",
+    "Mastitis Service",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Better compliance with pelvic floor training — and no more losing paper notes or patients forgetting their homework!",
+   "quoteAttribution": "Mischa Bongers, Pelvic Fix Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Mischa Bongers — APA Titled Women's, Men's & Pelvic Health Physiotherapist (Director). Catriona Waite — APA Titled Sports Physiotherapist with special interest in women's, men's & pelvic health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, EMG biofeedback hire, Balloon training, Ultrasound for mastitis, Electrical stimulation hire, Obstetric TENS hire, Interferential hire (constipation), Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes — phone & video, including remote & regional patients"
+    },
+    {
+     "label": "Home Visits",
+     "value": "In very special circumstances only"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Quarterly therapeutic yoga for pelvic pain (run by Catriona)"
+    },
+    {
+     "label": "Niche",
+     "value": "Men's health, paediatric pelvic health, pessary service, pelvic pain (incl. teens), colorectal & bowel dysfunction"
+    },
+    {
+     "label": "Stands out",
+     "value": "Mastitis service, equipment loan program (Obs TENS, e-stim, EMG biofeedback, interferential), wide range of supportive pelvic & perinatal products, active community education, and a trusted large referral base from local medical & allied health colleagues. 3 locations."
+    },
+    {
+     "label": "Favourite",
+     "value": "Customisable reminders — not just for pelvic floor exercises but also for medication reminders like Ovestin use"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.pelvicfixphysiotherapy.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/pelvicfixphysio",
+     "title": "@pelvicfixphysio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/mischa-bongers",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Pelvicworks Physiotherapy",
+   "clinicians": "Becky Hollows",
+   "location": "Geelong & Bellarine Peninsula, VIC, Australia",
+   "tags": [
+    "Pelvic Health",
+    "Pelvy Partner"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Classes",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Niche",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.pelvicworksphysiotherapy.com.au/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Physio73",
+   "clinicians": "Rebekah Taylor & Allana Tunbridge",
+   "location": "2 Clinics in Perth, WA, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Men's Health",
+    "Mastitis Service",
+    "Prolapse",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Made my clinic easier — patients don't email as frequently to ask questions. The notes section and reminders are my favourite features.",
+   "quoteAttribution": "Rebekah Taylor, Physio73",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Rebekah Taylor — UK-titled physiotherapist with pelvic health specialisation. Allana Tunbridge — pelvic health physiotherapist. Men's health in collaboration with Jo Milios."
+    },
+    {
+     "label": "Equipment",
+     "value": "Diagnostic & therapeutic ultrasound (incl. mastitis), Biofeedback, Dry needling (pelvic & abdominal pain), TTNS, PTNS, Pessary fitting, Rectal balloon training, Speculum exams"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Small Pilates classes & open gym memberships with physio-led individually prescribed programs. Babies welcome in gym sessions."
+    },
+    {
+     "label": "Niche",
+     "value": "Prolapse management & pessary fitting, men's health (alongside Jo Milios), bowel dysfunction in men & women, pre & postnatal programs"
+    },
+    {
+     "label": "Stands out",
+     "value": "Exclusive pregnancy package covering antenatal & postnatal care including massage & booklet. Gym membership program where mums bring their babies and work through individually prescribed programs."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://physio73.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/physio.73",
+     "title": "@physio.73"
+    }
+   ]
+  },
+  {
+   "name": "PhysioSista",
+   "clinicians": "Michelle Perks",
+   "location": "Bibra Lake, Perth, WA, Australia",
+   "tags": [
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "Teens",
+    "Colorectal",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "The combination of including pelvic stretches with pelvic floor exercises in the app — and clinician notes saved in the app is so handy.",
+   "quoteAttribution": "Michelle Perks, PhysioSista",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Michelle Perks — Graduate Certificate in Clinical Physiotherapy (Continence & Women's Health)."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, Rectal balloon training, Ultrasound for mastitis, Electrical stimulation hire, Pessary fitting & prolapse assessment"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Clinical Pilates/Rehab Reformer, Ready.Set.Gym (small group total body strength), Prime Pelvic Floor Class, Sassy Teens strength class, Nurture mat Pilates for pre & postnatal women"
+    },
+    {
+     "label": "Niche",
+     "value": "Pessary fitting, pelvic pain (incl. teens — with ultrasound for non-internal assessment), colorectal & bowel dysfunction, all aspects of pelvic healthcare"
+    },
+    {
+     "label": "Stands out",
+     "value": "Strength-based classes specifically for women with prolapse, post-gynae surgery return to gym, and postnatal return to gym. Pessary fitting service with prolapse assessment expertise."
+    },
+    {
+     "label": "Favourite",
+     "value": "Combining pelvic stretches with pelvic floor exercises in one program — plus reminders that save writing out similar exercises every time"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.physiosista.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/physiosista",
+     "title": "@physiosista"
+    }
+   ]
+  },
+  {
+   "name": "Physiotherapy Alliance",
+   "clinicians": "Jenna Horwood",
+   "location": "6 Clinics in South Western Ontario, ON, Canada",
+   "tags": [
+    "Prolapse",
+    "Urinary Incontinence",
+    "Pessary (from June 2026)",
+    "Bulk Billing Available",
+    "Telehealth"
+   ],
+   "quote": "Patients are reporting that they are finding it easier to remember their exercises and rely on the app for the notifications.",
+   "quoteAttribution": "Jenna Horwood",
+   "details": [
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes (available)"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes (DVA / NDIS / HCP)"
+    },
+    {
+     "label": "Classes",
+     "value": "EP-run hydrotherapy classes at local pool"
+    },
+    {
+     "label": "Niche",
+     "value": "Prolapse & urinary incontinence/urgency. Pessary fitting commencing June 2026 (cups, rings & Gellhorn)."
+    },
+    {
+     "label": "Stands out",
+     "value": "Bulk-billed EPC appointments available. Services Gin Gin, Mt Perry, Wallaville, Childers, Woodgate & Biggenden areas."
+    },
+    {
+     "label": "Favourite",
+     "value": "Video features — patients have easy, paperless access to information"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://physiotherapyalliance.com/",
+     "title": "Website"
+    }
+   ]
+  },
+  {
+   "name": "Resurgence Physiotherapy",
+   "clinicians": "Ashlee Ryan",
+   "location": "Multiple Locations in Perth, WA, Australia",
+   "tags": [
+    "Pelvic Pain",
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Sexual Dysfunction",
+    "Born Ready Course",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "Ability to put all info into the app with videos and easy to follow instructions and education.",
+   "quoteAttribution": "Ashlee Ryan, Resurgence Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Ashlee Ryan — Advanced training in pelvic health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Therapeutic ultrasound & low level laser therapy for mastitis, Dry needling, TENS"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Rarely"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Matwork Pilates, Mums & Bubs classes (all face to face). Born Ready antenatal course (face to face)."
+    },
+    {
+     "label": "Niche",
+     "value": "Pelvic pain (endometriosis & persistent pelvic pain), pregnancy & postpartum specialty including Born Ready antenatal course, sexual dysfunction (male & female), prolapse management & pessary service, mastitis service"
+    },
+    {
+     "label": "Stands out",
+     "value": "Associated with Pain Specialists WA (developing a dedicated pelvic pain clinic) and Jupiter Health Clinics. Mastitis service with low level laser therapy — a rare and sought-after treatment option."
+    },
+    {
+     "label": "Favourite",
+     "value": "Videos and easy to follow instructions and education — all in one place for patients"
+    },
+    {
+     "label": "Excited about",
+     "value": "Uploading own videos for more clinician & patient specific exercises"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.resurgencephysiotherapy.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/resurgencephysio",
+     "title": "@resurgencephysio"
+    },
+    {
+     "href": "https://instagram.com/ashleejryan",
+     "title": "@ashleejryan"
+    }
+   ]
+  },
+  {
+   "name": "Revolve Physiotherapy",
+   "clinicians": "Amanda Hardy & Team",
+   "location": "Cairns, QLD, Australia",
+   "tags": [
+    "APA Titled",
+    "Men's Health",
+    "Paediatric",
+    "Pessary Fitting",
+    "LGBTQAI+",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Amanda Hardy — APA Titled Physiotherapist. Master of Clinical Physiotherapy (Continence & Pelvic Health). Growing team with more clinicians coming soon."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, Balloon training, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Men's health, paediatric pelvic health, pessary service, pelvic pain including teens, colorectal & bowel dysfunction — LGBTQAI+ inclusive practice."
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.revolvephysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/revolveephysiotherapy",
+     "title": "@revolveephysiotherapy"
+    }
+   ]
+  },
+  {
+   "name": "Shalom Pilates and Physio",
+   "clinicians": "Gabrielle Cole",
+   "location": "2 Clinics in South East QLD, Australia",
+   "tags": [
+    "Antenatal",
+    "Pessary Fitting",
+    "Mastitis Service",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "The built-in reminder feature has made a huge difference — getting people to actually do their exercises is the problem Pelvy solves!",
+   "quoteAttribution": "Gabrielle Cole, Shalom Pilates and Physio",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Gabrielle Cole — APA Level 2, Level 3 training completed, currently progressing through APA Titlement process."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes — available when needed"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Pilates & Mums and Bubs classes"
+    },
+    {
+     "label": "Niche",
+     "value": "Antenatal pelvic health — supporting women through pregnancy with expert, personalised care."
+    },
+    {
+     "label": "Stands out",
+     "value": "Located in a small country town — runs a monthly community walk & coffee to bring the local community together around pelvic health awareness. 2 locations serving the area."
+    },
+    {
+     "label": "Favourite",
+     "value": "The built-in reminder feature — compliance has improved significantly since using Pelvy!"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.shalompilates.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/shalompilatesandphysio",
+     "title": "@shalompilatesandphysio"
+    }
+   ]
+  },
+  {
+   "name": "Sports & Spinal Physio",
+   "clinicians": "Emily Abbott & Team",
+   "location": "Multiple Clinics across QLD, Australia",
+   "tags": [
+    "13 Clinicians",
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "Multidisciplinary",
+    "Classes",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "Being able to keep everything in one place and help compliance — the clinician notes feature is our favourite so far.",
+   "quoteAttribution": "Sports & Spinal Physio Team",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "13 clinicians across multiple locations. Emily Abbott — postgraduate pelvic health cert, APA Level 2, special interest in pelvic pain. Team includes APA Level 1 & 2 clinicians with training in internal assessments."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, EMG biofeedback, Ultrasound for mastitis, Dry needling, Electrical stimulation hire, Obstetric TENS hire, Pessary fitting, VALD assessment — varies by clinic location"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Small group women's health classes (max 4), with tailored exercises for each participant — not one size fits all"
+    },
+    {
+     "label": "Niche",
+     "value": "Pelvic pain, pessary fitting, men's health — services vary by clinic location"
+    },
+    {
+     "label": "Stands out",
+     "value": "True multidisciplinary team — RMT, dietitians, EPs, physio, podiatrists & psychology under one roof. Frequent collaborative meetings with GPs & specialists. High-end equipment including VALD assessment. Small group classes with individualised exercises for every participant."
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.sportsandspinalphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/sports.and.spinal",
+     "title": "@sports.and.spinal"
+    }
+   ]
+  },
+  {
+   "name": "Stephanie Lyons Physiotherapy",
+   "clinicians": "Stephanie Lyons",
+   "location": "Sherborne, Dorset, England, United Kingdom",
+   "tags": [
+    "Pelvic Pain",
+    "Telehealth",
+    "Home Visits"
+   ],
+   "quote": "More efficient treatment management — both myself and my patients love having all advice and programmes in one place.",
+   "quoteAttribution": "Stephanie Lyons, Stephanie Lyons Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Stephanie Lyons — Pelvic Health Physiotherapist with a developing special interest in pelvic pain conditions."
+    },
+    {
+     "label": "Equipment",
+     "value": "Details to be confirmed"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "Yes"
+    },
+    {
+     "label": "Classes",
+     "value": "Not currently"
+    },
+    {
+     "label": "Niche",
+     "value": "Full pelvic health physiotherapy (PHPT) service, with a developing special interest in pelvic pain conditions."
+    },
+    {
+     "label": "Stands out",
+     "value": "Offers home visits and telehealth alongside in-person clinics — flexible care options to suit each patient's needs."
+    },
+    {
+     "label": "Favourite",
+     "value": "Adherence tracking — with exercises tailored specifically to pelvic health"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://stephlyonsphysio.com/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/stephlyonsphysio",
+     "title": "@stephlyonsphysio"
+    }
+   ]
+  },
+  {
+   "name": "The Pelvic Health Co.",
+   "clinicians": "Dr Anita Bir",
+   "location": "3 Clinics in Melbourne, VIC, Australia",
+   "tags": [
+    "Specialist Physiotherapist",
+    "FACP",
+    "Men's Health",
+    "Paediatric",
+    "Classes",
+    "Telehealth"
+   ],
+   "quote": "One platform for PFMT & HEP — ease of prescribing home exercise programs has transformed my practice.",
+   "quoteAttribution": "Dr Anita Bir, The Pelvic Health Co.",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Dr Anita Bir — Specialist Women's, Men's & Pelvic Health Physiotherapist (Australian College of Physiotherapists, 2022). B.Physio, M.Physio, PGradCert (Pelvic Floor Physiotherapy), PGradCert (Exercise for Women), PGradCert (Pelvic Organ Prolapse Management), MACP, FACP."
+    },
+    {
+     "label": "Equipment",
+     "value": "Real-time ultrasound, Dry needling, Rectal balloon training, TENS"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "Yes — Online pelvic floor relaxation class"
+    },
+    {
+     "label": "Niche",
+     "value": "Full spectrum pelvic health expertise — men's health, paediatric pelvic health, pessary service, pelvic pain (incl. teens), LGBTQAI+ inclusive, colorectal & bowel dysfunction. Passionate about all areas of pelvic health."
+    },
+    {
+     "label": "Stands out",
+     "value": "One of Australia's leading Specialist Pelvic Health Physiotherapists — awarded Fellow of the Australian College of Physiotherapists (FACP) in 2022. Extensive postgraduate qualifications across pelvic floor, exercise, and prolapse management. 3 locations."
+    },
+    {
+     "label": "Favourite",
+     "value": "One platform for PFMT & HEP — ease of prescribing and delivering exercise programs all in one place"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.pelvichealthco.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/anitabirphysio",
+     "title": "@anitabirphysio"
+    },
+    {
+     "href": "https://www.linkedin.com/in/anita-bir",
+     "title": "LinkedIn"
+    }
+   ]
+  },
+  {
+   "name": "Thea Pelvic Health Physiotherapy",
+   "clinicians": "Nicola Gibson",
+   "location": "Currambine, Perth, WA, Australia",
+   "tags": [
+    "Men's Health",
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "Mastitis Service",
+    "Telehealth"
+   ],
+   "quote": "Previously handwriting advice and drawing exercises — after getting used to Pelvy it's now saving me a fair bit of time.",
+   "quoteAttribution": "Nicola Gibson, Thea Pelvic Health Physiotherapy",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Curtin Graduate Certificate in Pelvic Health. Completing Curtin Masters in Pelvic Health (2026). Special interests: urinary incontinence, OAB, POP, pelvic pain."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Biofeedback, US for mastitis, Laser for nipple damage, Electrical stimulation hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Men's health, pessary service, pelvic pain (including experienced in seeing complex pelvic pain patients)"
+    },
+    {
+     "label": "Stands out",
+     "value": "Mastitis service available"
+    },
+    {
+     "label": "Favourite",
+     "value": "Exercise reminders & guided exercises ensure correct technique between sessions"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://www.theapelvichealth.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://instagram.com/thea_pelvichealth",
+     "title": "@thea_pelvichealth"
+    }
+   ]
+  },
+  {
+   "name": "Vitality Road Physio",
+   "clinicians": "Karen Humphris",
+   "location": "2 Clinics in Gippsland, VIC, Australia",
+   "tags": [
+    "Men's Health",
+    "Pessary Fitting",
+    "Pelvic Pain",
+    "Paediatric",
+    "Telehealth"
+   ],
+   "quote": "",
+   "quoteAttribution": "",
+   "details": [
+    {
+     "label": "Credentials",
+     "value": "Karen Humphris — Graduate Certificate in Physiotherapy (Pelvic Floor Physiotherapy), University of Melbourne 2024. Sees women, men, children across the full spectrum of pelvic health."
+    },
+    {
+     "label": "Equipment",
+     "value": "Ultrasound for assessment, Electrical stimulation hire, Pessary fitting"
+    },
+    {
+     "label": "Telehealth",
+     "value": "Yes"
+    },
+    {
+     "label": "Home Visits",
+     "value": "No"
+    },
+    {
+     "label": "Classes",
+     "value": "No"
+    },
+    {
+     "label": "Niche",
+     "value": "Men's health incl. post-prostatectomy (with ultrasound), pessary service, pelvic pain — seeing women, men & children across pregnancy, postnatal, prolapse, bladder & bowel, urgency & continence"
+    },
+    {
+     "label": "Stands out",
+     "value": "Details to be confirmed"
+    }
+   ],
+   "links": [
+    {
+     "href": "https://vitalityroadphysio.com.au/",
+     "title": "Website"
+    },
+    {
+     "href": "https://pelvy.app",
+     "title": ""
+    },
+    {
+     "href": "tel:+61456585447",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/features/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/blog/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/about/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/general-user-faqs/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/clinician-faqs/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/contact-us/",
+     "title": ""
+    },
+    {
+     "href": "https://pelvy.app/privacy-policy/",
+     "title": ""
+    },
+    {
+     "href": "https://www.facebook.com/people/Pelvy-App/61562366453185/",
+     "title": ""
+    },
+    {
+     "href": "https://www.instagram.com/pelvy.app/",
+     "title": ""
+    },
+    {
+     "href": "https://www.linkedin.com/in/amelia-godfrey-0a9406142/",
+     "title": ""
+    },
+    {
+     "href": "https://www.youtube.com/@PelvyApp",
+     "title": ""
+    }
+   ]
+  }
+ ],
+ "corrections": [
+  "Two website addresses in the live directory began \"hhttps://\" (Essential Health Physiotherapy, Katy Holmes Physiotherapy). Corrected to \"https://\"."
+ ]
+}

@@ -1,0 +1,117 @@
+---
+// The app's exercise screen, drawn in the brand system and running for real.
+// Sage disc: breathe in, let go. Slate disc: breathe out, work. Ring: hold.
+// Server-rendered at "Rep 1, breathe in" so it reads without JavaScript.
+interface Props {
+  /** The copy inside the room photograph: decorative, never focusable. */
+  mini?: boolean;
+  class?: string;
+}
+const { mini = false, class: className } = Astro.props;
+---
+<div
+  class:list={['app', className, { 'app--mini': mini }]}
+  data-player
+  data-phase="in"
+  role={mini ? undefined : 'group'}
+  aria-label={mini ? undefined : 'A working sample of the Pelvy exercise screen'}
+  aria-hidden={mini ? 'true' : undefined}
+  inert={mini}
+>
+  <div class="app__bar">
+    <svg class="app__x" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" /></svg>
+    <span class="app__title" data-player-title>Belly breathing</span>
+  </div>
+  <p class="app__rep mono">Rep <span data-player-rep>1</span> of <span data-player-reps>20</span></p>
+  <p class="app__cue" data-player-cue>Widen your lower belly, waist and ribs</p>
+  <div class="app__stage">
+    <div class="app__disc">
+      <span class="app__count mono" data-player-count>3</span>
+      <span class="app__label" data-player-label>Breathe in</span>
+    </div>
+  </div>
+  {!mini && (
+    <button class="app__pause" type="button" data-player-toggle aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="app__icon-pause" d="M8 5v14M16 5v14" /><path class="app__icon-play" d="M8 5l11 7-11 7z" /></svg>
+      <span data-player-toggle-label>Pause</span>
+    </button>
+  )}
+  {!mini && <p class="visually-hidden" role="status" data-player-status></p>}
+</div>
+
+<style>
+  .app {
+    container-type: inline-size;
+    position: relative;
+    aspect-ratio: 390 / 844;
+    width: 100%;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--stack-body);
+    overflow: hidden;
+    border-radius: 7% / 3.235%;
+    user-select: none;
+    -webkit-user-select: none;
+    --s: 1;
+  }
+  .app > * { position: absolute; left: 0; right: 0; margin: 0; }
+
+  .app__bar { top: 7.9%; display: flex; align-items: center; gap: 5cqw; padding-inline: 5.6cqw; }
+  .app__x { width: 5.6cqw; height: 5.6cqw; fill: none; stroke: var(--ink); stroke-width: 2.4; stroke-linecap: round; }
+  .app__title { font-weight: 600; font-size: 4.7cqw; line-height: 1; letter-spacing: -0.01em; }
+
+  .app__rep { top: 16.1%; text-align: center; font-size: 4.1cqw; line-height: 1; color: var(--muted); }
+
+  .app__cue {
+    top: 22.8%; height: 15%; display: grid; place-items: start center; padding-inline: 8cqw; text-align: center;
+    font-family: var(--stack-display); font-weight: 600; font-size: 7.6cqw; line-height: 1.19; letter-spacing: -0.015em;
+    color: var(--deep); text-wrap: balance;
+  }
+
+  .app__stage { top: 40.5%; height: 39%; display: grid; place-items: center; }
+
+  /* One shape, three states. The inner circle opens a filled disc into a ring. */
+  .app__disc {
+    position: relative; display: grid; place-content: center; justify-items: center; gap: 2cqw;
+    width: var(--disc); aspect-ratio: 1; border-radius: 50%;
+    background: var(--sage); color: var(--ink);
+    transform: scale(var(--s));
+  }
+  /* A phase changes in a single frame, so the numeral and its word are readable in every frame. */
+  .app__disc::before {
+    content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--white);
+    transform: scale(0);
+  }
+  .app__count, .app__label { position: relative; }
+  .app__count { font-size: 19.5cqw; line-height: 0.9; }
+  /* Ink sits on sage at 24px and up. The small copy inside the photograph is a picture of the app. */
+  /* On a small screen the disc grows within the screen so its 24px word still sits inside it. */
+  .app { --label: max(1.5rem, 6.15cqw); --disc: clamp(66cqw, 10.4rem, 86cqw); }
+  .app--mini { --label: 6.15cqw; --disc: 66cqw; }
+  .app__label { font-weight: 600; font-size: var(--label); line-height: 1; }
+
+  .app[data-phase='out'] .app__disc { background: var(--slate); color: var(--accent-on-solid); }
+  .app[data-phase='hold'] .app__disc { background: var(--deep); color: var(--ink); }
+  .app[data-phase='hold'] .app__disc::before { transform: scale(0.8334); }
+  .app[data-phase='hold'] .app__label { color: var(--deep); }
+
+  .app > .app__pause {
+    top: auto; bottom: 5.6%; left: 50%; right: auto; translate: -50% 0;
+    display: inline-flex; align-items: center; justify-content: center; gap: 2.6cqw;
+    min-width: 37cqw; height: max(13.8cqw, 2.75rem); padding-inline: 1.1rem; border-radius: var(--r-pill);
+    border: max(0.5cqw, 1.5px) solid var(--ink); background: transparent; color: var(--ink);
+    font-weight: 600; font-size: max(4.4cqw, 0.95rem); line-height: 1; cursor: pointer; white-space: nowrap;
+    transition: background-color var(--duration-base) var(--ease-standard), color var(--duration-base) var(--ease-standard);
+  }
+  .app__pause:hover { background: var(--ink); color: var(--white); }
+  .app__pause svg { width: 4.6cqw; height: 4.6cqw; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+  .app__icon-play { display: none; fill: currentColor; stroke-width: 1.5; }
+  .app__pause[aria-pressed='true'] .app__icon-pause { display: none; }
+  .app__pause[aria-pressed='true'] .app__icon-play { display: block; }
+  /* The button only does something once the script is running. */
+  :global(html:not(.js)) .app > .app__pause { display: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .app__disc { transform: none; }
+  }
+</style>

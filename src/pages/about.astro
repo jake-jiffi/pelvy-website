@@ -1,0 +1,104 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import Cta from '../components/page/Cta.astro';
+import clinic from '../assets/people/amelia-clinic.jpg';
+import portrait from '../assets/people/amelia-portrait.png';
+import { reach, routes, links, site } from '../data/site';
+
+const title = 'About Amelia Godfrey and Pelvy';
+const description = 'Pelvy was built by Amelia Godfrey, a pelvic health physiotherapist, from what her patients and the clinicians around her asked for.';
+const schema = [{
+  '@type': 'Person',
+  name: site.founder,
+  jobTitle: 'Pelvic health physiotherapist, founder and director of Pelvy',
+  worksFor: { '@id': `${site.url}/#organisation` },
+  sameAs: [links.linkedin],
+}];
+---
+<Base {title} {description} {schema} crumbs={[{ name: 'About Amelia', href: routes.about }]}>
+  <PageHead kicker="About Amelia" title="Built by a physio, from what her patients asked for." lead="Amelia is a physiotherapist who works only in pelvic health. In recent years that has been with pelvic pain and endometriosis clinics." narrow>
+    <figure class="founder" slot="media">
+      <!-- 1170 by 755 at source: never shown wider than 600px, so it stays sharp on a dense screen. -->
+      <div class="founder__photo">
+        <Image src={clinic} widths={[480, 720, 1170]} sizes="(min-width: 680px) 600px, 100vw" loading="eager" alt="Amelia Godfrey using an ultrasound machine with a man lying on a treatment bed in her clinic." />
+      </div>
+      <figcaption class="founder__plate">
+        <span class="founder__name serif">Amelia Godfrey</span>
+        <span class="founder__role">Pelvic health physiotherapist, founder and director of Pelvy, in clinic.</span>
+      </figcaption>
+    </figure>
+  </PageHead>
+
+  <section class="section--tight">
+    <div class="wrap about">
+      <figure class="about__portrait" data-rise>
+        <!-- A cut-out on white, 586 by 946 at source: never shown wider than 293px, and never stretched. -->
+        <div class="about__portrait-frame">
+          <Image src={portrait} widths={[293, 586]} sizes="293px" alt="Amelia Godfrey, smiling, in a rust top." />
+        </div>
+      </figure>
+
+      <div class="prose" data-rise style="--i: 1">
+        <p class="about__lead serif">She kept seeing the same thing. A patient would leave with good advice and a program, then struggle to keep up with it.</p>
+        <p>The handout was lost, the email was buried, and the education was hard to find when it was needed. Patients wanted to get better. What they lacked was one place to keep it all, and something to count for them.</p>
+        <p>So she built Pelvy from what her patients and the clinicians around her asked for: physiotherapists, GPs, midwives, and medical and surgical specialists.</p>
+        <p>A clinician subscribes and sets a patient up. The patient gets their clinician’s advice, a program that counts every rep, and reminders they control. The clinician gets a patient who can find what they were told.</p>
+        <p>Where no clinic subscribes, a GP or specialist hands over a QR code and the patient subscribes for themselves, starting on a program Amelia wrote.</p>
+        <p>She is also completing a Masters in Psychosexual Therapy at the University of Sydney.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="stack" style="--stack-gap: 1.25rem" data-rise>
+        <h2 class="h1">So far</h2>
+        <p><a class="link-strong" href={routes.blog}>Read the news</a></p>
+      </div>
+      <dl class="sofar" data-rise style="--i: 1">
+        <div><dt class="mono">Late 2025</dt><dd>The pilot opens to clinics.</dd></div>
+        <div><dt class="mono">Mar 2026</dt><dd>People can subscribe without a clinic, and Pelvy holds its first launch party, in Perth.</dd></div>
+        <div><dt class="mono">Jul 2026</dt><dd>Amelia counts {reach.clinics} clinics in {reach.countries} countries, and more than {reach.patients} patients.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap">
+      <div class="panel panel--mint split" data-rise>
+        <h2 class="h2">What Pelvy is, plainly.</h2>
+        <div class="stack body" style="--stack-gap: 0.9rem">
+          <p>{site.disclaimer}</p>
+          <p>It guides, counts, reminds, keeps and explains. When someone isn’t improving, it sends them to a person.</p>
+          <p>{site.legalName}, {site.address}. <a href={`mailto:${site.email}`}>{site.email}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>
+
+<style>
+  /* The clinic photograph opens the page, on the ground photographs sit on. Ink on sage is 24px and up. */
+  .founder { margin: 0 auto; width: 100%; max-width: 600px; background: var(--sage); color: var(--ink); border-radius: var(--r-panel); overflow: hidden; }
+  .founder__photo { aspect-ratio: 1170 / 755; background: var(--mint); }
+  .founder__photo :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  .founder__plate { display: grid; gap: 0.35rem; padding: clamp(1.25rem, 3vw, 1.75rem) clamp(1.25rem, 3vw, 2rem) clamp(1.5rem, 3.4vw, 2rem); }
+  .founder__name { font-weight: 600; font-size: var(--text-xl); line-height: 1.12; letter-spacing: var(--tracking-xl); }
+  .founder__role { font-size: 1.5rem; line-height: 1.3; max-width: 26ch; }
+  @media (min-width: 900px) { .founder { margin-inline: auto 0; } }
+
+  .about { display: grid; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+  @media (min-width: 900px) { .about { grid-template-columns: 293px minmax(0, 1fr); } }
+  .about__portrait { margin: 0; width: 293px; max-width: 100%; }
+  .about__portrait-frame { background: var(--color-neutral-1); border-radius: var(--r-panel); overflow: hidden; border: 1px solid var(--line); }
+  .about__lead { font-weight: 500; font-size: var(--text-lg); line-height: 1.3; letter-spacing: var(--tracking-lg); }
+
+  .sofar { margin: 0; border-top: 2px solid var(--ink); }
+  .sofar > div { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1rem; padding-block: 1.25rem; border-bottom: 1px solid var(--line); font-size: var(--text-md); line-height: var(--leading-md); }
+  .sofar dt { color: var(--deep); font-size: var(--text-base); line-height: calc(var(--text-md) * var(--leading-md)); white-space: nowrap; }
+  .sofar dd { margin: 0; max-width: 40ch; }
+</style>

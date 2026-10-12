@@ -1,0 +1,124 @@
+---
+// One form shell for the two enquiry routes. Where it sends:
+//  - PUBLIC_FORM_ENDPOINT set: posts JSON there and reports what came back.
+//  - not set (as now): opens the visitor's email app with the message written,
+//    addressed to Amelia, and says so. Nothing pretends to have been delivered.
+import { site } from '../../data/site';
+interface Props { subject: string; submit: string }
+const { subject, submit } = Astro.props;
+const endpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
+---
+<form class="form" action={`mailto:${site.email}?subject=${encodeURIComponent(subject)}`} method="post" enctype="text/plain" data-form data-subject={subject} data-endpoint={endpoint} data-to={site.email}>
+  <div class="form__errors" role="alert" tabindex="-1" data-form-errors hidden></div>
+  <slot />
+  <div class="form__foot">
+    <button class="btn" type="submit" data-form-submit>{submit}</button>
+    <p class="fine" data-form-how>{endpoint ? 'Your message goes to Amelia.' : `This opens your email app with your message written and addressed to ${site.email}. You press send.`}</p>
+  </div>
+  <div class="form__status" role="status" data-form-status hidden></div>
+</form>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-form]').forEach((form) => {
+    const errors = form.querySelector<HTMLElement>('[data-form-errors]')!;
+    const status = form.querySelector<HTMLElement>('[data-form-status]')!;
+    const button = form.querySelector<HTMLButtonElement>('[data-form-submit]')!;
+    const { subject = '', endpoint = '', to = '' } = form.dataset;
+    form.noValidate = true; // this script reports problems itself, in one place
+    // An error is never carried by colour alone: it has this mark and its words.
+    const mark = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" /><path d="M12 7v6.5M12 16.9v.1" /></svg>';
+    const label = (el: Element) => form.querySelector(`label[for="${el.id}"]`)?.textContent?.replace('(optional)', '').trim() ?? (el as HTMLInputElement).name;
+
+    // Parts of the form that only apply to one kind of person.
+    const paint = () => form.querySelectorAll<HTMLElement>('[data-when]').forEach((el) => {
+      const [name, value] = el.dataset.when!.split('=');
+      const on = (form.elements.namedItem(name) as RadioNodeList | null)?.value === value;
+      el.hidden = !on;
+      el.querySelectorAll<HTMLInputElement>('input, select, textarea').forEach((f) => { f.disabled = !on; });
+    });
+    form.addEventListener('change', paint);
+    paint();
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const fields = [...form.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('input, select, textarea')].filter((f) => !f.disabled && f.name);
+      const bad = fields.filter((f) => !f.checkValidity());
+      fields.forEach((f) => f.setAttribute('aria-invalid', String(bad.includes(f))));
+      if (bad.length) {
+        // Say what happened, then what to do.
+        errors.innerHTML = `${mark}<div><p>${bad.length === 1 ? 'One thing needs fixing' : `${bad.length} things need fixing`} before this can go.</p><ul>${bad.map((f) => `<li><a href="#${f.id}">${label(f)}: ${f.validity.valueMissing ? 'this is needed' : 'check this'}</a></li>`).join('')}</ul></div>`;
+        errors.hidden = false;
+        errors.focus();
+        return;
+      }
+      errors.hidden = true;
+      const seen = new Set<string>();
+      const lines: [string, string][] = [];
+      fields.forEach((f) => {
+        if (f instanceof HTMLInputElement && (f.type === 'radio' || f.type === 'checkbox')) {
+          if (!f.checked) return;
+          lines.push([f.dataset.label ?? f.name, f.type === 'checkbox' ? 'Yes' : f.value]);
+        } else if (f.value.trim() && !seen.has(f.name)) lines.push([label(f), f.value.trim()]);
+        seen.add(f.name);
+      });
+      const body = lines.map(([k, v]) => `${k}: ${v}`).join('\n');
+
+      if (!endpoint) {
+        const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailto;
+        status.innerHTML = `<p><strong>Your email app should have opened</strong> with your message written. Press send there and it goes to Amelia.</p><p>If nothing opened, nothing has been sent. <a href="${mailto}" data-form-again>Try opening it again</a>, or copy your message and email it to ${to}.</p><p><button type="button" class="btn btn--quiet btn--small" data-form-copy>Copy my message</button></p>`;
+        status.hidden = false;
+        const copy = status.querySelector<HTMLButtonElement>('[data-form-copy]')!;
+        copy.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(`To: ${to}\nSubject: ${subject}\n\n${body}`);
+            copy.textContent = 'Copied';
+          } catch {
+            copy.textContent = 'Copying is blocked here. Select the form text instead';
+          }
+        });
+        return;
+      }
+      button.disabled = true;
+      status.classList.remove('form__status--failed');
+      status.innerHTML = '<p>Sending.</p>';
+      status.hidden = false;
+      try {
+        const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ subject, ...Object.fromEntries(lines) }) });
+        if (!res.ok) throw new Error(String(res.status));
+        form.reset();
+        paint();
+        status.innerHTML = '<p><strong>Sent.</strong> Amelia answers these herself, so check your junk folder for amelia@pelvy.app.</p>';
+      } catch {
+        status.classList.add('form__status--failed');
+        status.innerHTML = `${mark}<p><strong>That didn’t send.</strong> Your message is still in the form. Try again, or email <a href="mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}">${to}</a> and it will carry what you wrote.</p>`;
+      } finally {
+        button.disabled = false;
+      }
+    });
+  });
+</script>
+
+<style>
+  .form { display: grid; gap: 1.25rem; max-width: 40rem; }
+  .form :global(.form__row) { display: grid; gap: 1.25rem; align-items: start; }
+  .form :global(.field) { align-content: start; }
+  @media (min-width: 640px) { .form :global(.form__row) { grid-template-columns: 1fr 1fr; } }
+  .form :global(fieldset) { border: 0; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+  .form :global(legend) { font-weight: 600; font-size: var(--text-sm); padding: 0; margin-bottom: 0.1rem; }
+  .form :global(.choice) { display: flex; align-items: center; gap: 0.7rem; min-height: 3rem; padding: 0.5rem 1rem; background: var(--white); border: 1.5px solid var(--border-strong); border-radius: var(--r-field); cursor: pointer; }
+  .form :global(.choice:has(input:checked)) { border-color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+  .form :global(.choice input) { width: 1.2rem; height: 1.2rem; accent-color: var(--deep); flex: none; }
+  .form :global([aria-invalid='true']) { border-color: var(--danger-solid); box-shadow: inset 0 0 0 1px var(--danger-solid); }
+  .form :global([hidden]) { display: none; }
+  .form__foot { display: grid; gap: 0.75rem; justify-items: start; margin-top: 0.5rem; }
+  .form__errors, .form__status { border-radius: var(--r-field); padding: 1rem 1.25rem; display: grid; gap: 0.5rem; }
+  .form__status { background: var(--mint); border: 1.5px solid var(--deep); }
+  /* An error has its mark beside its words, as well as its colour. */
+  .form__errors, .form__status--failed { background: var(--danger-bg); border: 1.5px solid var(--danger-solid); color: var(--color-danger-12); grid-template-columns: auto minmax(0, 1fr); gap: 0.85rem; align-items: start; }
+  .form__errors :global(svg), .form__status--failed :global(svg) { width: 1.5rem; height: 1.5rem; margin-top: 0.05rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+  .form__errors :global(div) { display: grid; gap: 0.5rem; }
+  .form__errors :global(ul) { margin: 0; padding-left: 1.2rem; }
+  .form__errors :global(a) { color: inherit; font-weight: 600; }
+  .form__errors[hidden], .form__status[hidden] { display: none; }
+</style>

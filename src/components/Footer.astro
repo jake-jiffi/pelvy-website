@@ -1,0 +1,87 @@
+---
+import Logo from '../assets/logo/pelvy-logo-brand.svg';
+import { site, links, routes } from '../data/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap site-footer__top">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo" href="/" aria-label="Pelvy, home"><Logo role="img" aria-hidden="true" /></a>
+      <p class="site-footer__tagline">{site.tagline}</p>
+      <address>
+        <a href={`mailto:${site.email}`}>{site.email}</a><br />
+        <a href={site.phoneHref}>{site.phone}</a><br />
+        {site.address}
+      </address>
+    </div>
+
+    <nav aria-label="Pelvy">
+      <h2 class="site-footer__h">Pelvy</h2>
+      <ul role="list">
+        <li><a href={routes.clinicians}>For clinicians</a></li>
+        <li><a href={routes.people}>For you</a></li>
+        <li><a href={routes.features}>What it does</a></li>
+        <li><a href={routes.directory}>Find a clinic</a></li>
+        <li><a href={routes.about}>About Amelia</a></li>
+        <li><a href={routes.blog}>News</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Help">
+      <h2 class="site-footer__h">Help</h2>
+      <ul role="list">
+        <li><a href={routes.clinicianFaqs}>Questions from clinicians</a></li>
+        <li><a href={routes.peopleFaqs}>Questions from patients</a></li>
+        <li><a href={routes.contact}>Contact Amelia</a></li>
+        <li><a href={routes.signUp}>Book a demo</a></li>
+        <li><a href={routes.privacy}>Terms and policies</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="Get the app and follow">
+      <h2 class="site-footer__h">The app</h2>
+      <ul role="list">
+        <li><a href={links.appStore} rel="noopener">App Store</a></li>
+        <li><a href={links.googlePlay} rel="noopener">Google Play</a></li>
+      </ul>
+      <h2 class="site-footer__h site-footer__h--gap">Follow</h2>
+      <ul role="list">
+        <li><a href={links.instagram} rel="noopener">Instagram</a></li>
+        <li><a href={links.facebook} rel="noopener">Facebook</a></li>
+        <li><a href={links.youtube} rel="noopener">YouTube</a></li>
+        <li><a href={links.linkedin} rel="noopener">Amelia on LinkedIn</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap site-footer__base">
+    <p>{site.disclaimer}</p>
+    <p>© {year} {site.legalName}</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: var(--white); border-top: 1px solid var(--line); padding-block: clamp(3rem, 6vw, 5rem) 2rem; }
+  .site-footer__top { display: grid; gap: 2.5rem; }
+  @media (min-width: 640px) { .site-footer__top { grid-template-columns: repeat(2, minmax(0, 1fr)); } .site-footer__brand { grid-column: 1 / -1; } }
+  @media (min-width: 1024px) { .site-footer__top { grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 3rem; } .site-footer__brand { grid-column: auto; } }
+
+  .site-footer__logo { display: block; width: 148px; }
+  .site-footer__logo :global(svg) { width: 100%; height: auto; }
+  .site-footer__tagline { margin-top: 1.25rem; font-size: var(--text-base); }
+  address { margin-top: 1.25rem; font-style: normal; font-size: var(--text-sm); line-height: 1.7; color: var(--muted); }
+  address a { color: var(--ink); }
+
+  .site-footer__h { font-family: var(--stack-body); font-weight: 600; font-size: var(--text-sm); color: var(--muted); margin-bottom: 0.9rem; }
+  .site-footer__h--gap { margin-top: 1.75rem; }
+  .site-footer ul { margin: 0; display: grid; gap: 0.55rem; }
+  .site-footer li a { color: var(--ink); text-decoration: none; font-size: var(--text-sm); display: inline-block; padding-block: 0.15rem; }
+  .site-footer li a:hover { color: var(--deep); text-decoration: underline; }
+
+  .site-footer__base {
+    margin-top: clamp(2.5rem, 5vw, 4rem); padding-top: 1.5rem; border-top: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem 2rem;
+    font-size: var(--text-xs); color: var(--muted);
+  }
+  .site-footer__base p:first-child { max-width: 62ch; }
+</style>

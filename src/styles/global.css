@@ -1,0 +1,269 @@
+/*
+ * Pelvy website. Colour, type, radius and motion come from the brand tokens in
+ * tokens.css (generated from brand/brand.json, copied verbatim). This file adds
+ * the site's own roles on top and never invents a value the brand does not have.
+ */
+
+:root {
+  /* Site roles, each pointing at a brand primitive. */
+  --deep: var(--accent-solid-strong);          /* #41684A: the mark, brand text, the one main action */
+  --deep-hover: var(--accent-solid-hover);
+  --sage: var(--color-accent2-9);              /* #78A080: let go. Ground behind app screens. Ink at 24px and up only */
+  --sage-soft: var(--color-accent2-8);         /* #ABC8B1: ground for reading-size text, the note card first */
+  --slate: var(--color-accent1-9);             /* #5E6687: work. Out-breath, squeeze, strength. Never a button */
+  --slate-tint: var(--color-accent1-3);
+  --slate-text: var(--color-accent1-11);
+  --mint: var(--accent-bg);                    /* #EDF5EE */
+  --paper: var(--surface-subtle);              /* #F8F9F8 */
+  --white: var(--color-neutral-1);
+  --ink: var(--color-brand-12);                /* #263529 */
+  --muted: var(--text-secondary);              /* #6B726D */
+  --line: var(--border-subtle);
+
+  /* Typeface stacks. The fallbacks are the ones the brand's own artboards name. */
+  --stack-display: 'Literata Variable', Literata, Georgia, serif;
+  --stack-body: 'DM Sans Variable', 'DM Sans', 'Trebuchet MS', sans-serif;
+  --stack-mono: 'DM Mono', 'Courier New', monospace;
+
+  /* Three radii and no fourth: panels and photographs, fields, pills. */
+  --r-panel: 22px;
+  --r-field: var(--radius-md);
+  --r-pill: var(--radius-full);
+
+  /* The breath: a card rises 8px and settles once, with a slight overshoot. */
+  --breath-ms: 320ms;
+  --breath-ease: cubic-bezier(0.34, 1.3, 0.64, 1);
+  --settle-ease: cubic-bezier(0.33, 0, 0.11, 1);
+
+  --wrap: 1280px;
+  --pad: clamp(1.25rem, 5.5vw, 5rem);
+  --header-h: 5.5rem;
+  --section: clamp(4.5rem, 9vw, 8rem);
+}
+
+/* A shorter header on phones leaves the first screen for the headline and the app. */
+@media (max-width: 639px) { :root { --header-h: 4.5rem; } }
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--stack-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  letter-spacing: var(--tracking-base);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+img, video, canvas, svg { display: block; max-width: 100%; }
+img, video { height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+ul[role='list'], ol[role='list'] { list-style: none; padding: 0; }
+
+a { color: var(--deep); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { color: var(--deep-hover); text-decoration-thickness: 2px; }
+
+::selection { background: var(--sage-soft); color: var(--ink); }
+
+.skip {
+  position: absolute; left: 1rem; top: -4rem; z-index: 100;
+  background: var(--deep); color: var(--accent-on-solid);
+  padding: 0.75rem 1.25rem; border-radius: var(--r-pill); font-weight: 600; text-decoration: none;
+}
+.skip:focus { top: 1rem; color: var(--accent-on-solid); }
+
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ---------- Type ---------- */
+
+.serif { font-family: var(--stack-display); }
+.mono { font-family: var(--stack-mono); font-weight: 500; font-variant-numeric: tabular-nums; }
+
+.h-display, .h1, .h2, .h3 {
+  font-family: var(--stack-display);
+  font-weight: 600;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.h-display { font-size: clamp(2.6rem, 1.4rem + 5.2vw, 4.63rem); line-height: 1.04; letter-spacing: -0.02em; }
+.h1 { font-size: clamp(2.3rem, 1.5rem + 3.6vw, var(--text-3xl)); line-height: 1.08; letter-spacing: var(--tracking-3xl); }
+.h2 { font-size: clamp(1.9rem, 1.35rem + 2.4vw, var(--text-2xl)); line-height: 1.12; letter-spacing: var(--tracking-2xl); }
+.h3 { font-size: var(--text-lg); line-height: 1.22; letter-spacing: var(--tracking-lg); }
+
+.lead { font-size: var(--text-md); line-height: var(--leading-md); letter-spacing: var(--tracking-md); max-width: 36ch; }
+.body { max-width: var(--measure); }
+.small { font-size: var(--text-sm); line-height: var(--leading-sm); }
+.fine { font-size: var(--text-xs); line-height: var(--leading-xs); color: var(--muted); }
+.muted { color: var(--muted); }
+.label { font-weight: 600; font-size: var(--text-sm); }
+
+.prose { max-width: var(--measure); }
+.prose > * + * { margin-top: 1.1em; }
+.prose h2 { font-family: var(--stack-display); font-weight: 600; font-size: var(--text-lg); line-height: 1.22; margin-top: 2em; }
+.prose h3 { font-family: var(--stack-display); font-weight: 600; font-size: var(--text-md); line-height: 1.3; margin-top: 1.6em; }
+.prose ul, .prose ol { padding-left: 1.2em; }
+.prose li + li { margin-top: 0.4em; }
+
+/* ---------- Layout ---------- */
+
+.wrap { width: 100%; max-width: calc(var(--wrap) + 2 * var(--pad)); margin-inline: auto; padding-inline: var(--pad); }
+.section { padding-block: var(--section); }
+.section--tight { padding-block: calc(var(--section) * 0.6); }
+.stack > * + * { margin-top: var(--stack-gap, 1.25rem); }
+
+.split { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+@media (min-width: 900px) {
+  .split { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+  .split--even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .split--wide-left { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+}
+
+/* ---------- Surfaces ---------- */
+
+.panel { border-radius: var(--r-panel); padding: clamp(1.5rem, 4vw, 3rem); }
+.panel--white { background: var(--white); border: 1px solid var(--line); }
+.panel--mint { background: var(--mint); }
+.panel--soft { background: var(--sage-soft); }
+.panel--sage { background: var(--sage); }
+.photo { border-radius: var(--r-panel); overflow: hidden; background: var(--mint); }
+.photo img, .photo video, .photo canvas { width: 100%; height: 100%; object-fit: cover; }
+
+/* A ground runs edge to edge with the panel radius. With a script it arrives as a card and opens (ground.ts). */
+.ground { position: relative; border-radius: var(--r-panel); }
+
+/* A small caption under a photograph. */
+.credit {
+  font-size: var(--text-2xs); line-height: 1.3; letter-spacing: var(--tracking-2xs);
+  color: var(--muted); margin-top: 0.6rem;
+}
+
+/* ---------- Actions ---------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 3.25rem; padding: 0 1.75rem;
+  border-radius: var(--r-pill); border: 2px solid var(--deep);
+  background: var(--deep); color: var(--accent-on-solid);
+  font-weight: 600; font-size: var(--text-base); line-height: 1; text-decoration: none; white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard), transform var(--breath-ms) var(--breath-ease);
+}
+.btn:hover { background: var(--deep-hover); border-color: var(--deep-hover); color: var(--accent-on-solid); }
+.btn:active { transform: scale(0.98); }
+.btn--quiet { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn--quiet:hover { background: var(--ink); border-color: var(--ink); color: var(--white); }
+.btn--small { min-height: 2.75rem; padding: 0 1.25rem; font-size: var(--text-sm); }
+
+/* Stops and starts a moving picture. Sits in the picture's bottom corner; the parent is positioned. */
+.motion-btn {
+  position: absolute; right: 0.75rem; bottom: 0.75rem; z-index: 2;
+  width: 2.75rem; height: 2.75rem; padding: 0; border: 0; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer;
+  background: color-mix(in srgb, var(--white) 86%, transparent); color: var(--ink);
+  transition: background-color var(--duration-base) var(--ease-standard);
+}
+.motion-btn[hidden] { display: none; }
+.motion-btn:hover { background: var(--white); }
+.motion-btn svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.motion-btn__play { display: none; fill: currentColor; stroke-width: 1.5; }
+.motion-btn[aria-pressed='true'] .motion-btn__pause { display: none; }
+.motion-btn[aria-pressed='true'] .motion-btn__play { display: block; }
+.link-strong { font-weight: 600; }
+
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
+
+/* ---------- The count ring: one numeral that is really counting something ---------- */
+
+.ring {
+  --d: 3rem;
+  flex: none; display: inline-grid; place-items: center;
+  width: var(--d); height: var(--d); border-radius: 50%;
+  border: calc(var(--d) / 12) solid var(--deep);
+  font-family: var(--stack-mono); font-weight: 500; font-size: calc(var(--d) * 0.42); line-height: 1;
+  color: var(--ink); background: transparent; font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Chips: sage means let go, slate means work ---------- */
+
+.chip {
+  display: inline-flex; align-items: center; min-height: 1.75rem; padding: 0 0.8rem;
+  border-radius: var(--r-pill); font-size: var(--text-xs); font-weight: 500; line-height: 1;
+}
+.chip--letgo { background: var(--mint); color: var(--deep); }
+.chip--work { background: var(--slate-tint); color: var(--slate); }
+.chip--plain { background: var(--control-bg); color: var(--ink); }
+
+/* ---------- The clinician's note ---------- */
+
+.note {
+  background: var(--sage-soft); color: var(--ink);
+  border-radius: var(--r-panel); padding: clamp(1.75rem, 4.5vw, 3rem);
+  display: flex; flex-direction: column; gap: clamp(1.25rem, 3vw, 2rem);
+}
+.note__from, .note__by { font-weight: 600; font-size: var(--text-base); }
+.note__words {
+  font-family: var(--stack-display); font-weight: 500;
+  font-size: clamp(1.6rem, 1.1rem + 2.2vw, 2.4rem); line-height: 1.28; letter-spacing: -0.012em; text-wrap: pretty;
+}
+
+/* ---------- Fields ---------- */
+
+.field { display: grid; gap: 0.4rem; }
+.field > label, .field > legend { font-weight: 600; font-size: var(--text-sm); }
+.field input, .field select, .field textarea {
+  width: 100%; min-height: 3.25rem; padding: 0.75rem 1rem;
+  background: var(--white); border: 1.5px solid var(--border-strong); border-radius: var(--r-field);
+}
+.field textarea { min-height: 9rem; resize: vertical; }
+.field input:hover, .field select:hover, .field textarea:hover { border-color: var(--muted); }
+.field__hint { font-size: var(--text-xs); color: var(--muted); }
+
+/* ---------- Disclosure (FAQs). Works with no JavaScript. ---------- */
+
+.faq { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer; display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem;
+  padding: 1.35rem 0; font-family: var(--stack-display); font-weight: 600; font-size: var(--text-md); line-height: 1.3;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: ''; flex: none; width: 0.7rem; height: 0.7rem; margin-right: 0.3rem;
+  border-right: 2px solid var(--deep); border-bottom: 2px solid var(--deep);
+  transform: translateY(-0.2rem) rotate(45deg); transition: transform var(--breath-ms) var(--breath-ease);
+}
+.faq details[open] summary::after { transform: translateY(0.15rem) rotate(225deg); }
+.faq .faq__a { padding: 0 0 1.6rem; max-width: var(--measure); }
+.faq .faq__a > * + * { margin-top: 0.9em; }
+
+/* ---------- Motion ---------- */
+
+/* Things rise 8px and settle once. Nothing is hidden unless a script is there to show it. */
+.js [data-rise] {
+  opacity: 0; transform: translateY(8px);
+  transition: opacity 480ms var(--settle-ease), transform 640ms var(--breath-ease);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.js [data-rise].is-in { opacity: 1; transform: none; }
+/* Whatever holds keyboard focus is fully there at once, with no fade to wait for. */
+.js [data-rise]:focus-within { opacity: 1; transform: none; transition: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rise] { opacity: 1; transform: none; transition: none; }
+}

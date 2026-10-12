@@ -1,0 +1,572 @@
+{
+  "schema": 1,
+  "workflow": "live-design",
+  "projectId": "d58ce166-532e-485f-920d-0be9797c7b33",
+  "runtime": {
+    "version": "1.18.0",
+    "digest": "bfa685a8ff77c310ef151197e59056fbf8dd732ed17d064102a289ee21c98fd6"
+  },
+  "revision": 8,
+  "stage": "selected",
+  "profile": {
+    "productKind": "saas-marketing",
+    "platform": "wordpress",
+    "facts": [
+      {
+        "status": "observed",
+        "value": "Pelvy is a pelvic floor app (Pelvy Patient, PELVY PTY LTD) built by Amelia Godfrey, a pelvic health physiotherapist. It counts a person through strength and relaxation programs and carries a subscribing clinician's own programs and advice.",
+        "basis": "brand/brand.json strategy and evidence e14, e24, e37, e40; pelvy.app/about"
+      },
+      {
+        "status": "observed",
+        "value": "Clinic pricing: AUD 20 a month during the pilot, with six free months for each patient. Pilot clinics keep that price.",
+        "basis": "pelvy.app/clinician-faqs captured 2026-10-12; brand open question q13 asks Amelia to confirm it is still current"
+      },
+      {
+        "status": "observed",
+        "value": "Pelvy Lite: people whose clinic does not subscribe pay $4.99 a month or $19.99 a year in the app.",
+        "basis": "Amelia's demo video youtu.be/qEsIuCbE9k8 (2026-03-29), brand evidence e37; contradicts the older /general-user-faqs page ($99 a year, waitlist)"
+      },
+      {
+        "status": "observed",
+        "value": "Three programs ship: Pelvic floor with breath, Belly breathing and downtraining, Pelvic floor strength. The hub has Programs, Videos and Learn tabs. Up to three reminder times per program.",
+        "basis": "demo video frames, brand evidence e44, e45"
+      },
+      {
+        "status": "observed",
+        "value": "Pelvy is education and support. It is not TGA certified, gives no individual medical advice, and tells people to see a pelvic health physio if nothing changes in three months.",
+        "basis": "pelvy.app/general-user-faqs; demo video; brand evidence e22, e47"
+      },
+      {
+        "status": "observed",
+        "value": "Data is stored in Google Cloud (Sydney region), encrypted in transit and at rest, deleted on request, never sold.",
+        "basis": "pelvy.app/privacy-policy (last updated 6 October 2025) and /general-user-faqs"
+      },
+      {
+        "status": "observed",
+        "value": "Amelia's post of 17 July 2026 says Pelvy is used in 112 clinics across 6 countries and has supported more than 5,300 patients.",
+        "basis": "pelvy.app/queensland-health-pilot-opportunity-could-pelvy-support-your-patients/ fetched 2026-10-12. Her own published figure; no data behind it was shown"
+      },
+      {
+        "status": "observed",
+        "value": "The live directory lists 65 clinic cards, 46 with a published quote from the clinic.",
+        "basis": "pelvy.app/clinicians-directory/ fetched 2026-10-12, parsed to src/data/clinics.json"
+      },
+      {
+        "status": "observed",
+        "value": "App Store: Pelvy Patient, free, rated 4.9 from 45 ratings (Australia). Google Play: 4.9 from 16 ratings.",
+        "basis": "brand evidence e24 and e35, read 2026-10-12"
+      },
+      {
+        "status": "observed",
+        "value": "Contact: amelia@pelvy.app, +61 456 585 447, 135 Hearl Close, Brinsmead QLD. Social: Facebook, Instagram, YouTube @PelvyApp, Amelia's LinkedIn.",
+        "basis": "pelvy.app footer, privacy policy and clinician FAQ"
+      }
+    ],
+    "identity": [
+      {
+        "status": "supplied",
+        "value": "Colour locked: deep sage #41684A (brand, actions), sage #78A080 (let go, large fills under ink only), soft sage #ABC8B1 (note card ground), slate #5E6687 (work only, never a button), paper and ink neutrals. White text never sits on either sage.",
+        "basis": "brand/brand.json identity.colour and decisions d10, d20, d23; brand/tokens/tokens.css"
+      },
+      {
+        "status": "supplied",
+        "value": "Type locked: Literata for headings and words a person says, DM Sans for everything the app says, DM Mono for counts. Major-third scale from 17px, 62ch measure.",
+        "basis": "brand/brand.json identity.type, decision d11"
+      },
+      {
+        "status": "supplied",
+        "value": "Shape: 22px on panels and photographs, pills on buttons, 10px on fields. Motion: fluid, the breath, 320ms cubic-bezier(0.34, 1.3, 0.64, 1), nothing bounces for attention.",
+        "basis": "brand/brand.json identity.shape, motionSignature, antiPatterns"
+      },
+      {
+        "status": "supplied",
+        "value": "Signature moves: the clinician's note (soft sage card, Literata, signed), the count ring (a numeral that is really counting), sage behind and ink in front. No illustration. The app is the picture.",
+        "basis": "brand/brand.json identity.signatureMoves, decisions d13, d15"
+      },
+      {
+        "status": "supplied",
+        "value": "Voice: plain about bodies, honest about limits, steady, reasoned, specific. Banned words include journey, empower, treats, cure, diagnose, wellness. No exclamation marks, no capitals for emphasis, no em dashes.",
+        "basis": "brand/brand.json voice"
+      },
+      {
+        "status": "supplied",
+        "value": "Logo: the 2024 logo copied to vector, name first and symbol after, deep sage with sage for the lighter shapes. It is recorded as a candidate that nobody has approved yet.",
+        "basis": "brand/brand.json decisions d21, d22; brand/logo/lockups"
+      }
+    ],
+    "assets": [
+      {
+        "status": "supplied",
+        "value": "Brand tokens, logo lockups and favicons",
+        "basis": "brand/tokens, brand/logo/lockups, brand/assets"
+      },
+      {
+        "status": "supplied",
+        "value": "App screens redrawn in the brand system, 780x1688 each: hub, program, breathe in, breathe out, hold",
+        "basis": "brand/canvas/app-*.png"
+      },
+      {
+        "status": "observed",
+        "value": "Real photographs of Amelia from pelvy.app: clinic ultrasound 1170x755, headshot cut-out 586x946, Perth launch party 1200x675. No other real photography exists in the set.",
+        "basis": "measured with sips; files under /Users/jakeshelley/dev/palate-pelvy/assets/photos captured from pelvy.app"
+      },
+      {
+        "status": "supplied",
+        "value": "Generated room scenes (no people), labelled as generated wherever shown: phone at home 2560x3200, fridge handout 2336x3504, clinic desk 5056x3392, waiting room 5056x3392",
+        "basis": "brand/media, generated with Higgsfield during the brand build"
+      },
+      {
+        "status": "proposed",
+        "value": "Higgsfield Kling 3.0 motion made for this site from those scenes: a locked-off 10 second loop of the room at home (job 81264e35), a clinic desk loop and a falling handout clip. Rooms and objects only. Candidates until Jake approves them.",
+        "basis": "generated 2026-10-12 in this build; .palate/evidence/media.md"
+      }
+    ],
+    "routes": [
+      "/",
+      "/about/",
+      "/blog/",
+      "/clinician-faqs/",
+      "/clinicians-and-specialists/",
+      "/clinicians-directory/",
+      "/contact-us/",
+      "/features/",
+      "/general-user-faqs/",
+      "/general-users/",
+      "/privacy-policy/",
+      "/sign-up/",
+      "/pelvy-launch-party-perth-wa/",
+      "/queensland-health-pilot-opportunity-could-pelvy-support-your-patients/"
+    ],
+    "journeys": [
+      "A clinician reads what Pelvy does and costs, then books a demo or signs up",
+      "A person sent by their clinician, or on their own, understands the app and goes to the App Store or Google Play",
+      "A GP or specialist finds the QR code route and asks Amelia for the printable sheet",
+      "Someone looks for a clinic that uses Pelvy in the directory",
+      "Anyone sends Amelia an enquiry"
+    ],
+    "integrations": [
+      {
+        "status": "observed",
+        "value": "App Store https://apps.apple.com/us/app/pelvy-patient/id6752825827 and Google Play https://play.google.com/store/apps/details?id=app.pelvy.patient_app",
+        "basis": "pelvy.app home"
+      },
+      {
+        "status": "unknown",
+        "value": "Enquiry and sign-up delivery. The live site uses WordPress forms. The new site needs a destination agreed before launch.",
+        "basis": "pelvy.app/contact-us and /sign-up"
+      }
+    ],
+    "unresolved": [
+      "The photography set cannot carry the design on its own: three real photographs, none wider than 1200px, none showing the app or a home. The design leads with the app, as the brand directs, and uses generated rooms labelled as generated.",
+      "Enquiry delivery destination and hosting are not chosen. Forms fall back to composing an email to amelia@pelvy.app until an endpoint is configured.",
+      "Clinic price, six free months and the word pilot need Amelia's confirmation (brand q13).",
+      "The 112 clinics, 6 countries and 5,300 patients figure is Amelia's published claim from July 2026 and needs a current number before launch.",
+      "Clinic quotes in the directory may need an AHPRA advertising check before they are used as testimonials.",
+      "Rights and releases for the photographs of Amelia and the man in the ultrasound photograph are unconfirmed (brand imagery.rights).",
+      "The logo is a candidate that nobody has approved.",
+      "App screens are drawn in the new brand system. The shipped app still uses its older colours."
+    ],
+    "artefacts": [
+      ".palate/input/source.json",
+      ".palate/evidence/clinics-directory-2026-10-12.json",
+      ".palate/references/lava-dental/sheet.jpg",
+      ".palate/references/halo-dental/sheet.jpg",
+      ".palate/references/lovi/sheet.jpg",
+      ".palate/references/antara-spa/sheet.jpg"
+    ]
+  },
+  "directions": [
+    {
+      "id": "a",
+      "label": "Counted through",
+      "status": "ready",
+      "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity. Round 1 of the critique (12 October 2026) repaired the keyboard path into the exercise screen, held the finished state for most of a screen, replaced the fade through sage with the photograph closing onto the phone's screen, set the clinician's note at 96px on a full-bleed soft sage ground that rises over the handout scene, added a ring that counts a real hold in the program card, alternated the grounds, and gave the clinic quotes one at a time with previous, next and a count. The room and desk loops were regenerated with more visible light. Round 2 fixed the count label's fit on short phones, put the app in the first phone screen, cleared the header from the pinned heading, removed the collision at the first scroll notch, and made the features, about and clinicians pages open on their subject (the working hub, the clinic photograph, the note at 96px on the rising ground). The directory gained a way back to its search.",
+      "entry": "src/directions/a/index.astro",
+      "referenceDecisions": [
+        {
+          "slug": "lovi",
+          "capture": ".palate/references/lovi/sheet.jpg",
+          "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+          "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+          "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+          "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+        },
+        {
+          "slug": "antara-spa",
+          "capture": ".palate/references/antara-spa/sheet.jpg",
+          "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+          "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+          "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+          "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+        },
+        {
+          "slug": "halo-dental",
+          "capture": ".palate/references/halo-dental/sheet.jpg",
+          "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+          "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+          "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+          "limit": "Frames sampled, not played."
+        },
+        {
+          "slug": "lava-dental",
+          "capture": ".palate/references/lava-dental/sheet.jpg",
+          "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+          "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+          "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+          "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+        }
+      ],
+      "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+      "thumbnail": {
+        "path": ".palate/previews/a.png",
+        "sha256": "c1838c98d7103680a660b6d76bb007b41af6d54ac32e8259e668d5544a5dec24"
+      },
+      "fingerprint": "5b994efc1ca9d2be7c86b88e3de1a1df52029ed32fa071c198a0abb106e20f30",
+      "checkedAt": "2026-10-12T05:48:44.446Z"
+    }
+  ],
+  "selection": {
+    "optionId": "a",
+    "fingerprint": "fb94d67e323785496365389f262c960880ca26429e00094c2b6620c9c3f97a0f",
+    "decisionId": "4ec5fa47-4cea-4828-8513-784c0177fc5a",
+    "parentDecision": null,
+    "combine": [],
+    "instructions": "",
+    "selectedAt": "2026-10-12T02:32:08.548Z"
+  },
+  "verification": [],
+  "operations": [
+    {
+      "id": "init-pelvy-1",
+      "digest": "d6fdbe38d7e5dc87df4046cfd7a7c3cea8748008d34738e1ab4152fbe70c59e8",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "projectId": "d58ce166-532e-485f-920d-0be9797c7b33",
+        "revision": 1,
+        "stage": "initialising"
+      }
+    },
+    {
+      "id": "source-pelvy-2",
+      "digest": "e65fd44f4cdf1241cddc8c07bc3f4e78f27e5c4185de7cc16263124279741c6e",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 2,
+        "stage": "designing"
+      }
+    },
+    {
+      "id": "option-a-ready-1",
+      "digest": "2fc5319f722186e01a9ef97a681af5883cf7f8a86e24f99667b77ae814b96878",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 3,
+        "stage": "designing",
+        "option": {
+          "id": "a",
+          "label": "Counted through",
+          "status": "ready",
+          "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity.",
+          "entry": "src/directions/a/index.astro",
+          "referenceDecisions": [
+            {
+              "slug": "lovi",
+              "capture": ".palate/references/lovi/sheet.jpg",
+              "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+              "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+              "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+              "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+            },
+            {
+              "slug": "antara-spa",
+              "capture": ".palate/references/antara-spa/sheet.jpg",
+              "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+              "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+              "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+              "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+            },
+            {
+              "slug": "halo-dental",
+              "capture": ".palate/references/halo-dental/sheet.jpg",
+              "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+              "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+              "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+              "limit": "Frames sampled, not played."
+            },
+            {
+              "slug": "lava-dental",
+              "capture": ".palate/references/lava-dental/sheet.jpg",
+              "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+              "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+              "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+              "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+            }
+          ],
+          "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+          "thumbnail": {
+            "path": ".palate/previews/a.png",
+            "sha256": "cc7461e26072e3353284eec3b11abfc5129fb1c093d7ec3ae02da31f256bbb1d"
+          },
+          "fingerprint": "fb94d67e323785496365389f262c960880ca26429e00094c2b6620c9c3f97a0f",
+          "checkedAt": "2026-10-12T02:31:57.539Z"
+        }
+      }
+    },
+    {
+      "id": "select-a-1",
+      "digest": "00bd5078f1242103c908ed7e2b0c3af94d9f6a2dab9953b58f904e7be50b9b67",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 4,
+        "stage": "selected",
+        "selection": {
+          "optionId": "a",
+          "fingerprint": "fb94d67e323785496365389f262c960880ca26429e00094c2b6620c9c3f97a0f",
+          "decisionId": "4ec5fa47-4cea-4828-8513-784c0177fc5a",
+          "parentDecision": null,
+          "combine": [],
+          "instructions": "",
+          "selectedAt": "2026-10-12T02:32:08.548Z"
+        }
+      }
+    },
+    {
+      "id": "option-a-refresh-r1",
+      "digest": "e04ce264c44ffbe625347155905da21294d0f83a70a601fd24bf015a08577007",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 5,
+        "stage": "selected",
+        "option": {
+          "id": "a",
+          "label": "Counted through",
+          "status": "ready",
+          "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity. Round 1 of the critique (12 October 2026) repaired the keyboard path into the exercise screen, held the finished state for most of a screen, replaced the fade through sage with the photograph closing onto the phone's screen, set the clinician's note at 96px on a full-bleed soft sage ground that rises over the handout scene, added a ring that counts a real hold in the program card, alternated the grounds, and gave the clinic quotes one at a time with previous, next and a count. The room and desk loops were regenerated with more visible light.",
+          "entry": "src/directions/a/index.astro",
+          "referenceDecisions": [
+            {
+              "slug": "lovi",
+              "capture": ".palate/references/lovi/sheet.jpg",
+              "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+              "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+              "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+              "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+            },
+            {
+              "slug": "antara-spa",
+              "capture": ".palate/references/antara-spa/sheet.jpg",
+              "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+              "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+              "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+              "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+            },
+            {
+              "slug": "halo-dental",
+              "capture": ".palate/references/halo-dental/sheet.jpg",
+              "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+              "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+              "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+              "limit": "Frames sampled, not played."
+            },
+            {
+              "slug": "lava-dental",
+              "capture": ".palate/references/lava-dental/sheet.jpg",
+              "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+              "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+              "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+              "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+            }
+          ],
+          "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+          "thumbnail": {
+            "path": ".palate/previews/a.png",
+            "sha256": "78a8430149354572c96779ed7a9eca372740c22a6ee49ac023e2ae6871043a01"
+          },
+          "fingerprint": "5165244380b657e35d19531195105b1fe95bc4aad083f6813c9579be4a95b7cb",
+          "checkedAt": "2026-10-12T04:07:49.027Z"
+        }
+      }
+    },
+    {
+      "id": "option-a-refresh-r1b",
+      "digest": "d9509fe08e0d6ea59ec5fc034aebd0f4972788c0c00a22526d68218e93011d67",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 6,
+        "stage": "selected",
+        "option": {
+          "id": "a",
+          "label": "Counted through",
+          "status": "ready",
+          "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity. Round 1 of the critique (12 October 2026) repaired the keyboard path into the exercise screen, held the finished state for most of a screen, replaced the fade through sage with the photograph closing onto the phone's screen, set the clinician's note at 96px on a full-bleed soft sage ground that rises over the handout scene, added a ring that counts a real hold in the program card, alternated the grounds, and gave the clinic quotes one at a time with previous, next and a count. The room and desk loops were regenerated with more visible light.",
+          "entry": "src/directions/a/index.astro",
+          "referenceDecisions": [
+            {
+              "slug": "lovi",
+              "capture": ".palate/references/lovi/sheet.jpg",
+              "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+              "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+              "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+              "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+            },
+            {
+              "slug": "antara-spa",
+              "capture": ".palate/references/antara-spa/sheet.jpg",
+              "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+              "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+              "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+              "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+            },
+            {
+              "slug": "halo-dental",
+              "capture": ".palate/references/halo-dental/sheet.jpg",
+              "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+              "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+              "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+              "limit": "Frames sampled, not played."
+            },
+            {
+              "slug": "lava-dental",
+              "capture": ".palate/references/lava-dental/sheet.jpg",
+              "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+              "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+              "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+              "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+            }
+          ],
+          "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+          "thumbnail": {
+            "path": ".palate/previews/a.png",
+            "sha256": "276f6956622218ab6fbb5cfecad1975352daf5ada609fdeeac274093b78e5a3f"
+          },
+          "fingerprint": "df6bc0a01e8eb582f8b88ce49ed0d2500aa626a41fcefc6645d31f73eef4adc2",
+          "checkedAt": "2026-10-12T04:08:28.325Z"
+        }
+      }
+    },
+    {
+      "id": "option-a-refresh-r1c",
+      "digest": "270702fc19ecc295e4c5b65aed957ab9bb3d3537918469f9f0609bf850906609",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 7,
+        "stage": "selected",
+        "option": {
+          "id": "a",
+          "label": "Counted through",
+          "status": "ready",
+          "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity. Round 1 of the critique (12 October 2026) repaired the keyboard path into the exercise screen, held the finished state for most of a screen, replaced the fade through sage with the photograph closing onto the phone's screen, set the clinician's note at 96px on a full-bleed soft sage ground that rises over the handout scene, added a ring that counts a real hold in the program card, alternated the grounds, and gave the clinic quotes one at a time with previous, next and a count. The room and desk loops were regenerated with more visible light.",
+          "entry": "src/directions/a/index.astro",
+          "referenceDecisions": [
+            {
+              "slug": "lovi",
+              "capture": ".palate/references/lovi/sheet.jpg",
+              "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+              "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+              "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+              "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+            },
+            {
+              "slug": "antara-spa",
+              "capture": ".palate/references/antara-spa/sheet.jpg",
+              "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+              "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+              "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+              "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+            },
+            {
+              "slug": "halo-dental",
+              "capture": ".palate/references/halo-dental/sheet.jpg",
+              "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+              "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+              "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+              "limit": "Frames sampled, not played."
+            },
+            {
+              "slug": "lava-dental",
+              "capture": ".palate/references/lava-dental/sheet.jpg",
+              "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+              "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+              "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+              "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+            }
+          ],
+          "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+          "thumbnail": {
+            "path": ".palate/previews/a.png",
+            "sha256": "c1838c98d7103680a660b6d76bb007b41af6d54ac32e8259e668d5544a5dec24"
+          },
+          "fingerprint": "df6bc0a01e8eb582f8b88ce49ed0d2500aa626a41fcefc6645d31f73eef4adc2",
+          "checkedAt": "2026-10-12T04:09:16.891Z"
+        }
+      }
+    },
+    {
+      "id": "option-a-refresh-r2",
+      "digest": "d1df06f9272a7eb933b25d56c7b5a6bac1217eb62909f15e7e8406f306037c98",
+      "result": {
+        "ok": true,
+        "project": "/Users/jakeshelley/dev/pelvy/website",
+        "revision": 8,
+        "stage": "selected",
+        "option": {
+          "id": "a",
+          "label": "Counted through",
+          "status": "ready",
+          "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity. Round 1 of the critique (12 October 2026) repaired the keyboard path into the exercise screen, held the finished state for most of a screen, replaced the fade through sage with the photograph closing onto the phone's screen, set the clinician's note at 96px on a full-bleed soft sage ground that rises over the handout scene, added a ring that counts a real hold in the program card, alternated the grounds, and gave the clinic quotes one at a time with previous, next and a count. The room and desk loops were regenerated with more visible light. Round 2 fixed the count label's fit on short phones, put the app in the first phone screen, cleared the header from the pinned heading, removed the collision at the first scroll notch, and made the features, about and clinicians pages open on their subject (the working hub, the clinic photograph, the note at 96px on the rising ground). The directory gained a way back to its search.",
+          "entry": "src/directions/a/index.astro",
+          "referenceDecisions": [
+            {
+              "slug": "lovi",
+              "capture": ".palate/references/lovi/sheet.jpg",
+              "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+              "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+              "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+              "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+            },
+            {
+              "slug": "antara-spa",
+              "capture": ".palate/references/antara-spa/sheet.jpg",
+              "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+              "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+              "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+              "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+            },
+            {
+              "slug": "halo-dental",
+              "capture": ".palate/references/halo-dental/sheet.jpg",
+              "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+              "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+              "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+              "limit": "Frames sampled, not played."
+            },
+            {
+              "slug": "lava-dental",
+              "capture": ".palate/references/lava-dental/sheet.jpg",
+              "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+              "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+              "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+              "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+            }
+          ],
+          "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+          "thumbnail": {
+            "path": ".palate/previews/a.png",
+            "sha256": "c1838c98d7103680a660b6d76bb007b41af6d54ac32e8259e668d5544a5dec24"
+          },
+          "fingerprint": "5b994efc1ca9d2be7c86b88e3de1a1df52029ed32fa071c198a0abb106e20f30",
+          "checkedAt": "2026-10-12T05:48:44.446Z"
+        }
+      }
+    }
+  ],
+  "createdAt": "2026-10-12T01:57:31.435Z"
+}

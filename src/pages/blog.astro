@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/page/PageHead.astro';
+import { routes } from '../data/site';
+
+const posts = (await getCollection('posts')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const fmt = new Intl.DateTimeFormat('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+const title = 'News from Pelvy, written by Amelia';
+const description = 'Posts from Amelia Godfrey, Pelvy’s founder: launches, pilots and the clinics that use Pelvy.';
+---
+<Base {title} {description} crumbs={[{ name: 'News', href: routes.blog }]}>
+  <PageHead kicker="News" title="From Amelia." lead="Written by Amelia Godfrey, in her own words." narrow />
+  <section class="section--tight">
+    <div class="wrap">
+      <ul class="posts" role="list">
+        {posts.map((post) => (
+          <li class="posts__item" data-rise>
+            <div class="posts__text">
+              <p class="mono posts__date"><time datetime={post.data.date.toISOString().slice(0, 10)}>{fmt.format(post.data.date)}</time></p>
+              <h2 class="h2"><a href={`/${post.id}/`}>{post.data.title}</a></h2>
+              <p class="body">{post.data.description}</p>
+            </div>
+            {post.data.image && (
+              <a class="photo posts__photo" href={`/${post.id}/`} tabindex="-1" aria-hidden="true">
+                <Image src={post.data.image} widths={[480, 720, 1200]} sizes="(min-width: 900px) 34vw, 100vw" alt="" />
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .posts { margin: 0 0 var(--section); border-top: 2px solid var(--ink); }
+  .posts__item { display: grid; gap: 1.5rem 3rem; padding-block: clamp(1.75rem, 4vw, 3rem); border-bottom: 1px solid var(--line); align-items: start; }
+  @media (min-width: 900px) { .posts__item { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); } }
+  .posts__text { display: grid; gap: 0.8rem; }
+  .posts__date { color: var(--muted); font-size: var(--text-sm); }
+  .posts__text h2 a { color: var(--ink); text-decoration: none; }
+  .posts__text h2 a:hover { color: var(--deep); text-decoration: underline; text-decoration-thickness: 2px; }
+  .posts__photo { display: block; aspect-ratio: 16 / 9; }
+</style>

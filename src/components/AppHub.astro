@@ -1,0 +1,112 @@
+---
+// The app's home screen, "My treatment hub", with its three tabs working.
+// Content is the app's own: demo video frames, 29 March 2026.
+import { programs, learn, videos } from '../data/site';
+---
+<div class="hub" data-hub role="group" aria-label="A sample of the Pelvy app's treatment hub">
+  <p class="hub__title">My treatment hub</p>
+  <div class="hub__tabs" role="tablist" aria-label="Treatment hub">
+    <button type="button" role="tab" id="hub-tab-programs" aria-controls="hub-programs" aria-selected="true" data-hub-tab="programs">Programs</button>
+    <button type="button" role="tab" id="hub-tab-videos" aria-controls="hub-videos" aria-selected="false" tabindex="-1" data-hub-tab="videos">Videos</button>
+    <button type="button" role="tab" id="hub-tab-learn" aria-controls="hub-learn" aria-selected="false" tabindex="-1" data-hub-tab="learn">Learn</button>
+  </div>
+
+  <div class="hub__body">
+    <div class="hub__pane" role="tabpanel" id="hub-programs" aria-labelledby="hub-tab-programs" data-hub-pane="programs">
+      <div class="hub__note">
+        <p class="hub__note-from">From your clinician</p>
+        <p class="hub__note-title">Your flare plan for pelvic pain</p>
+        <p class="hub__note-words">Let your belly go, then belly breathing. Use your guided program.</p>
+        <p class="hub__note-by">Amelia Godfrey, physiotherapist</p>
+      </div>
+      {programs.map((p) => (
+        <div class="hub__card">
+          <p class="hub__card-title">{p.name}</p>
+          <p class="hub__card-meta"><span>Position</span> {p.position}</p>
+          <div class="hub__card-foot">
+            <span class="hub__chips">{p.chips.map((c) => <span class:list={['hub__chip', `hub__chip--${c.kind}`]}>{c.label}</span>)}</span>
+            <span class="hub__freq">{p.frequency}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="hub__pane" role="tabpanel" id="hub-videos" aria-labelledby="hub-tab-videos" data-hub-pane="videos" hidden>
+      {videos.map((v) => (
+        <div class="hub__card">
+          <p class="hub__card-title">{v}</p>
+        </div>
+      ))}
+      <div class="hub__also">
+        <p class="hub__also-h">In the library</p>
+        <ul role="list">
+          <li>Mobility for hips, lower back and upper back.</li>
+          <li>Every stretch has a version with support, and one with movement.</li>
+          <li>Education videos.</li>
+          <li>Filmed with real people, including men.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hub__pane" role="tabpanel" id="hub-learn" aria-labelledby="hub-tab-learn" data-hub-pane="learn" hidden>
+      {learn.map((a) => (
+        <div class="hub__card">
+          <span class:list={['hub__chip', a.tag.startsWith('Strength') ? 'hub__chip--work' : a.tag.startsWith('Pain') ? 'hub__chip--letgo' : 'hub__chip--plain']}>{a.tag}</span>
+          <p class="hub__card-title hub__card-title--small">{a.title}</p>
+        </div>
+      ))}
+      <p class="hub__more">Each one says it is general education, not individual advice.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hub {
+    container-type: inline-size; aspect-ratio: 390 / 844; width: 100%;
+    background: var(--paper); color: var(--ink); border-radius: 7% / 3.235%; overflow: hidden;
+    display: flex; flex-direction: column; font-family: var(--stack-body);
+  }
+  .hub__title { margin: 15.5cqw 5.4cqw 0; font-family: var(--stack-display); font-weight: 600; font-size: 7.4cqw; line-height: 1.1; letter-spacing: -0.015em; }
+  .hub__tabs { display: grid; grid-template-columns: repeat(3, 1fr); margin: 4.2cqw 4.2cqw 0; border-bottom: max(0.5cqw, 1.5px) solid var(--line); }
+  .hub__tabs button {
+    appearance: none; border: 0; background: none; cursor: pointer; padding: 2.2cqw 0 3cqw; min-height: 44px;
+    font-weight: 500; font-size: 4.3cqw; line-height: 1; color: var(--muted);
+    border-bottom: max(0.8cqw, 2.5px) solid transparent; margin-bottom: calc(-1 * max(0.5cqw, 1.5px));
+    transition: color var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
+  }
+  .hub__tabs button[aria-selected='true'] { color: var(--ink); font-weight: 600; border-bottom-color: var(--deep); }
+  .hub__tabs button:focus-visible { outline-offset: -2px; }
+
+  .hub__body { flex: 1; min-height: 0; overflow: hidden; }
+  .hub__pane { display: grid; gap: 2.8cqw; padding: 3.8cqw 4.2cqw 0; align-content: start; }
+  .hub__pane[hidden] { display: none; }
+  :global(.js) .hub__pane { animation: hub-in 420ms var(--breath-ease) both; }
+  @keyframes hub-in { from { opacity: 0; transform: translateY(2cqw); } }
+
+  .hub__note { background: var(--sage-soft); border-radius: 5.6cqw; padding: 4.4cqw 4.6cqw; display: grid; gap: 1.4cqw; }
+  .hub__note-from { font-weight: 600; font-size: 3.5cqw; }
+  .hub__note-title { font-family: var(--stack-display); font-weight: 600; font-size: 5.1cqw; line-height: 1.2; }
+  .hub__note-words { font-family: var(--stack-display); font-size: 4.3cqw; line-height: 1.32; }
+  .hub__note-by { font-size: 3.5cqw; }
+
+  .hub__card { background: var(--white); border: max(0.26cqw, 1px) solid var(--line); border-radius: 5.6cqw; padding: 4cqw 4.6cqw; display: grid; gap: 1.6cqw; }
+  .hub__card-title { font-family: var(--stack-display); font-weight: 600; font-size: 4.9cqw; line-height: 1.18; }
+  .hub__card-title--small { font-size: 4.2cqw; line-height: 1.25; }
+  .hub__card-meta { font-size: 3.7cqw; line-height: 1.3; }
+  .hub__card-meta span { color: var(--muted); }
+  .hub__card-foot { display: flex; align-items: center; justify-content: space-between; gap: 2cqw; margin-top: 0.6cqw; }
+  .hub__chips { display: flex; gap: 1.6cqw; }
+  .hub__chip { display: inline-flex; align-items: center; justify-self: start; height: 6.2cqw; padding: 0 3cqw; border-radius: var(--r-pill); font-size: 3.3cqw; font-weight: 500; line-height: 1; }
+  .hub__chip--letgo { background: var(--mint); color: var(--deep); }
+  .hub__chip--work { background: var(--slate-tint); color: var(--slate); }
+  .hub__chip--plain { background: var(--control-bg); color: var(--ink); }
+  .hub__freq { font-size: 3.5cqw; color: var(--muted); white-space: nowrap; }
+  /* What else the library holds, in the site's words: the screen names only the titles on file. */
+  .hub__also { background: var(--mint); border-radius: 5.6cqw; padding: 4.6cqw 4.6cqw 5cqw; display: grid; gap: 2.4cqw; }
+  .hub__also-h { font-weight: 600; font-size: 4cqw; line-height: 1.2; }
+  .hub__also ul { margin: 0; display: grid; gap: 2cqw; font-size: 4cqw; line-height: 1.32; }
+  .hub__pane[data-hub-pane='videos'] .hub__card { padding-block: 4.8cqw; }
+  .hub__more { font-size: 3.5cqw; line-height: 1.35; color: var(--muted); padding: 1cqw 1cqw 0; }
+
+  @media (prefers-reduced-motion: reduce) { :global(.js) .hub__pane { animation: none; } }
+</style>

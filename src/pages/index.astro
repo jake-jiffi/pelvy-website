@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import Home from '../components/home/Home.astro';
+import { site, links } from '../data/site';
+
+const schema = [
+  { '@type': 'WebSite', '@id': `${site.url}/#website`, url: site.url, name: site.name, inLanguage: 'en-AU', publisher: { '@id': `${site.url}/#organisation` } },
+  {
+    '@type': 'MobileApplication',
+    name: 'Pelvy Patient',
+    operatingSystem: 'iOS, Android',
+    applicationCategory: 'HealthApplication',
+    description: site.description,
+    installUrl: links.appStore,
+    sameAs: [links.appStore, links.googlePlay],
+    publisher: { '@id': `${site.url}/#organisation` },
+  },
+];
+---
+<Base title="Pelvy: the pelvic floor app that counts you through it" description="A pelvic floor app built by a pelvic health physio. Programs for strength and for relaxation, counted breath by breath, with your clinician’s advice." {schema} flushTop>
+  <Home />
+</Base>
