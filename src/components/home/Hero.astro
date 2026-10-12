@@ -182,8 +182,27 @@ const sample = 'A working sample in Pelvy’s new look. The timings are examples
   :global(.hero--live) .hero__screen :global(.app) { --label: max(1.5rem, 6.15cqw); --disc: clamp(66cqw, 10.4rem, 86cqw); }
   :global(.hero--live) .try { position: absolute; inset: 0; padding: calc(var(--header-h) * 0.5) 0 0; display: grid; align-items: center; pointer-events: none; }
   :global(.hero--live) .try.is-on { pointer-events: auto; }
-  :global(.hero--live) .try__screen { opacity: 0; width: auto; height: min(74svh, 46rem); aspect-ratio: 390 / 844; }
+  /* Never smaller than its count label needs (26.2rem tall), never taller than the window allows. */
+  :global(.hero--live) .try__screen { opacity: 0; width: auto; height: min(max(74svh, 26.2rem), calc(100svh - 4rem), 46rem); aspect-ratio: 390 / 844; }
   :global(.hero--live) .try__screen :global(.app) { box-shadow: none; }
+
+  /* Short windows: the opening copy shrinks to sit between the header and the foot of the
+     stage, so the scene still runs. hero.ts sets --hero-fit, from 1 down to 0.6. */
+  @media (min-width: 900px) {
+    :global(.hero--live) .hero__copy { gap: calc(clamp(1.25rem, 2.4vw, 1.75rem) * var(--hero-fit, 1)); }
+    /* The same clamp as .h-display. */
+    :global(.hero--live) .hero__copy .h-display { font-size: calc(clamp(2.6rem, 1.4rem + 5.2vw, 4.63rem) * var(--hero-fit, 1)); }
+    :global(.hero--live) .hero__copy .lead { font-size: calc(var(--text-md) * var(--hero-fit, 1)); }
+  }
+  @media (min-width: 900px) and (max-height: 800px) {
+    :global(.hero--live) .hero__grid { padding-block: calc(var(--header-h) + 0.5rem) 2rem; }
+  }
+  @media (min-width: 900px) and (max-height: 640px) {
+    :global(.hero--live) .hero__prices { display: none; }
+  }
+  @media (min-width: 640px) and (max-height: 560px) {
+    :global(.hero--live) .try__key { display: none; }
+  }
 
   /* Short phones: the exercise screen keeps its size and the words around it give way. */
   @media (max-width: 639px) and (max-height: 739px) {
@@ -209,6 +228,11 @@ const sample = 'A working sample in Pelvy’s new look. The timings are examples
     :global(.hero--live) .try__lead { max-width: 30ch; }
     :global(.hero--live) .try__screen { grid-area: screen; height: min(62svh, 46rem); margin: 0; }
     :global(.hero--live) .try__panel { grid-area: panel; align-self: center; }
+  }
+  /* A short tablet or a half-width window: the screen takes the height and the heading stays for screen readers. */
+  @media (min-width: 640px) and (max-width: 899px) and (max-height: 679px) {
+    :global(.hero--live) .try__copy { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+    :global(.hero--live) .try__screen { height: min(max(62svh, 26.2rem), calc(100svh - 5rem), 46rem); }
   }
 
   @media (max-width: 899px) {

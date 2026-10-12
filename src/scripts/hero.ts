@@ -170,9 +170,33 @@ export function initHero() {
     if (gone !== photoGone) { photoGone = gone; syncVideo(); }
   }
 
-  // The pinned version needs room: the opening copy and the exercise screen
-  // with its controls must each fit one screen. Otherwise the page stays static.
-  const fits = () => copy.getBoundingClientRect().bottom <= stage.getBoundingClientRect().bottom - 8 && tryIn.scrollHeight <= stage.clientHeight + 1;
+  // The pinned version adapts to the window rather than asking for a tall one.
+  // In a short window the opening copy shrinks (--hero-fit, used by Hero.astro)
+  // until it sits between the header and the foot of the stage.
+  const MIN_FIT = 0.6; // smaller than this and the headline stops being one
+  const MIN_SCREEN = 193; // px: narrower and the 24px count label no longer fits its disc
+  const header = document.querySelector<HTMLElement>('.site-header');
+  const copyFits = () => {
+    const c = copy.getBoundingClientRect(), s = stage.getBoundingClientRect();
+    return c.bottom <= s.bottom - 8 && c.top >= s.top + (header?.offsetHeight ?? 0);
+  };
+  function fitCopy() {
+    const set = (k: number) => hero.style.setProperty('--hero-fit', k.toFixed(3));
+    set(1);
+    if (copyFits()) return true;
+    let lo = MIN_FIT, hi = 1;
+    set(lo);
+    if (!copyFits()) return false;
+    for (let i = 0; i < 5; i++) {
+      const mid = (lo + hi) / 2;
+      set(mid);
+      if (copyFits()) lo = mid; else hi = mid;
+    }
+    set(lo);
+    return true;
+  }
+  // The exercise screen with its controls must fit one screen and stay large enough to read.
+  const tryFits = () => tryIn.scrollHeight <= stage.clientHeight + 1 && target.getBoundingClientRect().width >= MIN_SCREEN;
 
   function disable() {
     trigger?.animation?.kill();
@@ -182,13 +206,14 @@ export function initHero() {
     tryLayer.classList.remove('is-on');
     tryLayer.inert = false;
     for (const el of [ground, world, photo, backing, screen, copy, meta, target, ...parts]) el.removeAttribute('style');
+    hero.style.removeProperty('--hero-fit');
     state.p = 0;
     if (photoGone) { photoGone = false; syncVideo(); }
   }
 
   function enable() {
     hero.classList.add('hero--live');
-    if (window.innerHeight < 640 || !fits()) { disable(); return; }
+    if (!fitCopy() || !tryFits()) { disable(); return; }
     measure();
     render();
     trigger = ScrollTrigger.create({
@@ -203,7 +228,8 @@ export function initHero() {
   ScrollTrigger.addEventListener('refreshInit', () => { if (trigger) measure(); });
   ScrollTrigger.addEventListener('refresh', () => { if (trigger) render(); });
   enable();
-  document.fonts?.ready.then(() => ScrollTrigger.refresh());
+  // Late fonts change how tall the copy is, so the fit is taken again once they are in.
+  document.fonts?.ready.then(() => { disable(); enable(); ScrollTrigger.refresh(); });
 
   // A different window may or may not have the room. Check again once it settles.
   let width = window.innerWidth, height = window.innerHeight, timer = 0;
