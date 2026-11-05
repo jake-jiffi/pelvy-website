@@ -39,7 +39,8 @@ const { for: audience = 'clinic', lead = true } = Astro.props;
 <style>
   .cta__panel { background: var(--sage); border-radius: var(--r-panel); padding: clamp(2rem, 6vw, 5rem); display: grid; gap: 2rem; align-items: end; }
   .cta__copy { display: grid; gap: 1.25rem; }
-  .cta__copy :global(.h1) { max-width: 16ch; }
+  /* The closing line is never under 44px, on a phone as well. */
+  .cta__copy :global(.h1) { max-width: 16ch; font-size: clamp(2.75rem, 1.5rem + 3.6vw, var(--text-3xl)); }
   /* Ink on sage at 24px and up. */
   .cta__lead { font-size: max(1.5rem, var(--text-md)); line-height: 1.38; max-width: 30ch; }
   .cta :global(.btn--on-sage) { background: var(--ink); border-color: var(--ink); }

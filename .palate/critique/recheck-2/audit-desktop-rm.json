@@ -1,0 +1,984 @@
+{
+ "/clinicians-and-specialists/": {
+  "status": 200,
+  "height": 6176,
+  "overflowX": 0,
+  "heads": [
+   "H1 Your advice and your program go home with your patient. [67px]",
+   "H2 The problem is the week after the appointment. [46px]",
+   "H2 What your patients get in the pilot. [58px]",
+   "H2 What it costs. [58px]",
+   "H2 Not a physio? Two ways to use it. [58px]",
+   "H3 Subscribe, and use the advice section [30px]",
+   "H3 Or recommend it in one scan [30px]",
+   "H2 What Pelvy doesn’t do yet. [46px]",
+   "H2 Where Pelvy is used. [46px]",
+   "H2 Health services and funded programs. [46px]",
+   "H2 See it with your own patients in mind. [58px]",
+   "H2 Pelvy [17px]",
+   "H2 Help [17px]",
+   "H2 The app [17px]",
+   "H2 Follow [17px]"
+  ],
+  "imgs": [
+   {
+    "src": "desk.AvGAJY6W_2h0s0R.webp",
+    "alt": "A pale timber clinic desk seen from above, with a ceramic dish, two notebooks and a pen around a small white card.",
+    "w": 788,
+    "nat": 720,
+    "broken": false
+   }
+  ],
+  "small": [
+   {
+    "t": "Questions from clinicians",
+    "w": 229,
+    "h": 29,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "For clinicians",
+    "w": 101,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "For you",
+    "w": 57,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "What it does",
+    "w": 99,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Find a clinic",
+    "w": 91,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "About Amelia",
+    "w": 105,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "News",
+    "w": 42,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Questions from clinicians",
+    "w": 195,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Questions from patients",
+    "w": 188,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Contact Amelia",
+    "w": 120,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Book a demo",
+    "w": 102,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Terms and policies",
+    "w": 145,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "App Store",
+    "w": 78,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Google Play",
+    "w": 91,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Instagram",
+    "w": 77,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Facebook",
+    "w": 76,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "YouTube",
+    "w": 66,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Amelia on LinkedIn",
+    "w": 145,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   }
+  ],
+  "landmarks": {
+   "main": 1,
+   "nav": 5,
+   "header": 2,
+   "footer": 1,
+   "skip": true,
+   "lang": "en-AU",
+   "title": "Pelvy for pelvic health clinicians",
+   "desc": "Subscribe, and your patients get your advice and their program on their phone, free for six months. $20 a month for the clinic during the pilot."
+  },
+  "stillHiddenAfterWalk": 0,
+  "audit": {
+   "radii": {
+    "9999px": [
+     "a.skip",
+     "a.btn.btn--small",
+     "summary",
+     "a.btn",
+     "a.btn.btn--on-sage"
+    ],
+    "22px": [
+     "section.voice.ground",
+     "div.photo.desk__frame",
+     "div.panel.panel--mint",
+     "a.watch.is-in",
+     "div.cta__panel.is-in"
+    ],
+    "50%": [
+     "span.card__ring",
+     "span.watch__play"
+    ]
+   },
+   "colours": [
+    {
+     "pair": "#263529 on #78a080",
+     "ratio": 4.4,
+     "minSize": 24,
+     "min": "Amelia is a pelvic health physiotherapis [p.cta__lead 24px/400]",
+     "fonts": [
+      "Literata Variable",
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#6b726d on #f8f9f8",
+     "ratio": 4.68,
+     "minSize": 15.2,
+     "min": "$20 a month during the pilot, with six m [p.fine.head-price 15.2px/400]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#6b726d on #fcfdfc",
+     "ratio": 4.84,
+     "minSize": 13.6,
+     "min": "A generated desk. The set-up card is par [figcaption.credit 13.6px/400]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #f8f9f8",
+     "ratio": 6.02,
+     "minSize": 16.9904,
+     "min": "For clinicians [a 16.9904px/500]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #fcfdfc",
+     "ratio": 6.23,
+     "minSize": 16.9904,
+     "min": "1 [span.mono 16.9904px/500]",
+     "fonts": [
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#ffffff on #41684a",
+     "ratio": 6.36,
+     "minSize": 16.9904,
+     "min": "Book a demo [a.btn.btn--small 16.9904px/600]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #abc8b1",
+     "ratio": 7.16,
+     "minSize": 23.7504,
+     "min": "Amelia Godfrey, pelvic health physiother [figcaption.note__by 23.7504px/600]",
+     "fonts": [
+      "Literata Variable",
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #edf5ee",
+     "ratio": 11.64,
+     "minSize": 7.28438,
+     "min": "1 [span.card__ring 7.28438px/500]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable",
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#263529 on #f8f9f8",
+     "ratio": 12.25,
+     "minSize": 16.9904,
+     "min": "For you [a 16.9904px/500]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #fcfdfc",
+     "ratio": 12.68,
+     "minSize": 16.9904,
+     "min": "Download Pelvy Patient. [li 16.9904px/400]",
+     "fonts": [
+      "Literata Variable",
+      "DM Mono",
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#ffffff on #263529",
+     "ratio": 12.93,
+     "minSize": 19,
+     "min": "Book a demo [a.btn.btn--on-sage 19px/600]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    }
+   ],
+   "sizes": {
+    "DM Sans Variable 19.0": 25,
+    "DM Sans Variable 17.0": 38,
+    "Literata Variable 67.2": 1,
+    "DM Sans Variable 23.8": 5,
+    "DM Sans Variable 15.2": 4,
+    "Literata Variable 96.0": 1,
+    "Literata Variable 46.4": 4,
+    "Literata Variable 58.0": 4,
+    "Literata Variable 29.7": 7,
+    "DM Mono 22.8": 2,
+    "DM Sans Variable 8.7": 1,
+    "Literata Variable 15.5": 1,
+    "DM Sans Variable 9.5": 3,
+    "DM Mono 7.3": 3,
+    "DM Sans Variable 8.5": 1,
+    "DM Sans Variable 13.6": 1,
+    "Literata Variable 23.8": 1,
+    "DM Mono 17.0": 3,
+    "DM Sans Variable 24.0": 1
+   },
+   "banned": {},
+   "exclaim": [],
+   "emdash": [],
+   "endash": [],
+   "caps": [
+    "TGA",
+    "QLD"
+   ],
+   "quotesEmdash": 0
+  },
+  "logs": []
+ },
+ "/features/": {
+  "status": 200,
+  "height": 4855,
+  "overflowX": 0,
+  "heads": [
+   "H1 Five things in the app now. Three that aren’t yet. [67px]",
+   "H2 In the app now [46px]",
+   "H3 Programs that count [46px]",
+   "H3 Your clinician’s notes [46px]",
+   "H3 Reminders [46px]",
+   "H3 Videos [46px]",
+   "H3 Learn [46px]",
+   "H2 Not in the app yet. [58px]",
+   "H2 See it with your own patients in mind. [58px]",
+   "H2 Pelvy [17px]",
+   "H2 Help [17px]",
+   "H2 The app [17px]",
+   "H2 Follow [17px]"
+  ],
+  "imgs": [],
+  "small": [
+   {
+    "t": "For clinicians",
+    "w": 101,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "For you",
+    "w": 57,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "What it does",
+    "w": 99,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Find a clinic",
+    "w": 91,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "About Amelia",
+    "w": 105,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "News",
+    "w": 42,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Questions from clinicians",
+    "w": 195,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Questions from patients",
+    "w": 188,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Contact Amelia",
+    "w": 120,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Book a demo",
+    "w": 102,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Terms and policies",
+    "w": 145,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "App Store",
+    "w": 78,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Google Play",
+    "w": 91,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Instagram",
+    "w": 77,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Facebook",
+    "w": 76,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "YouTube",
+    "w": 66,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Amelia on LinkedIn",
+    "w": 145,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   }
+  ],
+  "landmarks": {
+   "main": 1,
+   "nav": 5,
+   "header": 2,
+   "footer": 1,
+   "skip": true,
+   "lang": "en-AU",
+   "title": "What Pelvy does, and what it doesn’t do yet",
+   "desc": "Programs that count every rep, your clinician’s notes, reminders, exercise videos and a Learn tab. Symptom tracking and diaries come after the pilot."
+  },
+  "stillHiddenAfterWalk": 0,
+  "audit": {
+   "radii": {
+    "9999px": [
+     "a.skip",
+     "a.btn.btn--small",
+     "summary",
+     "a.btn",
+     "span.hub__chip.hub__chip--work",
+     "span.hub__chip.hub__chip--letgo",
+     "span.hub__chip.hub__chip--plain",
+     "span"
+    ],
+    "22px": [
+     "div.panel.panel--sage",
+     "div.parts",
+     "figure.note",
+     "ul.parts",
+     "ol.parts",
+     "div.panel.panel--mint",
+     "div.cta__panel.is-in"
+    ],
+    "7% 3.235%": [
+     "div.hub"
+    ],
+    "16.247px": [
+     "div.hub__note",
+     "div.hub__card",
+     "div.hub__also"
+    ],
+    "50%": [
+     "span.ring"
+    ]
+   },
+   "colours": [
+    {
+     "pair": "#263529 on #78a080",
+     "ratio": 4.4,
+     "minSize": 24,
+     "min": "Amelia is a pelvic health physiotherapis [p.cta__lead 24px/400]",
+     "fonts": [
+      "Literata Variable",
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#6b726d on #f8f9f8",
+     "ratio": 4.68,
+     "minSize": 10.1544,
+     "min": "Each one says it is general education, n [p.hub__more 10.1544px/400]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#6b726d on #fcfdfc",
+     "ratio": 4.84,
+     "minSize": 10.1544,
+     "min": "2 times daily [span.hub__freq 10.1544px/400]",
+     "fonts": [
+      "DM Sans Variable",
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#5e6687 on #f0f2fa",
+     "ratio": 5.04,
+     "minSize": 9.57413,
+     "min": "Contract [span.hub__chip.hub__chip--work 9.57413px/500]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #edf5ee",
+     "ratio": 5.72,
+     "minSize": 9.57413,
+     "min": "Relax [span.hub__chip.hub__chip--letgo 9.57413px/500]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #f8f9f8",
+     "ratio": 6.02,
+     "minSize": 16.9904,
+     "min": "What it does [a 16.9904px/500]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #fcfdfc",
+     "ratio": 6.23,
+     "minSize": 19,
+     "min": "1 [span.mono 19px/500]",
+     "fonts": [
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#ffffff on #41684a",
+     "ratio": 6.36,
+     "minSize": 16.9904,
+     "min": "Book a demo [a.btn.btn--small 16.9904px/600]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #abc8b1",
+     "ratio": 7.16,
+     "minSize": 10.1544,
+     "min": "From your clinician [p.hub__note-from 10.1544px/600]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #f1f3f1",
+     "ratio": 11.6,
+     "minSize": 9.57413,
+     "min": "Everyone [span.hub__chip.hub__chip--plain 9.57413px/500]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #edf5ee",
+     "ratio": 11.64,
+     "minSize": 11.605,
+     "min": "In the library [p.hub__also-h 11.605px/600]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #f8f9f8",
+     "ratio": 12.25,
+     "minSize": 12.4754,
+     "min": "Programs [button 12.4754px/600]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable",
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#263529 on #fcfdfc",
+     "ratio": 12.68,
+     "minSize": 10.7346,
+     "min": "Lying down [p.hub__card-meta 10.7346px/400]",
+     "fonts": [
+      "Literata Variable",
+      "DM Sans Variable",
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#ffffff on #263529",
+     "ratio": 12.93,
+     "minSize": 19,
+     "min": "Book a demo [a.btn.btn--on-sage 19px/600]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    }
+   ],
+   "sizes": {
+    "DM Sans Variable 19.0": 24,
+    "DM Sans Variable 17.0": 30,
+    "Literata Variable 67.2": 1,
+    "DM Sans Variable 23.8": 8,
+    "Literata Variable 21.5": 1,
+    "DM Sans Variable 12.5": 3,
+    "DM Sans Variable 10.2": 5,
+    "Literata Variable 14.8": 1,
+    "Literata Variable 12.5": 1,
+    "Literata Variable 14.2": 3,
+    "DM Sans Variable 10.7": 6,
+    "DM Sans Variable 9.6": 4,
+    "DM Sans Variable 13.6": 1,
+    "Literata Variable 46.4": 6,
+    "DM Mono 20.2": 5,
+    "DM Mono 19.0": 15,
+    "Literata Variable 38.4": 1,
+    "DM Sans Variable 15.2": 8,
+    "DM Mono 29.7": 3,
+    "Literata Variable 58.0": 2,
+    "DM Sans Variable 24.0": 1
+   },
+   "banned": {
+    "treat": [
+     "treatment"
+    ]
+   },
+   "exclaim": [],
+   "emdash": [],
+   "endash": [],
+   "caps": [
+    "QLD"
+   ],
+   "quotesEmdash": 0
+  },
+  "logs": []
+ },
+ "/about/": {
+  "status": 200,
+  "height": 3797,
+  "overflowX": 0,
+  "heads": [
+   "H1 Built by a physio, from what her patients asked for. [67px]",
+   "H2 So far [58px]",
+   "H2 What Pelvy is, plainly. [46px]",
+   "H2 See it with your own patients in mind. [58px]",
+   "H2 Pelvy [17px]",
+   "H2 Help [17px]",
+   "H2 The app [17px]",
+   "H2 Follow [17px]"
+  ],
+  "imgs": [
+   {
+    "src": "amelia-clinic.BLSD9fxC_20BIt2.webp",
+    "alt": "Amelia Godfrey using an ultrasound machine with a man lying on a treatment bed in her clinic.",
+    "w": 579,
+    "nat": 600,
+    "broken": false
+   },
+   {
+    "src": "amelia-portrait.BbSS-IFX_FAepG.webp",
+    "alt": "Amelia Godfrey, smiling, in a rust top.",
+    "w": 291,
+    "nat": 293,
+    "broken": false
+   }
+  ],
+  "small": [
+   {
+    "t": "For clinicians",
+    "w": 101,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "For you",
+    "w": 57,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "What it does",
+    "w": 99,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Find a clinic",
+    "w": 91,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "About Amelia",
+    "w": 105,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "News",
+    "w": 42,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Questions from clinicians",
+    "w": 195,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Questions from patients",
+    "w": 188,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Contact Amelia",
+    "w": 120,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Book a demo",
+    "w": 102,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Terms and policies",
+    "w": 145,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "App Store",
+    "w": 78,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Google Play",
+    "w": 91,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Instagram",
+    "w": 77,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Facebook",
+    "w": 76,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "YouTube",
+    "w": 66,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   },
+   {
+    "t": "Amelia on LinkedIn",
+    "w": 145,
+    "h": 30,
+    "tag": "A",
+    "inl": false
+   }
+  ],
+  "landmarks": {
+   "main": 1,
+   "nav": 5,
+   "header": 2,
+   "footer": 1,
+   "skip": true,
+   "lang": "en-AU",
+   "title": "About Amelia Godfrey and Pelvy",
+   "desc": "Pelvy was built by Amelia Godfrey, a pelvic health physiotherapist, from what her patients and the clinicians around her asked for."
+  },
+  "stillHiddenAfterWalk": 0,
+  "audit": {
+   "radii": {
+    "9999px": [
+     "a.skip",
+     "a.btn.btn--small",
+     "summary",
+     "a.btn",
+     "a.btn.btn--on-sage"
+    ],
+    "22px": [
+     "figure.founder",
+     "div.about__portrait-frame",
+     "div.panel.panel--mint",
+     "div.cta__panel.is-in"
+    ]
+   },
+   "colours": [
+    {
+     "pair": "#263529 on #78a080",
+     "ratio": 4.4,
+     "minSize": 24,
+     "min": "Pelvic health physiotherapist, founder a [span.founder__role 24px/400]",
+     "fonts": [
+      "Literata Variable",
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#6b726d on #fcfdfc",
+     "ratio": 4.84,
+     "minSize": 15.2,
+     "min": "Pelvy is education and support between a [p 15.2px/400]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #edf5ee",
+     "ratio": 5.72,
+     "minSize": 19,
+     "min": "amelia@pelvy.app [a 19px/400]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#41684a on #f8f9f8",
+     "ratio": 6.02,
+     "minSize": 16.9904,
+     "min": "About Amelia [a 16.9904px/500]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable",
+      "DM Mono"
+     ]
+    },
+    {
+     "pair": "#ffffff on #41684a",
+     "ratio": 6.36,
+     "minSize": 16.9904,
+     "min": "Book a demo [a.btn.btn--small 16.9904px/600]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #edf5ee",
+     "ratio": 11.64,
+     "minSize": 19,
+     "min": "Pelvy is education and support between a [p 19px/400]",
+     "fonts": [
+      "Literata Variable",
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #f8f9f8",
+     "ratio": 12.25,
+     "minSize": 16.9904,
+     "min": "For clinicians [a 16.9904px/500]",
+     "fonts": [
+      "DM Sans Variable",
+      "Literata Variable"
+     ]
+    },
+    {
+     "pair": "#263529 on #fcfdfc",
+     "ratio": 12.68,
+     "minSize": 16.9904,
+     "min": "amelia@pelvy.app [a 16.9904px/400]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    },
+    {
+     "pair": "#ffffff on #263529",
+     "ratio": 12.93,
+     "minSize": 19,
+     "min": "Book a demo [a.btn.btn--on-sage 19px/600]",
+     "fonts": [
+      "DM Sans Variable"
+     ]
+    }
+   ],
+   "sizes": {
+    "DM Sans Variable 19.0": 14,
+    "DM Sans Variable 17.0": 30,
+    "Literata Variable 67.2": 1,
+    "DM Sans Variable 23.8": 4,
+    "Literata Variable 37.1": 1,
+    "DM Sans Variable 24.0": 2,
+    "Literata Variable 29.7": 1,
+    "Literata Variable 58.0": 2,
+    "DM Mono 19.0": 3,
+    "Literata Variable 46.4": 1,
+    "DM Sans Variable 15.2": 2
+   },
+   "banned": {},
+   "exclaim": [],
+   "emdash": [],
+   "endash": [],
+   "caps": [
+    "QLD"
+   ],
+   "quotesEmdash": 0
+  },
+  "logs": []
+ }
+}

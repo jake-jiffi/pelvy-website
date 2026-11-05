@@ -12,14 +12,20 @@ dist/
 .palate/submissions/
 .palate/cart/
 
-# Private working records: check results, critique reports, reference studies of other sites,
-# and the session's own logs. They stay on the machine that made them.
-.palate/evidence/
-.palate/critique/
-.palate/references/
+# Working screenshots from checks and critiques (about 210 MB). The written records beside them are kept.
+.palate/evidence/**/*.png
+.palate/evidence/**/*.jpg
+.palate/critique/**/*.png
+.palate/critique/**/*.jpg
+# Reference studies: the frame sheets stay (the option record points at them), the clips and page grabs do not.
+.palate/references/**/*.webm
+.palate/references/**/*.png
+.palate/references/**/*.jpg
+!.palate/references/*/sheet.jpg
+# The session's own logs.
 .palate/events/
-.palate/input/
 .palate/locks/
 .palate/verification/
 .palate/preview-dist.log
+checks/results/
 .DS_Store

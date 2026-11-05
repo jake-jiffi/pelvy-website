@@ -1,0 +1,46 @@
+{
+ "id": "a",
+ "label": "Counted through",
+ "status": "ready",
+ "entry": "src/directions/a/index.astro",
+ "previewUrl": "http://127.0.0.1:4322/_palate/directions/a",
+ "thumbnail": {
+  "path": ".palate/previews/a.png",
+  "sha256": "c1838c98d7103680a660b6d76bb007b41af6d54ac32e8259e668d5544a5dec24"
+ },
+ "rationale": "One direction, as asked. The page behaves like the app: it counts and it breathes. The opening is a room at home with the app running on the phone (a generated room, labelled; a 10 second Higgsfield loop). Scrolling pushes in through the phone until its screen is the page, then hands over a working exercise screen with a let go or squeeze switch. After that: the handout leaving the fridge as you scroll, the clinician's note set large, the app's hub with working tabs, two ways in with prices, three counted steps for clinics beside a clinic desk loop, real clinic quotes from Pelvy's directory on deep sage, the handout comparison, what Pelvy doesn't do yet, and Amelia in clinic. Identity is the supplied brand, unchanged: deep sage, sage, soft sage and slate with their meanings; Literata, DM Sans, DM Mono; 22px panels, pills, 10px fields; the breath easing. Nothing here is a proposed identity. Round 1 of the critique (12 October 2026) repaired the keyboard path into the exercise screen, held the finished state for most of a screen, replaced the fade through sage with the photograph closing onto the phone's screen, set the clinician's note at 96px on a full-bleed soft sage ground that rises over the handout scene, added a ring that counts a real hold in the program card, alternated the grounds, and gave the clinic quotes one at a time with previous, next and a count. The room and desk loops were regenerated with more visible light. Round 2 fixed the count label's fit on short phones, put the app in the first phone screen, cleared the header from the pinned heading, removed the collision at the first scroll notch, and made the features, about and clinicians pages open on their subject (the working hub, the clinic photograph, the note at 96px on the rising ground). The directory gained a way back to its search.",
+ "referenceDecisions": [
+  {
+   "slug": "lovi",
+   "capture": ".palate/references/lovi/sheet.jpg",
+   "sha256": "78af4ba65a602719c5b46b5d66c29f5f6483e7ac1e878bfdeb7f0f2daaff18fa",
+   "observed": "Clip frames at 0.9s to 4.6s: live product UI sits inside a phone-shaped frame laid over a photograph in the hero, then a statement whose words go from faint to ink as the page scrolls.",
+   "uses": "The live exercise screen fitted into the phone in the room photograph, and the scroll-read lines in the handout section.",
+   "limit": "Frames sampled from the clip with ffmpeg at known times, not played in a browser. Sequence observed, smoothness not."
+  },
+  {
+   "slug": "antara-spa",
+   "capture": ".palate/references/antara-spa/sheet.jpg",
+   "sha256": "203887a1754263398c6ac09b8e311c85b8ca4e8cd7d1739b4ec3fa2622da9bc7",
+   "observed": "Frames at 1.5s to 3.4s: a rounded image panel grows with scroll until it fills the width, over a green ground that rises as a section change; easing is slow and settles.",
+   "uses": "The room panel opening onto a sage ground and pushing in on scroll, with a scrubbed, unhurried catch-up.",
+   "limit": "Frames sampled, not played. No smooth-scroll library adopted."
+  },
+  {
+   "slug": "halo-dental",
+   "capture": ".palate/references/halo-dental/sheet.jpg",
+   "sha256": "ed6640b598d6f633506116a7c24c3227c489a51762afc13777b5c4fe148b1173",
+   "observed": "Frames at 0.4s to 6.3s: one product on a stage, then capability shown as working interface cards rather than described.",
+   "uses": "Showing the app as working interface: the exercise screen, the program card and the hub with real tabs.",
+   "limit": "Frames sampled, not played."
+  },
+  {
+   "slug": "lava-dental",
+   "capture": ".palate/references/lava-dental/sheet.jpg",
+   "sha256": "c27c6cede405da497e2f6eeeaaba11c6a9274d56ad312ced1eb4c5b0c2540018",
+   "observed": "Frames at 0.4s to 6.1s: a pinned statement reveals word by word while images drift past; light and dark sections alternate.",
+   "uses": "The pinned handout scene with lines read in beside it, the deep sage quotes band as the page's one inversion, and numbered steps that fill as they are passed.",
+   "limit": "The arc timeline the library notes describe is not in the captured clip, so the carried steps follow the written notes: suggested, not observed."
+  }
+ ]
+}

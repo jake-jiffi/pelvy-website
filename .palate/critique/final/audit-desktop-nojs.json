@@ -1,0 +1,22 @@
+{
+ "/": {
+  "status": 200,
+  "logs": []
+ },
+ "/clinicians-directory/": {
+  "status": 200,
+  "logs": []
+ },
+ "/sign-up/": {
+  "status": 200,
+  "logs": []
+ },
+ "/general-users/": {
+  "status": 200,
+  "logs": []
+ },
+ "/features/": {
+  "status": 200,
+  "logs": []
+ }
+}

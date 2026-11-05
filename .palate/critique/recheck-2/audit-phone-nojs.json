@@ -1,0 +1,14 @@
+{
+ "/clinicians-and-specialists/": {
+  "status": 200,
+  "logs": []
+ },
+ "/features/": {
+  "status": 200,
+  "logs": []
+ },
+ "/about/": {
+  "status": 200,
+  "logs": []
+ }
+}

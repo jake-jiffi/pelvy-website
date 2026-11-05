@@ -1,0 +1,18 @@
+PASS  home 1440x900: all 4 reading lines start below the first screen  [3546, 4111, 4814, 5748]
+PASS  home 390x844: all 4 reading lines start below the first screen  [3605, 3958, 4381, 5098]
+PASS  home 1920x1200: all 4 reading lines start below the first screen  [4704, 5485, 6404, 7514]
+PASS  webkit desktop /features/: tabs inside the first screen, no sideways scroll  [{"top":234,"bottom":278,"w":266,"in":true,"ox":0}]
+PASS  webkit desktop /features/: the tabs work
+PASS  webkit desktop /about/: photograph inside the first screen, 600px or less  [{"top":218,"bottom":592,"w":579,"in":true,"ox":0}]
+PASS  webkit desktop /clinicians-and-specialists/: note larger than the heading, and it reads in  [note 96px, heading 67.199997px, words in ink 8 then 11]
+PASS  webkit desktop directory: the return control is inside the viewport at scroll 6000  [{"top":832,"bottom":880,"w":193,"in":true,"ox":0}]
+PASS  webkit desktop directory: it returns to the search  [{"tools":104,"focus":"dir-q"}]
+PASS  webkit desktop sign-up: heading changes and changes back  [Write to Amelia.]
+PASS  webkit phone /features/: tabs inside the first screen, no sideways scroll  [{"top":638,"bottom":682,"w":267,"in":true,"ox":0}]
+PASS  webkit phone /features/: the tabs work
+PASS  webkit phone /about/: photograph inside the first screen, 600px or less  [{"top":506,"bottom":730,"w":347,"in":true,"ox":0}]
+PASS  webkit phone /clinicians-and-specialists/: note larger than the heading, and it reads in  [note 45.84px, heading 39.560001px, words in ink 3 then 11]
+PASS  webkit phone directory: the return control is inside the viewport at scroll 6000  [{"top":776,"bottom":824,"w":180,"in":true,"ox":0}]
+PASS  webkit phone directory: it returns to the search  [{"tools":88,"focus":"dir-q"}]
+PASS  webkit phone sign-up: heading changes and changes back  [Write to Amelia.]
+errors: none

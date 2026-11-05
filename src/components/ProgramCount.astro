@@ -86,8 +86,8 @@ const seconds = (v: string) => parseInt(v, 10);
   .count__phase { font-weight: 600; font-size: var(--text-lg); line-height: 1.15; color: var(--deep); transition: color 480ms var(--settle-ease); }
   .count[data-kind='work'] .count__phase { color: var(--slate); }
   .count__rep { font-size: var(--text-sm); }
-  /* The stop control shares the counting part's cell and sits in its corner. */
-  .count__pause { grid-area: 1 / 1 / 2 / 2; }
+  /* The stop control shares the counting part's cell. On a phone it takes the top corner, clear of the count's words. */
+  .count__pause { grid-area: 1 / 1 / 2 / 2; top: 0.75rem; bottom: auto; }
   .count:not([data-live]) .count__pause { display: none; }
 
   .count__list { container-type: inline-size; padding: clamp(1.25rem, 2.6vw, 2rem); min-width: 0; }
@@ -123,6 +123,7 @@ const seconds = (v: string) => parseInt(v, 10);
     .count__now { flex-direction: column; justify-content: center; gap: 1.5rem; padding-bottom: 1.5rem; }
     .count__ring { --d: clamp(9rem, 14vw, 11.5rem); }
     .count__state { justify-items: center; text-align: center; gap: 0.3rem; }
+    .count__pause { top: auto; bottom: 0.75rem; }
   }
 
   @media (prefers-reduced-motion: reduce) {

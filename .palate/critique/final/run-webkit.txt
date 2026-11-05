@@ -1,0 +1,22 @@
+engine: webkit 26.6
+PASS  phone: pinned mode starts
+PASS  phone: the live screen sits on the phone in the photograph  [0.321, 0.137, 0.339, 0.73]
+PASS  phone: container units resolve inside the app screen  [20.227875px]
+PASS  phone: no sideways scroll  [0]
+PASS  phone: the count runs
+PASS  phone: the stage stays pinned  [0]
+PASS  phone: the small screen lands on the large one within 1px  [0, 0, 0, 0]
+PASS  phone: the exercise screen is shown and usable  [1 inert=false]
+PASS  phone: Squeeze switches the program
+PASS  phone: the handout sequence draws
+PASS  desktop: pinned mode starts
+PASS  desktop: the live screen sits on the phone in the photograph  [0.321, 0.137, 0.339, 0.73]
+PASS  desktop: container units resolve inside the app screen  [23.387812px]
+PASS  desktop: no sideways scroll  [0]
+PASS  desktop: the count runs
+PASS  desktop: the stage stays pinned  [0]
+PASS  desktop: the small screen lands on the large one within 1px  [0, 0, 0, 0]
+PASS  desktop: the exercise screen is shown and usable  [1 inert=false]
+PASS  desktop: Squeeze switches the program
+PASS  desktop: the handout sequence draws
+errors: none

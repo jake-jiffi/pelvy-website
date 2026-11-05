@@ -1,0 +1,54 @@
+PASS  [desktop] 1 clinician books a demo: home opens with the promise and a Book a demo action
+PASS  [desktop] 1 clinician books a demo: navigation reaches the clinicians page
+PASS  [desktop] 1 clinician books a demo: the price is stated: $20 a month, six months free for patients
+PASS  [desktop] 1 clinician books a demo: Book a demo reaches the sign-up form
+PASS  [desktop] 1 clinician books a demo: the form writes an email to Amelia with the clinic and the live demo request
+PASS  [desktop] 1 clinician books a demo: it says plainly that nothing has been sent from the page
+PASS  [desktop] 2 patient gets the app: "I'm a patient: get the app" lands on the store links
+PASS  [desktop] 2 patient gets the app: both store links are the real listings
+PASS  [desktop] 2 patient gets the app: navigation reaches the page for patients
+PASS  [desktop] 2 patient gets the app: both prices are stated: free for six months with a clinic, $4.99 or $19.99 alone
+PASS  [desktop] 2 patient gets the app: it says when to see a physio
+PASS  [desktop] 2 patient gets the app: the exercise screen can be tried: Squeeze switches the program
+PASS  [desktop] 3 GP finds the QR route: the link lands on the recommend section
+PASS  [desktop] 3 GP finds the QR route: it offers the printable QR sheet by email to Amelia
+PASS  [desktop] 3 GP finds the QR route: it states the price the patient pays
+PASS  [desktop] 4 find a clinic: navigation reaches the directory
+PASS  [desktop] 4 find a clinic: all 65 clinics are listed
+PASS  [desktop] 4 find a clinic: searching "adelaide" narrows the list
+PASS  [desktop] 4 find a clinic: a clinic opens to show credentials and telehealth
+PASS  [desktop] 4 find a clinic: the clinic's own website link is a real address
+PASS  [desktop] 5 enquiry: the footer reaches the contact page
+PASS  [desktop] 5 enquiry: sending it empty says what is needed, in one place
+PASS  [desktop] 5 enquiry: the form writes the email to Amelia with the message
+PASS  [desktop] 5 enquiry: direct contact details are on the page
+PASS  [desktop] 0 every route: all 14 live addresses answer with one h1 and no sideways scroll
+PASS  [desktop] 0 every route: an unknown address gives a 404 page with ways on
+PASS  [phone] 1 clinician books a demo: home opens with the promise and a Book a demo action
+PASS  [phone] 1 clinician books a demo: navigation reaches the clinicians page
+PASS  [phone] 1 clinician books a demo: the price is stated: $20 a month, six months free for patients
+PASS  [phone] 1 clinician books a demo: Book a demo reaches the sign-up form
+PASS  [phone] 1 clinician books a demo: the form writes an email to Amelia with the clinic and the live demo request
+PASS  [phone] 1 clinician books a demo: it says plainly that nothing has been sent from the page
+PASS  [phone] 2 patient gets the app: "I'm a patient: get the app" lands on the store links
+PASS  [phone] 2 patient gets the app: both store links are the real listings
+PASS  [phone] 2 patient gets the app: navigation reaches the page for patients
+PASS  [phone] 2 patient gets the app: both prices are stated: free for six months with a clinic, $4.99 or $19.99 alone
+PASS  [phone] 2 patient gets the app: it says when to see a physio
+PASS  [phone] 2 patient gets the app: the exercise screen can be tried: Squeeze switches the program
+PASS  [phone] 3 GP finds the QR route: the link lands on the recommend section
+PASS  [phone] 3 GP finds the QR route: it offers the printable QR sheet by email to Amelia
+PASS  [phone] 3 GP finds the QR route: it states the price the patient pays
+PASS  [phone] 4 find a clinic: navigation reaches the directory
+PASS  [phone] 4 find a clinic: all 65 clinics are listed
+PASS  [phone] 4 find a clinic: searching "adelaide" narrows the list
+PASS  [phone] 4 find a clinic: a clinic opens to show credentials and telehealth
+PASS  [phone] 4 find a clinic: the clinic's own website link is a real address
+PASS  [phone] 5 enquiry: the footer reaches the contact page
+PASS  [phone] 5 enquiry: sending it empty says what is needed, in one place
+PASS  [phone] 5 enquiry: the form writes the email to Amelia with the message
+PASS  [phone] 5 enquiry: direct contact details are on the page
+PASS  [phone] 0 every route: all 14 live addresses answer with one h1 and no sideways scroll
+PASS  [phone] 0 every route: an unknown address gives a 404 page with ways on
+
+52 of 52 steps passed. Console, page and request errors: none

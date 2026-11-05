@@ -1,0 +1,20 @@
+pair | ratio | smallest size | sample
+ok   #263529 on #78A080  4.4  24px  Squeeze, hold, let go. Pelvy counts  <p.try__lead>
+ok   #6B726D on #F8F9F8  4.68  12.136px  Rep <p.app__rep>
+ok   #6B726D on #FCFDFC  4.84  10.1544px  2 times daily <span.hub__freq>
+ok   #5E6687 on #F0F2FA  5.04  9.57413px  Contract <span.hub__chip>
+ok   #41684A on #EDF5EE  5.72  9.57413px  Relax <span.hub__chip>
+ok   #41684A on #F8F9F8  6.02  15.2104px  More about this clinic <summary.>
+ok   #41684A on #FCFDFC  6.23  15.2104px  1 <span.mono>
+ok   #FFFFFF on #41684A  6.36  15.2104px  Amelia’s count in July 2026: 112 cli <p.said__reach>
+ok   #263529 on #ABC8B1  7.16  10.1544px  From your clinician <p.hub__note-from>
+ok   #263529 on #F0F2FA  11.57  13.6004px  Hold <dt.>
+ok   #263529 on #F1F3F1  11.6  13.6004px  Pelvic Health <li.chip>
+ok   #263529 on #EDF5EE  11.64  4.27828px  1 <span.card__ring>
+ok   #432825 on #FEEEEC  11.89  17px  4 things need fixing before this can <p.>
+ok   #263529 on #F8F9F8  12.25  12.4754px  Programs <button.>
+ok   #263529 on #FCFDFC  12.68  10.7346px  Lying down <p.hub__card-meta>
+ok   #FCFDFC on #263529  12.68  15.2104px  Let go <button.btn>
+ok   #FFFFFF on #263529  12.93  17px  Book a demo <a.btn>
+
+0 pairs under AA

@@ -1,0 +1,19 @@
+PASS  contact: empty submit lists the four needed fields  [4 things need fixing before this can go. |  | Your name: this is needed | Email: this is needed | Country: this is needed | Your message: this is needed]
+PASS  contact: focus moves to the error summary
+PASS  contact: nothing claims to have been sent
+PASS  contact: a malformed email is caught  [One thing needs fixing before this can go. |  | Email: check this]
+PASS  contact: says the email app should have opened and that nothing was sent  [Your email app should have opened with your message written. Press send there and it goes to Amelia. |  | If nothing opened, nothing has been sent. Try opening ]
+PASS  contact: no script from the message runs or is injected
+PASS  contact: retry link goes only to amelia@pelvy.app  [mailto:amelia@pelvy.app?subject=Pelvy%20website%20enquiry&bo]
+PASS  contact: the message box stops at 1500 characters
+PASS  contact: mailto is addressed to Amelia with the subject set  [mailto:amelia@pelvy.app?subject=Pelvy%20website%20enquiry&body=Your%20name%3A%20A%20%26%20]
+PASS  contact: hostile "&bcc=" in the message stays inside the body  [subject,body]
+PASS  contact: body carries every field, labelled  [Your name: A & B | Email: a@b.co | Country: Australia | About: A question about Pelvy | Your messa]
+PASS  contact: whole link stays a sane length  [1708]
+PASS  sign-up: a clinician must give a clinic name  [4 things need fixing before this can go. |  | Your name: this is needed | Email: this is needed | Country: this is needed | Clinic name: this is needed]
+PASS  sign-up: choosing patient hides the clinic fields
+PASS  sign-up: choosing patient shows the store links
+PASS  sign-up: a patient is not asked for a clinic name  [3 things need fixing before this can go. |  | Your name: this is needed | Email: this is needed | Country: this is needed]
+PASS  sign-up: switching back restores the clinic fields
+PASS  sign-up: keyboard-only submit reaches the status message
+PASS  no-JS: form posts to mailto and keeps native validation

@@ -29,7 +29,7 @@ Node 22.12 or newer.
 
 Page addresses match the live WordPress site, so nothing indexed or linked breaks.
 
-Paths that start with `brand/` point at the Pelvy brand folder. It is not in this repository. Ask Jake for it.
+Paths that start with `brand/` point at the Pelvy brand folder. It has its own repository, https://github.com/jake-jiffi/pelvy-brand. Clone it next to this one as `brand`.
 
 ## Before it goes live
 
@@ -39,7 +39,11 @@ Paths that start with `brand/` point at the Pelvy brand folder. It is not in thi
 4. **The logo** is the brand's candidate. Nobody has approved it yet.
 5. **Generated scenes** (the room, the fridge, the desk) carry no label on the page. Jake had the labels taken off on 12 October 2026. The brand file still says generated photography "is labelled" (`brand/brand.json`, imagery rules), so either record that decision there or put the labels back. Approve the scenes by name or replace them with photographs.
 
-Every fact the site states carries its source as a comment in `src/data/site.ts`. The full claims ledger and the media provenance record are kept out of this repository. Ask Jake for them.
+The sources behind every claim are in `.palate/evidence/claims.md`. Media provenance is in `.palate/evidence/media.md`. The critique reports are in `.palate/critique/`. None of it is part of the built site.
+
+## Checks
+
+The browser checks live in `checks/`. See `checks/README.md`.
 
 ## Motion
 

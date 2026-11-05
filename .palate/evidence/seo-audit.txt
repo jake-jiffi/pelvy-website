@@ -1,0 +1,93 @@
+url                                                                    title  desc h1 imgs
+/404.html                                                                 22   127 1  0
+/about/                                                                   30   131 1  2
+/blog/                                                                    34    92 1  1
+/clinician-faqs/                                                          41   120 1  0
+/clinicians-and-specialists/                                              34   144 1  1
+/clinicians-directory/                                                    22   129 1  0
+/contact-us/                                                              23   100 1  0
+/features/                                                                43   149 1  0
+/general-user-faqs/                                                       39   137 1  0
+/general-users/                                                           46   158 1  0
+/                                                                         54   149 1  4
+/pelvy-launch-party-perth-wa/                                             37   101 1  1
+/privacy-policy/                                                          26    89 1  0
+/queensland-health-pilot-opportunity-could-pelvy-support-your-patients    59   122 1  0
+/sign-up/                                                                 41   154 1  0
+
+PROBLEMS 0
+
+EXTERNAL 76
+  https://ace-physiotherapy-and-pilates.au2.cliniko.com/bookings#location
+  https://ace-pt.org/
+  https://amelieprivate.com/
+  https://anatomyphysiotherapy.ie/
+  https://apps.apple.com/us/app/pelvy-patient/id6752825827
+  https://blackwoodphysioandpelvichealth.com.au/
+  https://childersphysio.com.au/
+  https://essentialhealthphysio.com.au/
+  https://fitrightwomenshealth.au/
+  https://formandpractice.com.au/
+  https://gracevillephysio.com.au/
+  https://liftpelvicphysio.com.au/
+  https://luma.org.au/
+  https://macwhphysio.com.au/
+  https://mercyphysio.com.au
+  https://ncphysio.com.au/
+  https://northwesthealthywomen.com.au/
+  https://nurturingherphysiotherapy.com.au/
+  https://physio73.com.au/
+  https://physiotherapyalliance.com/
+  https://play.google.com/store/apps/details?id=app.pelvy.patient_app
+  https://reactivephysio.com/
+  https://stephlyonsphysio.com/
+  https://thehealthypeachphysio.com.au/
+  https://vitalityroadphysio.com.au/
+  https://www.activepelvichealth.org/
+  https://www.adelaidepelvicphysiotherapy.com/
+  https://www.adphysio.com.au/
+  https://www.allsportsphysio.com.au/
+  https://www.bodyandbirthphysio.com/
+  https://www.boutiquepelvichealth.com/
+  https://www.breathewomenshealth.com.au/
+  https://www.centralmelbournegastro.com.au/
+  https://www.deniliquinpelvicphysio.com/
+  https://www.elevatepelvichealth.com.au/
+  https://www.embodyph.com.au
+  https://www.embracephysiopilates.com.au/
+  https://www.empelvicphysio.com.au/
+  https://www.evolvepelvicphysio.au/
+  https://www.facebook.com/people/Pelvy-App/61562366453185/
+  https://www.femmespacephysiotherapy.com.au/
+  https://www.fit2function.com.au/
+  https://www.focuswithformphysio.com.au/
+  https://www.geelongpelvichealth.com.au/
+  https://www.healthfocus.com.au/
+  https://www.herhealthphysiotherapy.com.au/
+  https://www.instagram.com/pelvy.app/
+  https://www.ivoryrosephysio.com.au/
+  https://www.jindabynewomenshealth.com.au/
+  https://www.katiepelvicphysio.com.au/
+  https://www.katyholmesphysiotherapy.com/
+  https://www.kmwomenshealth.com.au/
+  https://www.linkedin.com/in/agner-grieco-hazewinkel-11a58a1b0/
+  https://www.linkedin.com/in/amelia-godfrey-0a9406142/
+  https://www.linkedin.com/in/lewisdaniellec/
+  https://www.linkedin.com/in/taryn-watson-471274aa/
+  https://www.oakflatsphysiotherapy.com.au/
+  https://www.pelvicfixphysiotherapy.com.au/
+  https://www.pelvichealthco.com.au/
+  https://www.pelvichug.com/
+  https://www.pelvicworksphysiotherapy.com.au/
+  https://www.physiosista.com.au/
+  https://www.resurgencephysiotherapy.com.au/
+  https://www.revolvephysio.com.au/
+  https://www.shalompilates.com.au/
+  https://www.sportsandspinalphysio.com.au/
+  https://www.territorywomensclinic.com/
+  https://www.theapelvichealth.com.au/
+  https://www.thefunkyphysio.com.au/
+  https://www.verawellness.com.au/
+  https://www.vitalcore.com.au/
+  https://www.youtube.com/@PelvyApp
+  https://youtu.be/qEsIuCbE9k8

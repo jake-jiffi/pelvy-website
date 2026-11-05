@@ -1,0 +1,168 @@
+{
+ "productKind": "saas-marketing",
+ "platform": "wordpress",
+ "facts": [
+  {
+   "status": "observed",
+   "value": "Pelvy is a pelvic floor app (Pelvy Patient, PELVY PTY LTD) built by Amelia Godfrey, a pelvic health physiotherapist. It counts a person through strength and relaxation programs and carries a subscribing clinician's own programs and advice.",
+   "basis": "brand/brand.json strategy and evidence e14, e24, e37, e40; pelvy.app/about"
+  },
+  {
+   "status": "observed",
+   "value": "Clinic pricing: AUD 20 a month during the pilot, with six free months for each patient. Pilot clinics keep that price.",
+   "basis": "pelvy.app/clinician-faqs captured 2026-10-12; brand open question q13 asks Amelia to confirm it is still current"
+  },
+  {
+   "status": "observed",
+   "value": "Pelvy Lite: people whose clinic does not subscribe pay $4.99 a month or $19.99 a year in the app.",
+   "basis": "Amelia's demo video youtu.be/qEsIuCbE9k8 (2026-03-29), brand evidence e37; contradicts the older /general-user-faqs page ($99 a year, waitlist)"
+  },
+  {
+   "status": "observed",
+   "value": "Three programs ship: Pelvic floor with breath, Belly breathing and downtraining, Pelvic floor strength. The hub has Programs, Videos and Learn tabs. Up to three reminder times per program.",
+   "basis": "demo video frames, brand evidence e44, e45"
+  },
+  {
+   "status": "observed",
+   "value": "Pelvy is education and support. It is not TGA certified, gives no individual medical advice, and tells people to see a pelvic health physio if nothing changes in three months.",
+   "basis": "pelvy.app/general-user-faqs; demo video; brand evidence e22, e47"
+  },
+  {
+   "status": "observed",
+   "value": "Data is stored in Google Cloud (Sydney region), encrypted in transit and at rest, deleted on request, never sold.",
+   "basis": "pelvy.app/privacy-policy (last updated 6 October 2025) and /general-user-faqs"
+  },
+  {
+   "status": "observed",
+   "value": "Amelia's post of 17 July 2026 says Pelvy is used in 112 clinics across 6 countries and has supported more than 5,300 patients.",
+   "basis": "pelvy.app/queensland-health-pilot-opportunity-could-pelvy-support-your-patients/ fetched 2026-10-12. Her own published figure; no data behind it was shown"
+  },
+  {
+   "status": "observed",
+   "value": "The live directory lists 65 clinic cards, 46 with a published quote from the clinic.",
+   "basis": "pelvy.app/clinicians-directory/ fetched 2026-10-12, parsed to src/data/clinics.json"
+  },
+  {
+   "status": "observed",
+   "value": "App Store: Pelvy Patient, free, rated 4.9 from 45 ratings (Australia). Google Play: 4.9 from 16 ratings.",
+   "basis": "brand evidence e24 and e35, read 2026-10-12"
+  },
+  {
+   "status": "observed",
+   "value": "Contact: amelia@pelvy.app, +61 456 585 447, 135 Hearl Close, Brinsmead QLD. Social: Facebook, Instagram, YouTube @PelvyApp, Amelia's LinkedIn.",
+   "basis": "pelvy.app footer, privacy policy and clinician FAQ"
+  }
+ ],
+ "identity": [
+  {
+   "status": "supplied",
+   "value": "Colour locked: deep sage #41684A (brand, actions), sage #78A080 (let go, large fills under ink only), soft sage #ABC8B1 (note card ground), slate #5E6687 (work only, never a button), paper and ink neutrals. White text never sits on either sage.",
+   "basis": "brand/brand.json identity.colour and decisions d10, d20, d23; brand/tokens/tokens.css"
+  },
+  {
+   "status": "supplied",
+   "value": "Type locked: Literata for headings and words a person says, DM Sans for everything the app says, DM Mono for counts. Major-third scale from 17px, 62ch measure.",
+   "basis": "brand/brand.json identity.type, decision d11"
+  },
+  {
+   "status": "supplied",
+   "value": "Shape: 22px on panels and photographs, pills on buttons, 10px on fields. Motion: fluid, the breath, 320ms cubic-bezier(0.34, 1.3, 0.64, 1), nothing bounces for attention.",
+   "basis": "brand/brand.json identity.shape, motionSignature, antiPatterns"
+  },
+  {
+   "status": "supplied",
+   "value": "Signature moves: the clinician's note (soft sage card, Literata, signed), the count ring (a numeral that is really counting), sage behind and ink in front. No illustration. The app is the picture.",
+   "basis": "brand/brand.json identity.signatureMoves, decisions d13, d15"
+  },
+  {
+   "status": "supplied",
+   "value": "Voice: plain about bodies, honest about limits, steady, reasoned, specific. Banned words include journey, empower, treats, cure, diagnose, wellness. No exclamation marks, no capitals for emphasis, no em dashes.",
+   "basis": "brand/brand.json voice"
+  },
+  {
+   "status": "supplied",
+   "value": "Logo: the 2024 logo copied to vector, name first and symbol after, deep sage with sage for the lighter shapes. It is recorded as a candidate that nobody has approved yet.",
+   "basis": "brand/brand.json decisions d21, d22; brand/logo/lockups"
+  }
+ ],
+ "assets": [
+  {
+   "status": "supplied",
+   "value": "Brand tokens, logo lockups and favicons",
+   "basis": "brand/tokens, brand/logo/lockups, brand/assets"
+  },
+  {
+   "status": "supplied",
+   "value": "App screens redrawn in the brand system, 780x1688 each: hub, program, breathe in, breathe out, hold",
+   "basis": "brand/canvas/app-*.png"
+  },
+  {
+   "status": "observed",
+   "value": "Real photographs of Amelia from pelvy.app: clinic ultrasound 1170x755, headshot cut-out 586x946, Perth launch party 1200x675. No other real photography exists in the set.",
+   "basis": "measured with sips; files under /Users/jakeshelley/dev/palate-pelvy/assets/photos captured from pelvy.app"
+  },
+  {
+   "status": "supplied",
+   "value": "Generated room scenes (no people), labelled as generated wherever shown: phone at home 2560x3200, fridge handout 2336x3504, clinic desk 5056x3392, waiting room 5056x3392",
+   "basis": "brand/media, generated with Higgsfield during the brand build"
+  },
+  {
+   "status": "proposed",
+   "value": "Higgsfield Kling 3.0 motion made for this site from those scenes: a locked-off 10 second loop of the room at home (job 81264e35), a clinic desk loop and a falling handout clip. Rooms and objects only. Candidates until Jake approves them.",
+   "basis": "generated 2026-10-12 in this build; .palate/evidence/media.md"
+  }
+ ],
+ "routes": [
+  "/",
+  "/about/",
+  "/blog/",
+  "/clinician-faqs/",
+  "/clinicians-and-specialists/",
+  "/clinicians-directory/",
+  "/contact-us/",
+  "/features/",
+  "/general-user-faqs/",
+  "/general-users/",
+  "/privacy-policy/",
+  "/sign-up/",
+  "/pelvy-launch-party-perth-wa/",
+  "/queensland-health-pilot-opportunity-could-pelvy-support-your-patients/"
+ ],
+ "journeys": [
+  "A clinician reads what Pelvy does and costs, then books a demo or signs up",
+  "A person sent by their clinician, or on their own, understands the app and goes to the App Store or Google Play",
+  "A GP or specialist finds the QR code route and asks Amelia for the printable sheet",
+  "Someone looks for a clinic that uses Pelvy in the directory",
+  "Anyone sends Amelia an enquiry"
+ ],
+ "integrations": [
+  {
+   "status": "observed",
+   "value": "App Store https://apps.apple.com/us/app/pelvy-patient/id6752825827 and Google Play https://play.google.com/store/apps/details?id=app.pelvy.patient_app",
+   "basis": "pelvy.app home"
+  },
+  {
+   "status": "unknown",
+   "value": "Enquiry and sign-up delivery. The live site uses WordPress forms. The new site needs a destination agreed before launch.",
+   "basis": "pelvy.app/contact-us and /sign-up"
+  }
+ ],
+ "unresolved": [
+  "The photography set cannot carry the design on its own: three real photographs, none wider than 1200px, none showing the app or a home. The design leads with the app, as the brand directs, and uses generated rooms labelled as generated.",
+  "Enquiry delivery destination and hosting are not chosen. Forms fall back to composing an email to amelia@pelvy.app until an endpoint is configured.",
+  "Clinic price, six free months and the word pilot need Amelia's confirmation (brand q13).",
+  "The 112 clinics, 6 countries and 5,300 patients figure is Amelia's published claim from July 2026 and needs a current number before launch.",
+  "Clinic quotes in the directory may need an AHPRA advertising check before they are used as testimonials.",
+  "Rights and releases for the photographs of Amelia and the man in the ultrasound photograph are unconfirmed (brand imagery.rights).",
+  "The logo is a candidate that nobody has approved.",
+  "App screens are drawn in the new brand system. The shipped app still uses its older colours."
+ ],
+ "artefacts": [
+  ".palate/input/source.json",
+  ".palate/evidence/clinics-directory-2026-10-12.json",
+  ".palate/references/lava-dental/sheet.jpg",
+  ".palate/references/halo-dental/sheet.jpg",
+  ".palate/references/lovi/sheet.jpg",
+  ".palate/references/antara-spa/sheet.jpg"
+ ]
+}

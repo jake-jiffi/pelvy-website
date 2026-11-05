@@ -1,0 +1,373 @@
+{
+ "base": "http://127.0.0.1:4330",
+ "when": "2026-10-12T05:36:37.746Z",
+ "passed": 52,
+ "total": 52,
+ "errors": [],
+ "results": [
+  {
+   "device": "desktop",
+   "journey": "1 clinician books a demo",
+   "step": "home opens with the promise and a Book a demo action",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "1 clinician books a demo",
+   "step": "navigation reaches the clinicians page",
+   "ok": true,
+   "detail": "/clinicians-and-specialists/"
+  },
+  {
+   "device": "desktop",
+   "journey": "1 clinician books a demo",
+   "step": "the price is stated: $20 a month, six months free for patients",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "1 clinician books a demo",
+   "step": "Book a demo reaches the sign-up form",
+   "ok": true,
+   "detail": "/sign-up/"
+  },
+  {
+   "device": "desktop",
+   "journey": "1 clinician books a demo",
+   "step": "the form writes an email to Amelia with the clinic and the live demo request",
+   "ok": true,
+   "detail": "I am: clinician | Your name: Dr Sam Example | Email: sam@example.clinic | Country: Australia | Clinic name: Example Pelvic Health | Live dem"
+  },
+  {
+   "device": "desktop",
+   "journey": "1 clinician books a demo",
+   "step": "it says plainly that nothing has been sent from the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "2 patient gets the app",
+   "step": "\"I'm a patient: get the app\" lands on the store links",
+   "ok": true,
+   "detail": "/#get-the-app y=104"
+  },
+  {
+   "device": "desktop",
+   "journey": "2 patient gets the app",
+   "step": "both store links are the real listings",
+   "ok": true,
+   "detail": "https://apps.apple.com/us/app/pelvy-patient/id6752825827 https://play.google.com/store/apps/details?id=app.pelvy.patient_app http://127.0.0."
+  },
+  {
+   "device": "desktop",
+   "journey": "2 patient gets the app",
+   "step": "navigation reaches the page for patients",
+   "ok": true,
+   "detail": "/general-users/"
+  },
+  {
+   "device": "desktop",
+   "journey": "2 patient gets the app",
+   "step": "both prices are stated: free for six months with a clinic, $4.99 or $19.99 alone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "2 patient gets the app",
+   "step": "it says when to see a physio",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "2 patient gets the app",
+   "step": "the exercise screen can be tried: Squeeze switches the program",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "3 GP finds the QR route",
+   "step": "the link lands on the recommend section",
+   "ok": true,
+   "detail": "/clinicians-and-specialists/#recommend y=104"
+  },
+  {
+   "device": "desktop",
+   "journey": "3 GP finds the QR route",
+   "step": "it offers the printable QR sheet by email to Amelia",
+   "ok": true,
+   "detail": "mailto:amelia@pelvy.app?subject=QR%20code%20sheet%20for%20my%20patients"
+  },
+  {
+   "device": "desktop",
+   "journey": "3 GP finds the QR route",
+   "step": "it states the price the patient pays",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "4 find a clinic",
+   "step": "navigation reaches the directory",
+   "ok": true,
+   "detail": "/clinicians-directory/"
+  },
+  {
+   "device": "desktop",
+   "journey": "4 find a clinic",
+   "step": "all 65 clinics are listed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "4 find a clinic",
+   "step": "searching \"adelaide\" narrows the list",
+   "ok": true,
+   "detail": "2 showing"
+  },
+  {
+   "device": "desktop",
+   "journey": "4 find a clinic",
+   "step": "a clinic opens to show credentials and telehealth",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "4 find a clinic",
+   "step": "the clinic's own website link is a real address",
+   "ok": true,
+   "detail": "https://www.adelaidepelvicphysiotherapy.com/"
+  },
+  {
+   "device": "desktop",
+   "journey": "5 enquiry",
+   "step": "the footer reaches the contact page",
+   "ok": true,
+   "detail": "/contact-us/"
+  },
+  {
+   "device": "desktop",
+   "journey": "5 enquiry",
+   "step": "sending it empty says what is needed, in one place",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "5 enquiry",
+   "step": "the form writes the email to Amelia with the message",
+   "ok": true,
+   "detail": "Your name: Jo Example | Email: jo@example.com | Country: Australia | About: Help with the app | Your message: Does Pelvy work on older phone"
+  },
+  {
+   "device": "desktop",
+   "journey": "5 enquiry",
+   "step": "direct contact details are on the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "0 every route",
+   "step": "all 14 live addresses answer with one h1 and no sideways scroll",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "desktop",
+   "journey": "0 every route",
+   "step": "an unknown address gives a 404 page with ways on",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "1 clinician books a demo",
+   "step": "home opens with the promise and a Book a demo action",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "1 clinician books a demo",
+   "step": "navigation reaches the clinicians page",
+   "ok": true,
+   "detail": "/clinicians-and-specialists/"
+  },
+  {
+   "device": "phone",
+   "journey": "1 clinician books a demo",
+   "step": "the price is stated: $20 a month, six months free for patients",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "1 clinician books a demo",
+   "step": "Book a demo reaches the sign-up form",
+   "ok": true,
+   "detail": "/sign-up/"
+  },
+  {
+   "device": "phone",
+   "journey": "1 clinician books a demo",
+   "step": "the form writes an email to Amelia with the clinic and the live demo request",
+   "ok": true,
+   "detail": "I am: clinician | Your name: Dr Sam Example | Email: sam@example.clinic | Country: Australia | Clinic name: Example Pelvic Health | Live dem"
+  },
+  {
+   "device": "phone",
+   "journey": "1 clinician books a demo",
+   "step": "it says plainly that nothing has been sent from the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "2 patient gets the app",
+   "step": "\"I'm a patient: get the app\" lands on the store links",
+   "ok": true,
+   "detail": "/#get-the-app y=88"
+  },
+  {
+   "device": "phone",
+   "journey": "2 patient gets the app",
+   "step": "both store links are the real listings",
+   "ok": true,
+   "detail": "https://apps.apple.com/us/app/pelvy-patient/id6752825827 https://play.google.com/store/apps/details?id=app.pelvy.patient_app http://127.0.0."
+  },
+  {
+   "device": "phone",
+   "journey": "2 patient gets the app",
+   "step": "navigation reaches the page for patients",
+   "ok": true,
+   "detail": "/general-users/"
+  },
+  {
+   "device": "phone",
+   "journey": "2 patient gets the app",
+   "step": "both prices are stated: free for six months with a clinic, $4.99 or $19.99 alone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "2 patient gets the app",
+   "step": "it says when to see a physio",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "2 patient gets the app",
+   "step": "the exercise screen can be tried: Squeeze switches the program",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "3 GP finds the QR route",
+   "step": "the link lands on the recommend section",
+   "ok": true,
+   "detail": "/clinicians-and-specialists/#recommend y=88"
+  },
+  {
+   "device": "phone",
+   "journey": "3 GP finds the QR route",
+   "step": "it offers the printable QR sheet by email to Amelia",
+   "ok": true,
+   "detail": "mailto:amelia@pelvy.app?subject=QR%20code%20sheet%20for%20my%20patients"
+  },
+  {
+   "device": "phone",
+   "journey": "3 GP finds the QR route",
+   "step": "it states the price the patient pays",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "4 find a clinic",
+   "step": "navigation reaches the directory",
+   "ok": true,
+   "detail": "/clinicians-directory/"
+  },
+  {
+   "device": "phone",
+   "journey": "4 find a clinic",
+   "step": "all 65 clinics are listed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "4 find a clinic",
+   "step": "searching \"adelaide\" narrows the list",
+   "ok": true,
+   "detail": "2 showing"
+  },
+  {
+   "device": "phone",
+   "journey": "4 find a clinic",
+   "step": "a clinic opens to show credentials and telehealth",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "4 find a clinic",
+   "step": "the clinic's own website link is a real address",
+   "ok": true,
+   "detail": "https://www.adelaidepelvicphysiotherapy.com/"
+  },
+  {
+   "device": "phone",
+   "journey": "5 enquiry",
+   "step": "the footer reaches the contact page",
+   "ok": true,
+   "detail": "/contact-us/"
+  },
+  {
+   "device": "phone",
+   "journey": "5 enquiry",
+   "step": "sending it empty says what is needed, in one place",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "5 enquiry",
+   "step": "the form writes the email to Amelia with the message",
+   "ok": true,
+   "detail": "Your name: Jo Example | Email: jo@example.com | Country: Australia | About: Help with the app | Your message: Does Pelvy work on older phone"
+  },
+  {
+   "device": "phone",
+   "journey": "5 enquiry",
+   "step": "direct contact details are on the page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "0 every route",
+   "step": "all 14 live addresses answer with one h1 and no sideways scroll",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "device": "phone",
+   "journey": "0 every route",
+   "step": "an unknown address gives a 404 page with ways on",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

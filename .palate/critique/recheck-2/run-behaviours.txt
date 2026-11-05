@@ -1,0 +1,35 @@
+PASS  player: counts by itself at rest  [in 1 -> out 4]
+PASS  player: the small screen in the room and the large one agree
+PASS  hero: video is playing
+PASS  hero: part way, the ground has opened and the room has scaled  [inset(0px 0px 0px 0.01px) | translate(-429.18px, -75.85px) scale(1.29407)]
+PASS  hero: at the end the small screen lands on the large one within 1px  [0, 0, 0, 0 (earlier 0, 0, 0, 0)]
+PASS  hero: the large screen and its controls are showing
+PASS  hero: the room clip is paused once it is out of sight
+PASS  switch: Squeeze changes the program and restarts the count  [{"phase":"in","count":"4","rep":"1","title":"Pelvic floor with breath","s":"0.8629"}]
+PASS  switch: pressed state follows
+PASS  switch: Squeeze reaches the slate out-breath with its cue  [out]
+PASS  pause: the count stops and the disc holds its size  [5/0.9930 -> 5/0.9930]
+PASS  pause: the button now says Start
+PASS  pause: scrolling away and back does not restart it  [5 -> 5]
+PASS  pause: Start resumes from where it stopped  [out 5 -> out 3]
+PASS  switch: twelve rapid switches leave a sane state  [{"phase":"in","count":"4","rep":"1","title":"Pelvic floor with breath","s":"0.8637"}]
+PASS  hub: Videos tab shows the video list and hides programs
+PASS  hub: arrow key moves to Learn and focus follows
+PASS  hub: the list beside the screen drives the tabs
+PASS  quotes: the row scrolls with the arrow keys
+PASS  keyboard: the exercise controls cannot be focused or pressed before they show
+PASS  keyboard: Tab goes Pause, Let go, Squeeze, each fully shown and in view  [[{"name":"pause","inTry":true,"opacity":1,"inView":true,"y":1710},{"name":"letgo","inTry":true,"opacity":1,"inView":true,"y":1710},{"name":"squeeze","inTry":true,"opacity":1,"inView":true,"y":1710}]]
+PASS  keyboard: Enter on Squeeze switches the program
+PASS  keyboard: the change is announced in a live region
+PASS  keyboard: Shift+Tab from Pause returns to the opening, back at the top  [{"name":"motion","inTry":false,"opacity":1,"inView":true,"y":0}]
+PASS  reduced motion: nothing counts or plays by itself  [3 -> 3]
+PASS  reduced motion: Start still counts, without the disc scaling  [hold2|none]
+PASS  reduced motion: nothing is left hidden
+PASS  menu: opens on a tap and shows the links
+PASS  menu: Escape closes it
+PASS  directory: search narrows the list and the count agrees  [8 clinics, 8 showing]
+PASS  directory: no match says so and offers a way on
+PASS  directory: state and telehealth filters combine  [13]
+PASS  directory: a clinic opens to show its details
+PASS  phone: no sideways scroll
+console/page errors: none

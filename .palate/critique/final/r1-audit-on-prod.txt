@@ -1,0 +1,408 @@
+{
+ "desktop": {
+  "note": {
+   "notePx": 96,
+   "heroPx": 74.08,
+   "biggestOther": 74.08,
+   "by": "Amelia Godfrey, pelvic health physiotherapist",
+   "from": false,
+   "sample": "The note shown is a sample from Pelvy’s store listing.",
+   "sampleInsideGround": false,
+   "ground": "rgb(171, 200, 177)"
+  },
+  "grounds": {
+   "heroEnd": 3150,
+   "saidTop": 10813,
+   "longestPaper": {
+    "len": 2400,
+    "from": 3150,
+    "to": 5550
+   },
+   "longestPaperOrWhite": {
+    "len": 2400,
+    "from": 3150,
+    "to": 5550
+   },
+   "sequence": [
+    "3150:rgb(248, 249, 248)(flush-top)",
+    "5550:rgb(171, 200, 177)(voice)",
+    "6330:rgb(248, 249, 248)(flush-top)",
+    "7430:rgb(120, 160, 128)(inside)",
+    "8390:rgb(248, 249, 248)(flush-top)",
+    "9170:rgb(237, 245, 238)(ways__band)",
+    "9550:rgb(248, 249, 248)(flush-top)",
+    "9610:rgb(252, 253, 252)(clinics)",
+    "10830:rgb(65, 104, 74)(said)"
+   ]
+  },
+  "count": {
+   "pairsTwoSecondsApart": [
+    "4 Rest rep 1 -> 2 Rest rep 1",
+    "2 Rest rep 1 -> 5 Hold rep 2",
+    "4 Hold rep 2 -> 2 Hold rep 2",
+    "1 Hold rep 2 -> 4 Rest rep 2",
+    "4 Rest rep 2 -> 2 Rest rep 2",
+    "1 Rest rep 2 -> 4 Hold rep 3"
+   ],
+   "allDiffer": true,
+   "ring": [
+    171,
+    "15px",
+    "\"DM Mono\""
+   ],
+   "pausedOutOfView": "3 Hold rep 3 -> 3 Hold rep 3",
+   "pauses": true,
+   "motionPaused": "3 Hold rep 3 -> 3 Hold rep 3",
+   "honoursPauseMotion": true
+  },
+  "steps": {
+   "onBeforeListInView": 0,
+   "onAt": [
+    {
+     "y": 9558,
+     "listTopInViewport": 410
+    },
+    {
+     "y": 9738,
+     "listTopInViewport": 230
+    },
+    {
+     "y": 9928,
+     "listTopInViewport": 40
+    }
+   ],
+   "gaps": [
+    180,
+    190
+   ],
+   "vh": 900
+  },
+  "quotes": {
+   "buttons": [
+    "Previous quote: 60x48, visible true",
+    "Next quote: 60x48, visible true"
+   ],
+   "start": "1 of 7 | scrollLeft 0",
+   "afterEnterOnNext": "2 of 7 | scrollLeft 1360",
+   "afterSpaceOnNext": "3 of 7 | scrollLeft 2720",
+   "status": "Quote 3 of 7",
+   "afterPrev": "2 of 7 | scrollLeft 1360",
+   "afterArrowRightOnRow": "3 of 7 | scrollLeft 2720",
+   "atEnd": "7 of 7 | scrollLeft 8160",
+   "pressesToEnd": 4,
+   "endState": {
+    "nextDisabled": "true",
+    "lastQuoteInView": true
+   },
+   "noAutoplay": true,
+   "verbatim": [
+    110,
+    132,
+    135,
+    136,
+    120,
+    125,
+    132
+   ]
+  },
+  "hub": {
+   "panes": {
+    "programs": {
+     "screenPx": 710,
+     "emptyPx": 82,
+     "emptyPct": 11.5,
+     "overflows": false
+    },
+    "videos": {
+     "screenPx": 710,
+     "emptyPx": 155,
+     "emptyPct": 21.8,
+     "overflows": false
+    },
+    "learn": {
+     "screenPx": 710,
+     "emptyPx": 106,
+     "emptyPct": 15,
+     "overflows": false
+    },
+    "playMarks": 0,
+    "tabHeights": [
+     44,
+     44,
+     44
+    ]
+   },
+   "instruction": {
+    "text": "This is the app’s home screen. Tap the tabs.",
+    "leadFontPx": 24,
+    "pxFromInstructionToTabs": -81
+   },
+   "afterTap_videos": {
+    "tabsTop": 219,
+    "tabsBottom": 262,
+    "vh": 900,
+    "inViewport": true,
+    "paneShown": true,
+    "tabsInViewBeforeTap": true
+   },
+   "afterTap_learn": {
+    "tabsTop": 219,
+    "tabsBottom": 262,
+    "vh": 900,
+    "inViewport": true,
+    "paneShown": true,
+    "tabsInViewBeforeTap": true
+   },
+   "afterTap_programs": {
+    "tabsTop": 219,
+    "tabsBottom": 262,
+    "vh": 900,
+    "inViewport": true,
+    "paneShown": true,
+    "tabsInViewBeforeTap": true
+   }
+  },
+  "setup": {
+   "steps": [
+    "1Download Pelvy Patient. @ 16.9904px",
+    "2Sign in with your mobile number. @ 16.9904px",
+    "3Your notes and your program are there. @ 16.9904px"
+   ],
+   "onCardPx": 8.73844
+  },
+  "sage": {
+   "textRunsOnSage": 3,
+   "under24": [],
+   "heroStage": [
+    "It counts, so you can finish. @ 57.9792px",
+    "Squeeze, hold, let go. Pelvy c @ 24px",
+    "Breathe out @ 24px"
+   ]
+  },
+  "overflowX": 0
+ },
+ "mobile": {
+  "note": {
+   "notePx": 45.84,
+   "heroPx": 42.68,
+   "biggestOther": 42.68,
+   "by": "Amelia Godfrey, pelvic health physiotherapist",
+   "from": false,
+   "sample": "The note shown is a sample from Pelvy’s store listing.",
+   "sampleInsideGround": false,
+   "ground": "rgb(171, 200, 177)"
+  },
+  "grounds": {
+   "heroEnd": 2954,
+   "saidTop": 11922,
+   "longestPaper": {
+    "len": 2000,
+    "from": 2954,
+    "to": 4954
+   },
+   "longestPaperOrWhite": {
+    "len": 2000,
+    "from": 2954,
+    "to": 4954
+   },
+   "sequence": [
+    "2954:rgb(248, 249, 248)(flush-top)",
+    "4954:rgb(171, 200, 177)(voice)",
+    "5594:rgb(248, 249, 248)(flush-top)",
+    "7054:rgb(120, 160, 128)(inside)",
+    "8774:rgb(248, 249, 248)(flush-top)",
+    "9774:rgb(237, 245, 238)(ways__band)",
+    "10254:rgb(248, 249, 248)(flush-top)",
+    "10294:rgb(252, 253, 252)(clinics)",
+    "11934:rgb(65, 104, 74)(said)"
+   ]
+  },
+  "count": {
+   "pairsTwoSecondsApart": [
+    "5 Rest rep 1 -> 3 Rest rep 1",
+    "3 Rest rep 1 -> 1 Rest rep 1",
+    "5 Hold rep 2 -> 3 Hold rep 2",
+    "2 Hold rep 2 -> 5 Rest rep 2",
+    "5 Rest rep 2 -> 3 Rest rep 2",
+    "2 Rest rep 2 -> 5 Hold rep 3"
+   ],
+   "allDiffer": true,
+   "ring": [
+    97,
+    "8px",
+    "\"DM Mono\""
+   ],
+   "pausedOutOfView": "4 Hold rep 3 -> 4 Hold rep 3",
+   "pauses": true
+  },
+  "steps": {
+   "onBeforeListInView": 0,
+   "onAt": [
+    {
+     "y": 10215,
+     "listTopInViewport": 384
+    },
+    {
+     "y": 10385,
+     "listTopInViewport": 214
+    },
+    {
+     "y": 10595,
+     "listTopInViewport": 4
+    }
+   ],
+   "gaps": [
+    170,
+    210
+   ],
+   "vh": 844
+  },
+  "quotes": {
+   "buttons": [
+    "Previous quote: 60x48, visible true",
+    "Next quote: 60x48, visible true"
+   ],
+   "start": "1 of 7 | scrollLeft 0",
+   "afterEnterOnNext": "2 of 7 | scrollLeft 369",
+   "afterSpaceOnNext": "3 of 7 | scrollLeft 737",
+   "status": "Quote 3 of 7",
+   "afterPrev": "2 of 7 | scrollLeft 369",
+   "afterArrowRightOnRow": "3 of 7 | scrollLeft 737",
+   "atEnd": "7 of 7 | scrollLeft 2211",
+   "pressesToEnd": 4,
+   "endState": {
+    "nextDisabled": "true",
+    "lastQuoteInView": true
+   },
+   "noAutoplay": true,
+   "verbatim": [
+    110,
+    132,
+    135,
+    136,
+    120,
+    125,
+    132
+   ],
+   "afterSwipe": "2 of 7 | scrollLeft 369"
+  },
+  "hub": {
+   "panes": {
+    "programs": {
+     "screenPx": 710,
+     "emptyPx": 82,
+     "emptyPct": 11.5,
+     "overflows": false
+    },
+    "videos": {
+     "screenPx": 710,
+     "emptyPx": 155,
+     "emptyPct": 21.8,
+     "overflows": false
+    },
+    "learn": {
+     "screenPx": 710,
+     "emptyPx": 106,
+     "emptyPct": 15,
+     "overflows": false
+    },
+    "playMarks": 0,
+    "tabHeights": [
+     44,
+     44,
+     44
+    ]
+   },
+   "instruction": {
+    "text": "This is the app’s home screen. Tap the tabs.",
+    "leadFontPx": 24,
+    "pxFromInstructionToTabs": 119
+   },
+   "afterTap_videos": {
+    "tabsTop": 195,
+    "tabsBottom": 239,
+    "vh": 844,
+    "inViewport": true,
+    "paneShown": true,
+    "tabsInViewBeforeTap": false
+   },
+   "afterTap_learn": {
+    "tabsTop": 195,
+    "tabsBottom": 239,
+    "vh": 844,
+    "inViewport": true,
+    "paneShown": true,
+    "tabsInViewBeforeTap": false
+   },
+   "afterTap_programs": {
+    "tabsTop": 195,
+    "tabsBottom": 239,
+    "vh": 844,
+    "inViewport": true,
+    "paneShown": true,
+    "tabsInViewBeforeTap": false
+   }
+  },
+  "setup": {
+   "steps": [
+    "1Download Pelvy Patient. @ 15.2104px",
+    "2Sign in with your mobile number. @ 15.2104px",
+    "3Your notes and your program are there. @ 15.2104px"
+   ],
+   "onCardPx": 5.56177
+  },
+  "sage": {
+   "textRunsOnSage": 3,
+   "under24": [],
+   "heroStage": [
+    "It counts, so you can finish. @ 29.6px",
+    "Squeeze, hold, let go. Pelvy c @ 24px",
+    "Breathe out @ 24px"
+   ]
+  },
+  "overflowX": 0
+ },
+ "focus": {
+  "stops": 35,
+  "belowFullOpacity": [],
+  "outOfView": [],
+  "order": [
+   "Skip to content",
+   "Pelvy, home",
+   "For clinicians",
+   "For you",
+   "What it does",
+   "Find a clinic",
+   "About Amelia",
+   "Book a demo",
+   "Book a demo",
+   "I’m a patient: get the app",
+   "Pause motion",
+   "Pause",
+   "Let goBelly breathing",
+   "SqueezePelvic floor with breath",
+   "Programs",
+   "ProgramsThree ship with the app: one for str",
+   "VideosMobility and stretches for hips, lower",
+   "LearnFive articles, in order, that help you ",
+   "Find a clinic that uses Pelvy",
+   "How it works without a clinician",
+   "Download on the App Store",
+   "Get it on Google Play",
+   "How recommending works",
+   "Book a demo",
+   "What clinics get, and what it costs",
+   "See the clinic directory",
+   "Quotes from clinics that use Pelvy. Use the ",
+   "Previous quote",
+   "Next quote",
+   "Find one who uses Pelvy",
+   "Book a demo",
+   "More about Amelia",
+   "Pelvy, home",
+   "amelia@pelvy.app",
+   "+61 456 585 447"
+  ]
+ }
+}
+console/page errors: none

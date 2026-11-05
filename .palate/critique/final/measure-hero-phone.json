@@ -1,0 +1,104 @@
+{
+ "sizes": {
+  "note": 45.84,
+  "hero": 42.68,
+  "tryH": 29.6,
+  "tryLead": 24,
+  "top5": [
+   {
+    "px": 51.9005,
+    "t": "1",
+    "c": "app__count mono",
+    "voice": false
+   },
+   {
+    "px": 51.9005,
+    "t": "1",
+    "c": "app__count mono",
+    "voice": false
+   },
+   {
+    "px": 45.84,
+    "t": "Let",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 45.84,
+    "t": "your",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 45.84,
+    "t": "belly",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 45.84,
+    "t": "go,",
+    "c": "",
+    "voice": true
+   }
+  ],
+  "noteBy": "Amelia Godfrey, pelvic health physiotherapist",
+  "noteFrom": false,
+  "sample": [
+   "The note shown is a sample from Pelvy’s store listing."
+  ]
+ },
+ "hero": {
+  "heroH": 2954,
+  "travel": 2110,
+  "live": true,
+  "holdFrom": 1395,
+  "holdTo": 2095,
+  "holdPx": 700,
+  "holdVh": 0.83,
+  "clickableWhileFaint": [],
+  "probeSample": [
+   {
+    "y": 844,
+    "inert": true,
+    "op": 0,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   },
+   {
+    "y": 1024,
+    "inert": true,
+    "op": 0,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   },
+   {
+    "y": 1204,
+    "inert": true,
+    "op": 0,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   },
+   {
+    "y": 1384,
+    "inert": true,
+    "op": 1,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   }
+  ]
+ },
+ "phase": {
+  "frames": 190,
+  "distinct": [
+   "in|Breathe in|rgb(38, 53, 41)|rgb(38, 53, 41)|rgb(120, 160, 128)|rgb(252, 253, 252)|1|matrix(0, 0, 0, 0, 0, 0)",
+   "hold|Hold|rgb(38, 53, 41)|rgb(65, 104, 74)|rgb(65, 104, 74)|rgb(252, 253, 252)|1|matrix(0.8334, 0, 0, 0.8334, 0, 0)",
+   "out|Breathe out|rgb(255, 255, 255)|rgb(255, 255, 255)|rgb(94, 102, 135)|rgb(252, 253, 252)|1|matrix(0, 0, 0, 0, 0, 0)"
+  ]
+ },
+ "errors": []
+}

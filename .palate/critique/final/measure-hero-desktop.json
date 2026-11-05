@@ -1,0 +1,145 @@
+{
+ "sizes": {
+  "note": 96,
+  "hero": 74.08,
+  "tryH": 57.9792,
+  "tryLead": 24,
+  "top5": [
+   {
+    "px": 96,
+    "t": "Let",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 96,
+    "t": "your",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 96,
+    "t": "belly",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 96,
+    "t": "go,",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 96,
+    "t": "then",
+    "c": "",
+    "voice": true
+   },
+   {
+    "px": 96,
+    "t": "belly",
+    "c": "",
+    "voice": true
+   }
+  ],
+  "noteBy": "Amelia Godfrey, pelvic health physiotherapist",
+  "noteFrom": false,
+  "sample": [
+   "The note shown is a sample from Pelvy’s store listing."
+  ]
+ },
+ "hero": {
+  "heroH": 3150,
+  "travel": 2250,
+  "live": true,
+  "holdFrom": 1485,
+  "holdTo": 2245,
+  "holdPx": 760,
+  "holdVh": 0.84,
+  "clickableWhileFaint": [],
+  "probeSample": [
+   {
+    "y": 900,
+    "inert": true,
+    "op": 0,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   },
+   {
+    "y": 1080,
+    "inert": true,
+    "op": 0,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   },
+   {
+    "y": 1260,
+    "inert": true,
+    "op": 0,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   },
+   {
+    "y": 1440,
+    "inert": true,
+    "op": 0.98,
+    "hitIsBtn": false,
+    "pe": "none",
+    "vis": "visible"
+   }
+  ]
+ },
+ "phase": {
+  "frames": 189,
+  "distinct": [
+   "hold|Hold|rgb(38, 53, 41)|rgb(65, 104, 74)|rgb(65, 104, 74)|rgb(252, 253, 252)|1|matrix(0.8334, 0, 0, 0.8334, 0, 0)",
+   "out|Breathe out|rgb(255, 255, 255)|rgb(255, 255, 255)|rgb(94, 102, 135)|rgb(252, 253, 252)|1|matrix(0, 0, 0, 0, 0, 0)",
+   "in|Breathe in|rgb(38, 53, 41)|rgb(38, 53, 41)|rgb(120, 160, 128)|rgb(252, 253, 252)|1|matrix(0, 0, 0, 0, 0, 0)"
+  ]
+ },
+ "keyboard": [
+  "1. Skip to content | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "2.  | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "3. For clinicians | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "4. For you | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "5. What it does | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "6. Find a clinic | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "7. About Amelia | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "8. Book a demo | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "9. Book a demo | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "10. I’m a patient: get the app | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "11. Pause motion | y=0 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "12. Pause | y=1710 inView=true op=1 TRY ring=solid 2px rgb(65, 104, 74)",
+  "13. Let goBelly breathing | y=1710 inView=true op=1 TRY ring=solid 2px rgb(65, 104, 74)",
+  "14. SqueezePelvic floor with breath | y=1710 inView=true op=1 TRY ring=solid 2px rgb(65, 104, 74)",
+  "15. Programs | y=7163 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "16. ProgramsThree ship with the app: o | y=7163 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "17. VideosMobility and stretches for h | y=7183 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "18. LearnFive articles, in order, that | y=7662 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "19. Find a clinic that uses Pelvy | y=8480 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "20. How it works without a clinician | y=8480 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "21. Download on the App Store | y=8480 inView=true op=1  ring=solid 2px rgb(65, 104, 74)",
+  "22. Get it on Google Play | y=8480 inView=true op=1  ring=solid 2px rgb(65, 104, 74)"
+ ],
+ "keyboardBack": {
+  "t": "Pause motion",
+  "y": 0
+ },
+ "live": {
+  "active": "SqueezePelvic floor with breat",
+  "title": "Pelvic floor with breath",
+  "regions": [
+   "status/: \"Pelvic floor with breath, started. Rep 1 of 10.\" visually-hidden",
+   "status/: \"\" visually-hidden"
+  ]
+ },
+ "tabFromMiddle": {
+  "t": "Skip to content",
+  "y": 0,
+  "cls": "skip"
+ },
+ "errors": []
+}

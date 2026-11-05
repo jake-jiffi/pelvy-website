@@ -1,0 +1,47 @@
+[
+  {
+    "created_at": "2026-10-12T02:07:26.413321Z",
+    "display_name": "Kling v3.0",
+    "id": "adb9a8a0-a928-4ad3-a445-5836ec9f9f7a",
+    "job_type": "kling3_0",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "16:9",
+      "cfg_scale": 0.5,
+      "duration": 10,
+      "enhance_prompt": false,
+      "height": 1080,
+      "kling_element_ids": [],
+      "kling_elements": [],
+      "medias": [
+        {
+          "data": {
+            "id": "b5f73857-8e1a-4b5a-b254-2b8ed0128671",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/b5f73857-8e1a-4b5a-b254-2b8ed0128671.jpg"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "b5f73857-8e1a-4b5a-b254-2b8ed0128671",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/b5f73857-8e1a-4b5a-b254-2b8ed0128671.jpg"
+          },
+          "role": "end_image"
+        }
+      ],
+      "mode": "pro",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Locked-off overhead tripod shot, the camera does not move at all, no zoom, no pan, no drift. A pale timber clinic desk in the morning. Soft daylight from a window drifts very slowly across the desk, and the faint shadow of leaves outside moves gently over the timber. The blank white card in the centre, the ceramic dish, the notebooks and the pen all stay perfectly still. The card stays plain blank white with nothing on it. Slow, calm, natural. No people, no hands, no text, no logos.",
+      "reference_elements": [],
+      "sound": "off",
+      "width": 1920
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/hf_20261012_020726_adb9a8a0-a928-4ad3-a445-5836ec9f9f7a.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_3D1RpzlerQ5BxyM042G44D574Qd/hf_20261012_020726_adb9a8a0-a928-4ad3-a445-5836ec9f9f7a_thumbnail.webp"
+  }
+]

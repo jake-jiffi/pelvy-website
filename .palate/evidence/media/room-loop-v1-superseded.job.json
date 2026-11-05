@@ -1,0 +1,47 @@
+[
+  {
+    "created_at": "2026-10-12T02:01:43.66375Z",
+    "display_name": "Kling v3.0",
+    "id": "81264e35-9096-4a16-890d-368cbf43cadb",
+    "job_type": "kling3_0",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "1:1",
+      "cfg_scale": 0.5,
+      "duration": 10,
+      "enhance_prompt": false,
+      "height": 1080,
+      "kling_element_ids": [],
+      "kling_elements": [],
+      "medias": [
+        {
+          "data": {
+            "id": "3abe0386-a410-4eb4-994f-9cd683a4fabd",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/3abe0386-a410-4eb4-994f-9cd683a4fabd.jpg"
+          },
+          "role": "start_image"
+        },
+        {
+          "data": {
+            "id": "3abe0386-a410-4eb4-994f-9cd683a4fabd",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/3abe0386-a410-4eb4-994f-9cd683a4fabd.jpg"
+          },
+          "role": "end_image"
+        }
+      ],
+      "mode": "pro",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Locked-off tripod shot, the camera does not move at all, no zoom, no pan, no drift. Late afternoon in a quiet bedroom. The sheer linen curtain on the right stirs very slowly in a light breeze, and the warm patches of sunlight on the pale timber floor drift and soften with it. The leaves of the pot plant move a little. The phone, the speckled mug and the rolled sage exercise mat stay perfectly still. The phone screen stays a plain, evenly lit blank white with nothing on it. Slow, calm, natural, like a slow breath in and out. No people, no hands, no text, no logos.",
+      "reference_elements": [],
+      "sound": "off",
+      "width": 1080
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/hf_20261012_020143_81264e35-9096-4a16-890d-368cbf43cadb.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_3D1RpzlerQ5BxyM042G44D574Qd/hf_20261012_020143_81264e35-9096-4a16-890d-368cbf43cadb_thumbnail.webp"
+  }
+]

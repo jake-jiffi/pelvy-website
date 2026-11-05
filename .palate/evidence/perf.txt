@@ -1,0 +1,2 @@
+desktop {"lcp":124,"cls":0.006,"fcp":124,"dom":687} transferred before scrolling: 1069KB {"document":"70KB","font":"183KB","stylesheet":"64KB","image":"66KB","script":"128KB","media":"556KB","other":"1KB"}
+phone, slow 4G, 4x CPU {"lcp":1488,"cls":0.008,"fcp":868,"dom":687} transferred before scrolling: 712KB {"document":"70KB","stylesheet":"64KB","font":"183KB","image":"46KB","script":"128KB","other":"1KB","media":"219KB"}

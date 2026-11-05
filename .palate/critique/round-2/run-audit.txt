@@ -1,0 +1,49 @@
+PASS  /features/ 1440x900: no empty area wider than 30% of the column and taller than 300px  [tallest empty area wider than 384px: 740x216 at x=196 y=88; largest of any width 256x728]
+PASS  /features/ desktop: the hub's tabs are inside the first screen  [tabs y=234 to 278 of 900; screen y=154 to 781, 290px wide]
+PASS  /features/ desktop: the tabs work
+PASS  /features/ desktop: one hub and one h1 on the page
+PASS  /about/ 1440x900: no empty area wider than 30% of the column and taller than 300px  [tallest empty area wider than 384px: 576x244 at x=204 y=88; largest of any width 1280x168]
+PASS  /about/ desktop: the clinic photograph is inside the first screen  [y=218 to 592 of 900, 579px wide]
+PASS  /clinicians-and-specialists/ 1440x900: no empty area wider than 30% of the column and taller than 300px  [tallest empty area wider than 384px: 620x104 at x=740 y=88; largest of any width 320x488]
+PASS  /clinicians-and-specialists/ desktop: the note is at least as large as the heading  [note 96px, heading 67.2px]
+PASS  /clinicians-and-specialists/ desktop: the note is the words, then name and role, with no "From your clinician" line  [Let your belly go, then belly breathing. Use your guided program. Amelia Godfrey, pelvic health physiotherapist]
+      note words at scroll 0: y=496 to 801 of 900
+PASS  /features/ phone: the hub's tabs are inside the first screen  [tabs y=638 to 681 of 844; screen y=557 to 1187, 291px wide]
+PASS  /features/ phone: the tabs work
+PASS  /features/ phone: one hub and one h1 on the page
+PASS  /about/ phone: the clinic photograph is inside the first screen  [y=506 to 730 of 844, 347px wide]
+PASS  /clinicians-and-specialists/ phone: the note is at least as large as the heading  [note 45.84px, heading 39.56px]
+PASS  /clinicians-and-specialists/ phone: the note is the words, then name and role, with no "From your clinician" line  [Let your belly go, then belly breathing. Use your guided program. Amelia Godfrey, pelvic health physiotherapist]
+      note words at scroll 0: y=664 to 907 of 844
+PASS  /clinicians-and-specialists/: note is at least the heading size from 320 to 1920 wide, with no sideways scroll  [320: 44.8/38.4, 360: 44.8/38.4, 390: 45.8/39.6, 600: 57.6/48.8, 768: 67.0/56.2, 820: 69.9/58.5, 900: 74.4/62.0, 1000: 80.0/49.0, 1024: 81.3/50.2, 1280: 95.7/62.7, 1440: 96.0/67.2, 1920: 96.0/67.2]
+PASS  /clinicians-and-specialists/: the note reads in as it is scrolled, and reads back  [words in ink at scroll 0, 120, 320, back to 0: 8, 10, 11, 8 of 11]
+PASS  /clinicians-and-specialists/: the ground under the note is the home page's rising ground  [clip at scroll 0: "inset(0px round 22px)", at 320: ""]
+      rises on the page: 16
+PASS  /clinicians-and-specialists/ phone: the ground opens as it is scrolled  [clip at scroll 0: "inset(8px 2px 0px round 22px)", at 400: ""]
+PASS  /features/ reduced motion: everything is there at once, and nothing plays or reads in by itself  [{"hidden":0,"spans":0,"clip":"","playing":0}]
+PASS  /features/ no JavaScript: served complete (the "js" class is never set, so no rise is hidden)  [13 rise hooks, all visible]
+PASS  /about/ reduced motion: everything is there at once, and nothing plays or reads in by itself  [{"hidden":0,"spans":0,"clip":"","playing":0}]
+PASS  /about/ no JavaScript: served complete (the "js" class is never set, so no rise is hidden)  [11 rise hooks, all visible]
+PASS  /clinicians-and-specialists/ reduced motion: everything is there at once, and nothing plays or reads in by itself  [{"hidden":0,"spans":0,"clip":"","playing":0}]
+PASS  /clinicians-and-specialists/ no JavaScript: served complete (the "js" class is never set, so no rise is hidden)  [16 rise hooks, all visible]
+PASS  /about/: clinic photograph never wider than 600px, portrait never wider than 293px (320 to 2560 wide)  [320: 280/291, 390: 347/291, 600: 534/291, 680: 600/291, 768: 600/291, 820: 600/291, 899: 600/291, 900: 360/291, 1024: 410/291, 1280: 512/291, 1440: 579/291, 1920: 579/291, 2560: 579/291]
+PASS  directory desktop: at the top, with the search in view, the return control is not shown  [{"vis":"hidden","op":"0"}]
+PASS  directory desktop: at scroll 6000 a control that returns to the search is inside the viewport  ["Back to search" at x=720 to 913, y=832 to 880 of 900, 193x48px; the search itself is 5383px above]
+PASS  directory desktop: pressing it returns to the search, with the search box focused  [{"y":513,"tools":104,"focus":"dir-q","vis":"hidden"}]
+PASS  directory desktop: past the end of the list it steps away
+PASS  directory phone: at the top, with the search in view, the return control is not shown  [{"vis":"hidden","op":"0"}]
+PASS  directory phone: at scroll 6000 a control that returns to the search is inside the viewport  ["Back to search" at x=195 to 375, y=776 to 824 of 844, 180x48px; the search itself is 5548px above]
+PASS  directory phone: pressing it returns to the search, with the search box focused  [{"y":364,"tools":88,"focus":"dir-q","vis":"hidden"}]
+PASS  directory phone: past the end of the list it steps away
+PASS  directory desktop, no JavaScript: no filter control shows, and all 65 clinics are listed  [0 controls showing, 65 clinics]
+PASS  directory phone, no JavaScript: no filter control shows, and all 65 clinics are listed  [0 controls showing, 65 clinics]
+PASS  sign-up desktop: the heading changes with the patient choice, and changes back  ["Tell Amelia about your clinic." -> "Write to Amelia." -> "Tell Amelia about your clinic."; lead -> "A question about Pelvy, or help with the app. She answers these herself."; next steps 3 -> 1 -> 3; link "Questions from clinicians" -> "Questions from patients"]
+PASS  sign-up desktop: one h1 throughout
+PASS  sign-up desktop: the error summary carries an icon as well as its words  [{"icon":true,"hidden":"true","words":"4 things need fixing before this can go. | Your name: this is needed | Email: th","stroke":"rgb(67, 40, 37)"}]
+PASS  sign-up phone: the heading changes with the patient choice, and changes back  ["Tell Amelia about your clinic." -> "Write to Amelia." -> "Tell Amelia about your clinic."; lead -> "A question about Pelvy, or help with the app. She answers these herself."; next steps 3 -> 1 -> 3; link "Questions from clinicians" -> "Questions from patients"]
+PASS  sign-up phone: one h1 throughout
+PASS  sign-up phone: the error summary carries an icon as well as its words  [{"icon":true,"hidden":"true","words":"4 things need fixing before this can go. | Your name: this is needed | Email: th","stroke":"rgb(67, 40, 37)"}]
+PASS  contact: the error summary carries an icon as well as its words
+PASS  all 14 routes at 390: one h1 and no sideways scroll
+
+44 passed, 0 failed. Console and page errors: none

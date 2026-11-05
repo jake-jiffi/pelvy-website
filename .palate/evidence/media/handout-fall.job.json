@@ -1,0 +1,39 @@
+[
+  {
+    "created_at": "2026-10-12T02:07:26.157156Z",
+    "display_name": "Kling v3.0",
+    "id": "54d26dda-684c-44c7-a819-3136132d8092",
+    "job_type": "kling3_0",
+    "min_result_url": null,
+    "params": {
+      "aspect_ratio": "9:16",
+      "cfg_scale": 0.5,
+      "duration": 5,
+      "enhance_prompt": false,
+      "height": 1920,
+      "kling_element_ids": [],
+      "kling_elements": [],
+      "medias": [
+        {
+          "data": {
+            "id": "3651d1d1-56a7-4c6c-a95b-f5301be214e3",
+            "type": "media_input",
+            "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/3651d1d1-56a7-4c6c-a95b-f5301be214e3.jpg"
+          },
+          "role": "start_image"
+        }
+      ],
+      "mode": "pro",
+      "multi_prompt": [],
+      "multi_shot_mode": "custom",
+      "multi_shots": false,
+      "prompt": "Locked-off camera, the camera does not move at all. A kitchen fridge door in ordinary daylight. The creased sheet of white paper slips out from under the round grey magnet, slides down the fridge door and drops out of the bottom of the frame, leaving the bare fridge door where it was. The magnet stays in place. The takeaway menu and the child's crayon drawing stay perfectly still. No people, no hands, no text, no logos.",
+      "reference_elements": [],
+      "sound": "off",
+      "width": 1080
+    },
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3D1RpzlerQ5BxyM042G44D574Qd/hf_20261012_020726_54d26dda-684c-44c7-a819-3136132d8092.mp4",
+    "status": "completed",
+    "thumbnail_url": "https://cdn.higgsfield.ai/user_3D1RpzlerQ5BxyM042G44D574Qd/hf_20261012_020726_54d26dda-684c-44c7-a819-3136132d8092_thumbnail.webp"
+  }
+]

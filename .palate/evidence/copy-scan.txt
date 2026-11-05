@@ -1,0 +1,8 @@
+/clinicians-directory/: banned: "Elevate"
+    Visit Elevate Pelvic Health
+/clinicians-directory/: banned: "Fix"
+    Visit Pelvic Fix Physiotherapy
+/clinicians-directory/: banned: "Wellness"
+    Visit Vera Wellness
+
+3 lines flagged
